@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Novo</fullName>
+        <default>true</default>
+        <label>Novo</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Triagem realizada</fullName>
+        <default>false</default>
+        <label>Triagem realizada</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Pausado</fullName>
+        <default>false</default>
+        <label>Pausado</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Ignorado</fullName>
+        <default>false</default>
+        <label>Ignorado</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Resolvidas</fullName>
+        <default>false</default>
+        <label>Resolvidas</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Anulado</fullName>
+        <default>false</default>
+        <label>Anulado</label>
+    </standardValue>
+</StandardValueSet>

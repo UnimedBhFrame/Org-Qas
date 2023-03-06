@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>ADMINISTRADORAS</fullName>
+        <description>Define o Canal como Administradoras</description>
+        <field>Canal2__c</field>
+        <literalValue>ADMINISTRADORAS</literalValue>
+        <name>ADMINISTRADORAS</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CANAL_GVEN_CONSULTORES</fullName>
+        <field>Canal2__c</field>
+        <literalValue>GVEN - CONSULTORES</literalValue>
+        <name>CANAL GVEN - CONSULTORES</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CANAL_LOJAS_AUTORIZADAS</fullName>
+        <field>Canal2__c</field>
+        <literalValue>LOJAS AUTORIZADAS</literalValue>
+        <name>CANAL - LOJAS AUTORIZADAS</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CANAL_LOJAS_PROPRIAS</fullName>
+        <field>Canal2__c</field>
+        <literalValue>LOJAS PRÓPRIAS</literalValue>
+        <name>CANAL - LOJAS PROPRIAS</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CANAL_SINDILOJAS</fullName>
+        <field>Canal2__c</field>
+        <literalValue>SINDILOJAS</literalValue>
+        <name>CANAL - SINDILOJAS</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Canal_CALL_CENTER</fullName>
+        <field>Canal2__c</field>
+        <literalValue>CALL CENTER</literalValue>
+        <name>Canal - CALL CENTER</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Canal_EQUIPE_CORPORATIVA</fullName>
+        <field>Canal2__c</field>
+        <literalValue>EQUIPE CORPORATIVA</literalValue>
+        <name>Canal - EQUIPE CORPORATIVA</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Canal_E_COMMERCE</fullName>
+        <field>Canal2__c</field>
+        <literalValue>E-COMMERCE</literalValue>
+        <name>Canal - E-COMMERCE</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>MovimentacaoNomeVendedor</fullName>
+        <description>Essa vendedora foi cadastrada errada no Salutaris, o nome dela correto é AGATA CHRISTIAN DE SOUZA COSTA. O usuário do Sales está com o nome correto dela.</description>
+        <field>NomeVendedor__c</field>
+        <formula>&apos;AGATA CHRISTIAN DE SOUZA COSTA&apos;</formula>
+        <name>Movimentacao - NomeVendedor - AGATA CHRI</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>x</fullName>
+        <field>Canal2__c</field>
+        <literalValue>CALL CENTER</literalValue>
+        <name>x</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Movimentacao - Canal - ADMINISTRADORAS</fullName>
+        <actions>
+            <name>ADMINISTRADORAS</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Especifica o canal de venda conforme o canal comercializador</description>
+        <formula>OR(CanalComercializador__c = &quot;ALLCARE BENEFICIOS CORRETORA DE SEGUROS&quot;,
+CanalComercializador__c = &quot;GERENTE DE VENDAS&quot;,
+CanalComercializador__c = &quot;QUALICORP CONSULTORIA E CORRETORA DE SEGUROS&quot;,
+CanalComercializador__c = &quot;VALLOR CORRETORA DE SEGUROS&quot; )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Movimentacao - Canal - CALL CENTER</fullName>
+        <actions>
+            <name>Canal_CALL_CENTER</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Especifica o canal de venda conforme o canal comercializador</description>
+        <formula>CanalComercializador__c = &quot;CANAL CALL CENTER&quot;</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Movimentacao - NomeVendedor - AGATA CHRISTIAN DE SOUZA COSTA</fullName>
+        <actions>
+            <name>MovimentacaoNomeVendedor</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Essa vendedora foi cadastrada errada no Salutaris, o nome dela correto é AGATA CHRISTIAN DE SOUZA COSTA e no DW o nome está vindo como AGATA CHISTIAN DE SOUZA COSTA.
+Correção necessária para o relacionamento</description>
+        <formula>NomeVendedor__c = &apos;AGATA CHISTIAN DE SOUZA COSTA&apos;</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Movimentação - Canal - E-COMMERCE</fullName>
+        <actions>
+            <name>Canal_E_COMMERCE</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Especifica o canal de venda conforme o canal comercializador</description>
+        <formula>OR(CanalComercializador__c = &quot;GVEN - ECOMMERCE EMPRESARIAL&quot;,
+CanalComercializador__c = &quot;GVEN - ECOMMERCE INDIVIDUAL&quot;,
+CanalComercializador__c = &quot;REVENDA E-COMMERCE INDIVIDUAL&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Movimentação - Canal - EQUIPE CORPORATIVA</fullName>
+        <actions>
+            <name>Canal_EQUIPE_CORPORATIVA</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Especifica o canal de venda conforme o canal comercializador</description>
+        <formula>OR(CanalComercializador__c = &quot;EQUIPE CORPORATIVA&quot;,
+CanalComercializador__c = &quot;EQUIPE CORPORATIVA - COORDENACAO&quot;,
+CanalComercializador__c = &quot;EQUIPE CORPORATIVA - CORRETOR&quot;,
+CanalComercializador__c = &quot;EQUIPE CORPORATIVA - GC&quot;,
+CanalComercializador__c = &quot;EQUIPE CORPORATIVA - ME&quot;,
+CanalComercializador__c = &quot;EQUIPE CORPORATIVA - PME II&quot;,
+CanalComercializador__c = &quot;MULTISEG CORRETORA DE SEGUROS LTDA&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Movimentação - Canal - GVEN - CONSULTORES</fullName>
+        <actions>
+            <name>CANAL_GVEN_CONSULTORES</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Especifica o canal de venda conforme o canal comercializador</description>
+        <formula>CanalComercializador__c = &quot;GVEN - CONSULTORES&quot;</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Movimentação - Canal - LOJAS AUTORIZADAS</fullName>
+        <actions>
+            <name>CANAL_LOJAS_AUTORIZADAS</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Especifica o canal de venda conforme o canal comercializador</description>
+        <formula>OR(CanalComercializador__c = &quot;AC SAUDE SC LTDA&quot;,
+CanalComercializador__c = &quot;PLANOMED REPRESENTACOES LTDA&quot;,
+CanalComercializador__c = &quot;PLANOVENDAS ADMINISTRADORA E CORRETORA DE SEGUROS LTDA&quot;,
+CanalComercializador__c = &quot;SALUTIA REPRESENTACOES LTDA&quot; )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Movimentação - Canal - LOJAS PROPRIAS</fullName>
+        <actions>
+            <name>CANAL_LOJAS_PROPRIAS</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Especifica o canal de venda conforme o canal comercializador</description>
+        <formula>OR(CanalComercializador__c = &quot;VENDAS LJ PROPRIA BETIM&quot;,
+CanalComercializador__c = &quot;VENDAS LJ PROPRIA CONTAGEM&quot;,
+CanalComercializador__c = &quot;VENDAS LJ PROPRIA LAGOA SANTA&quot;,
+CanalComercializador__c = &quot;VENDAS LJ PROPRIA PEDRO LEOPOLDO&quot;,
+CanalComercializador__c = &quot;VENDAS LJ PROPRIA SANTA BARBARA&quot;,
+CanalComercializador__c = &quot;VENDAS LJ PROPRIA SANTA LUZIA&quot;,
+CanalComercializador__c = &quot;VENDAS LOJA PROPRIA BH&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Movimentação - Canal - SINDILOJAS%22</fullName>
+        <actions>
+            <name>CANAL_SINDILOJAS</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Especifica o canal de venda conforme o canal comercializador</description>
+        <formula>CanalComercializador__c = &quot;SINDILOJAS BH&quot;</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

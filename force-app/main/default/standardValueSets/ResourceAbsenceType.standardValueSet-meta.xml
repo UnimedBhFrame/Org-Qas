@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Almoço</fullName>
+        <default>false</default>
+        <label>Almoço</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Compromisso particular</fullName>
+        <default>true</default>
+        <label>Compromisso particular</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Férias</fullName>
+        <default>false</default>
+        <label>Férias</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Reunião</fullName>
+        <default>false</default>
+        <label>Reunião</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Treinamento interno</fullName>
+        <default>false</default>
+        <label>Treinamento interno</label>
+    </standardValue>
+</StandardValueSet>

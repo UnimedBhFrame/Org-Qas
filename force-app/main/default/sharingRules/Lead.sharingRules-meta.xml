@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Acesso_a_Leads</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Acesso a Leads</label>
+        <sharedTo>
+            <group>AcessoLeads</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Gerente</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>ApoioEstrategico</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Apoio Estratégico</label>
+        <sharedTo>
+            <role>ApoioEstrategico</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Gerente</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>CallCenterLead</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Regra de compartilhamento dos leads</description>
+        <label>Call Center Lead</label>
+        <sharedTo>
+            <role>Gerente</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>AtendenteCallCenter</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>SupervisorBH</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Supervisor BH ver Supervisor Interior</description>
+        <label>Supervisor BH</label>
+        <sharedTo>
+            <role>SupervisorBH</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>SupervisorInterior</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>SupervisorPlanovendas</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Supervisor Planovendas</label>
+        <sharedTo>
+            <group>SupervisorPlanovendas</group>
+        </sharedTo>
+        <sharedFrom>
+            <role>SupervisorPlanovendas</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>PAGINA DE PLANOS</fullName>
+        <default>false</default>
+        <label>PAGINA DE PLANOS</label>
+    </standardValue>
+    <standardValue>
+        <fullName>HubSpot</fullName>
+        <default>false</default>
+        <label>HubSpot</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Chatbot/Indicação Interna Unimed-BH</fullName>
+        <default>false</default>
+        <label>Chatbot/Indicação Interna Unimed-BH</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Call Center</fullName>
+        <default>false</default>
+        <label>Call Center</label>
+    </standardValue>
+</StandardValueSet>

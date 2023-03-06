@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>PME 2 C</name>
+    <queueMembers>
+        <users>
+            <user>nayana.cruz@unimedbh.com.br</user>
+            <user>suportecanaldevendas@unimedbh.com.br</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Substituir</fullName>
+        <default>true</default>
+        <label>Substituir</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Reembolso</fullName>
+        <default>false</default>
+        <label>Reembolso</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Crédito</fullName>
+        <default>false</default>
+        <label>Crédito</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Devolução</fullName>
+        <default>false</default>
+        <label>Devolução</label>
+    </standardValue>
+</StandardValueSet>

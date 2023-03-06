@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Indicação Chatbot - GVEN Consultores</name>
+    <queueMembers>
+        <users>
+            <user>ana.horta@unimedbh.com.br</user>
+            <user>elaine.oliveira@unimedbh.com.br</user>
+            <user>januaria.teixeira@unimedbh.com.br</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

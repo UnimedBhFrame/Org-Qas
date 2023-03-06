@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Admissão</fullName>
+        <default>false</default>
+        <label>Admissão</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Inclusão de dependente</fullName>
+        <default>false</default>
+        <label>Inclusão de dependente</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Transferência</fullName>
+        <default>false</default>
+        <label>Transferência</label>
+    </standardValue>
+</StandardValueSet>

@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>EmailAlteraPropriedadeLead</fullName>
+        <description>Lead - Envio de email quando altera o proprietario</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>EmailsUnimed/LeadsNovoProprietario</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>AjustaCPFLead</fullName>
+        <description>Ajusta o CPF substituindo o caractere / por -</description>
+        <field>CPF__c</field>
+        <formula>SUBSTITUTE(CPF__c,&quot;/&quot;,&quot;-&quot;)</formula>
+        <name>Ajusta CPF do Lead</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>AlteraJuridica</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>PessoaJuridica</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Altera pra Jurídica</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>AlteraOwnerParaFilaCorretora</fullName>
+        <field>OwnerId</field>
+        <lookupValue>CorretoraCorporativoNovosNegocios</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>AlteraOwnerParaFilaCorretora</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>AtualizaStatusLead</fullName>
+        <description>Atualiza o status para captação</description>
+        <field>Status</field>
+        <literalValue>Captação</literalValue>
+        <name>Atualiza Status Lead</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>AtualizaStatusQualificacao</fullName>
+        <description>Atualiza o status para qualificação.</description>
+        <field>Status</field>
+        <literalValue>Qualificação</literalValue>
+        <name>Atualiza Status QUalificação</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>AtualizaTipoRegistro</fullName>
+        <description>Atualiza o tipo de registro do lead.</description>
+        <field>RecordTypeId</field>
+        <lookupValue>PessoaJuridicaEnterprise</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Atualiza Tipo de Registro</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>AtualizarProprietario</fullName>
+        <field>OwnerId</field>
+        <lookupValue>SACallCenter</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>AtualizarProprietario</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>BEM_DIGITAL</fullName>
+        <field>LeadSource</field>
+        <literalValue>BEM DIGITAL</literalValue>
+        <name>BEM DIGITAL</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DataLeadPerdido</fullName>
+        <description>Registra a última data em que o status do lead foi alterado para perdido</description>
+        <field>DataLeadPerdido__c</field>
+        <formula>NOW()</formula>
+        <name>Lead - Data Lead Perdido</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DocumentoIdentificacao</fullName>
+        <description>Atualiza o campo Documento de Identificação quando o CPF não for branco</description>
+        <field>DocumentoIdentificacao__c</field>
+        <formula>IF(ISBLANK(CPF__c),&quot;Sem Informação&quot;,CPF__c)</formula>
+        <name>Documento de Identificação</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>DocumentoIdentificacaoCNPJ</fullName>
+        <description>Quando existir um valor no CNPJ, atualiza o campo Documento de Identificação com este novo valor, caso não exista, insira a string &quot;Sem Informação&quot;.</description>
+        <field>DocumentoIdentificacao__c</field>
+        <formula>IF(ISBLANK(CNPJ__c),&quot;Sem Informação&quot;,CNPJ__c)</formula>
+        <name>Documento de Identificação CNPJ</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>HISTORIAS</fullName>
+        <field>LeadSource</field>
+        <literalValue>HISTORIAS</literalValue>
+        <name>HISTORIAS</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>LeadAtualizaCPFCNPJ</fullName>
+        <field>CPFCNPJ__c</field>
+        <formula>IF(ISCHANGED(CPF__c),SUBSTITUTE(
+SUBSTITUTE(
+SUBSTITUTE(CPF__c,&quot;.&quot;,&quot;&quot;),&quot;-&quot;,&quot;&quot;),&quot;/&quot;,&quot;&quot;),
+IF(ISCHANGED(CNPJ__c),
+SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(CNPJ__c,&quot;.&quot;,&quot;&quot;),&quot;-&quot;,&quot;&quot;),&quot;/&quot;,&quot;&quot;),
+IF(NOT(ISBLANK(CPF__c)),
+SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(CPF__c,&quot;.&quot;,&quot;&quot;),&quot;-&quot;,&quot;&quot;),&quot;/&quot;,&quot;&quot;),
+SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE(CNPJ__c,&quot;.&quot;,&quot;&quot;),&quot;-&quot;,&quot;&quot;),&quot;/&quot;,&quot;&quot;)
+)
+)
+)</formula>
+        <name>Lead - Atualiza CPFCNPJ</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>LeadCopiarEmail</fullName>
+        <field>Email__c</field>
+        <formula>Email</formula>
+        <name>Lead - Copiar E-mail</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>LeadFormatarCNPJ</fullName>
+        <field>CNPJ__c</field>
+        <formula>(LEFT(CNPJ__c , 2)
+&amp;&quot;.&quot;&amp;
+RIGHT(LEFT(CNPJ__c,5), 3)
+&amp;&quot;.&quot;&amp;
+RIGHT(LEFT(CNPJ__c,8), 3)
+&amp;&quot;/&quot;&amp;
+LEFT(RIGHT(CNPJ__c,6), 4)
+&amp;&quot;-&quot;&amp;
+RIGHT(CNPJ__c,2))</formula>
+        <name>Lead - Formatar CNPJ</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>LeadFormatarCPF</fullName>
+        <field>CPF__c</field>
+        <formula>(LEFT(CPF__c ,3)&amp;
+&quot;.&quot;&amp;
+RIGHT(LEFT(CPF__c ,6),3) &amp;
+&quot;.&quot; &amp;
+LEFT(RIGHT(CPF__c ,5),3) &amp; &quot;-&quot; &amp;
+RIGHT(CPF__c,2))</formula>
+        <name>Lead - Formatar CPF</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>LeadFormatarCelular</fullName>
+        <field>MobilePhone</field>
+        <formula>IF(
+LEN(TRIM( MobilePhone)) = 11,
+&quot;(&quot; &amp; LEFT(MobilePhone,2) &amp; &quot;) &quot;&amp; RIGHT(LEFT(MobilePhone,7),5) &amp; &quot;-&quot; &amp; RIGHT(MobilePhone,4),
+&quot;(&quot; &amp; LEFT(MobilePhone,2) &amp; &quot;) &quot;&amp; RIGHT(LEFT(MobilePhone,6),4) &amp; &quot;-&quot; &amp; RIGHT(MobilePhone,4)
+)</formula>
+        <name>Lead - Formatar Celular</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>LeadFormatarTelefone</fullName>
+        <field>Phone</field>
+        <formula>IF(
+LEN(TRIM( Phone)) = 11,
+&quot;(&quot; &amp; LEFT(Phone,2) &amp; &quot;) &quot;&amp; RIGHT(LEFT(Phone,7),5) &amp; &quot;-&quot; &amp; RIGHT(Phone,4),
+&quot;(&quot; &amp; LEFT(Phone,2) &amp; &quot;) &quot;&amp; RIGHT(LEFT(Phone,6),4) &amp; &quot;-&quot; &amp; RIGHT(Phone,4)
+)</formula>
+        <name>Lead - Formatar Telefone</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>LeadLevantadaMao</fullName>
+        <field>OwnerId</field>
+        <lookupValue>LevantadaMao</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Lead - Levantada de Mão</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>LeadWebToLeadPessoaFisica</fullName>
+        <description>Sempre que um lead é criado via Web-to-lead ou a origem do lead for Marketing Cloud e o campo CPF está preenchido, irá ser atribuído o tipo de registro Pessoa Física.</description>
+        <field>RecordTypeId</field>
+        <lookupValue>PessoaFisica</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Lead - Web-to-lead Pessoa Física</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>LeadWebToLeadPessoaJuridica</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>PessoaJuridica</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Lead - Web-to-lead Pessoa Jurídica</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PAGINA_DE_PLANOS</fullName>
+        <field>LeadSource</field>
+        <literalValue>PAGINA DE PLANOS</literalValue>
+        <name>PAGINA DE PLANOS</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PORTAL</fullName>
+        <field>LeadSource</field>
+        <literalValue>PORTAL</literalValue>
+        <name>PORTAL</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PreencheIdRegsistro</fullName>
+        <field>RecordId__c</field>
+        <formula>CASESAFEID(Id)</formula>
+        <name>Preenche Id do Registro</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>PreencheObservacoesVisita</fullName>
+        <description>Preenche o campo observações de visita</description>
+        <field>ObservacoesCompromisso__c</field>
+        <formula>Observacoes__c</formula>
+        <name>PreencheObservacoesVisita</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>AlteraOwnerParaFilaCorretora</fullName>
+        <actions>
+            <name>AlteraOwnerParaFilaCorretora</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.Corretora__c</field>
+            <operation>equals</operation>
+            <value>Verdadeiro</value>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Data Lead Perdido</fullName>
+        <actions>
+            <name>DataLeadPerdido</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.Status</field>
+            <operation>equals</operation>
+            <value>Lead Perdido</value>
+        </criteriaItems>
+        <description>Armazena a ultima data em que o lead ficou com o status Perdido</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Documento de Identificação CNPJ</fullName>
+        <actions>
+            <name>DocumentoIdentificacaoCNPJ</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Quando existir um valor no CNPJ, atualiza o campo Documento de Identificação com este novo valor, caso não exista, insira a string &quot;Sem Informação&quot;.</description>
+        <formula>NOT(ISBLANK(CNPJ__c))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Documento de Identificação CPF</fullName>
+        <actions>
+            <name>DocumentoIdentificacao</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Quando existir um valor no CPF, atualiza o campo Documento de Identificação com este novo valor, caso não exista, insira a string &quot;Sem Informação&quot;.</description>
+        <formula>NOT(ISBLANK(CPF__c))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>LEAD - CPFCNPJ</fullName>
+        <actions>
+            <name>LeadAtualizaCPFCNPJ</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Atualiza o campo CPFCNPJ__c com a informação do documento de identificação, essa regra é necessária para evitar duplicidade de informação. Este campo é utilizado nas regras de correspondência</description>
+        <formula>ISCHANGED(CPF__c) || ISCHANGED(CNPJ__c) || NOT(ISBLANK(CPFCNPJId__c))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>LEAD - Origem do Lead - BEM DIGITAL</fullName>
+        <actions>
+            <name>BEM_DIGITAL</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(OrigemLeadAux__c = &apos;BEM DIGITAL&apos;, ISBLANK(TEXT(LeadSource)))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>LEAD - Origem do Lead - HISTORIAS</fullName>
+        <actions>
+            <name>HISTORIAS</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(OrigemLeadAux__c = &quot;HISTORIAS&quot;, ISBLANK(TEXT(LeadSource)))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>LEAD - Origem do Lead - PAGINA DE PLANOS</fullName>
+        <actions>
+            <name>PAGINA_DE_PLANOS</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(OrigemLeadAux__c = &quot;PAGINA DE PLANOS&quot;, ISBLANK(TEXT(LeadSource)))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>LEAD - Origem do Lead - PORTAL</fullName>
+        <actions>
+            <name>PORTAL</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>AND(OrigemLeadAux__c = &quot;PORTAL&quot;, ISBLANK(TEXT(LeadSource)))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead - Altera Status para captação</fullName>
+        <actions>
+            <name>AtualizaStatusLead</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>De acordo com o canal de entrada e tipo de registro do lead, esta regra atualiza o status do Lead para &apos;Captação&apos;</description>
+        <formula>OR(  OR( TEXT(CanalEntrada__c ) = &apos;Mailing&apos;,  TEXT(CanalEntrada__c ) = &apos;Call Center&apos;,  TEXT(CanalEntrada__c ) = &apos;Promotor&apos;,  TEXT(CanalEntrada__c ) = &apos;Consultor&apos;,  TEXT(CanalEntrada__c ) = &apos;Indicação interna UnimedBH&apos;, TEXT(CanalEntrada__c ) = &apos;Indicação&apos;)  ,  OR( RecordType.Name = &apos;Pessoa Jurídica - Enterprise&apos;,  RecordType.Name = &apos;Pessoa Física&apos;,  RecordType.Name = &apos;Pessoa Jurídica&apos;))</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead - Altera Status para qualificação</fullName>
+        <actions>
+            <name>AtualizaStatusQualificacao</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>De acordo com o canal de entrada e tipo de registro do lead, esta regra atualiza o status do Lead para &apos;Qualificação&apos;</description>
+        <formula>TEXT(CanalEntrada__c ) = &apos;e-Commerce&apos;||  TEXT(CanalEntrada__c ) = &apos;Hotsite: Soluções Empresa&apos;</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead - CPF</fullName>
+        <actions>
+            <name>AjustaCPFLead</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Ajusta o CPF substituindo o caractere / por -</description>
+        <formula>ISCHANGED(CPF__c) || NOT(ISBLANK(CPF__c))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead - Copiar E-mail</fullName>
+        <actions>
+            <name>LeadCopiarEmail</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>NOT(ISBLANK(Email))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead - Formatar CNPJ</fullName>
+        <actions>
+            <name>LeadFormatarCNPJ</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Formatar campo CNPJ__c automaticamente.</description>
+        <formula>(LEN(CNPJ__c)==14)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead - Formatar CPF</fullName>
+        <actions>
+            <name>LeadFormatarCPF</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Formatar campo CPF__c automaticamente.</description>
+        <formula>(LEN(CPF__c)==11)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead - Formatar Celular</fullName>
+        <actions>
+            <name>LeadFormatarCelular</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Formatar campo Celular automaticamente.</description>
+        <formula>OR(LEN( MobilePhone) = 10,LEN( MobilePhone) = 11)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead - Formatar Telefone</fullName>
+        <actions>
+            <name>LeadFormatarTelefone</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Formatar campo Telefone automaticamente.</description>
+        <formula>OR(LEN( Phone) = 10,LEN( Phone) = 11)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead - Levantada de Mão</fullName>
+        <actions>
+            <name>LeadLevantadaMao</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <formula>NOT(ISBLANK(OrigemWebToLead__c))</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead - Muda para Enterprise</fullName>
+        <actions>
+            <name>AtualizaTipoRegistro</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.NumeroVidas__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>30</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Médico Cooperado,Pessoa Física,Pessoa Física RN</value>
+        </criteriaItems>
+        <description>Verifica o número de vidas do Lead. Caso seja maior do que 29, o tipo de registro é alterado para Pessoa Jurídica - Enterprise</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead - Muda para Juridica</fullName>
+        <actions>
+            <name>AlteraJuridica</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.NumeroVidas__c</field>
+            <operation>lessThan</operation>
+            <value>30</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Médico Cooperado,Pessoa Física,Pessoa Física RN</value>
+        </criteriaItems>
+        <description>Verifica o número de vidas do Lead. Caso seja menor do que 30, o tipo de registro é alterado para Pessoa Jurídica - Enterprise</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead - Preenche Campo Observações</fullName>
+        <actions>
+            <name>PreencheObservacoesVisita</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Sempre que o campo Observações é preenchido, o campo observações visitas é automaticamente preenchido.</description>
+        <formula>!ISBLANK(Observacoes__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead - Preenche Id do Registro</fullName>
+        <actions>
+            <name>PreencheIdRegsistro</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Sempre que um lead é criado, o campo de autorreferência é preenchido com o Id do Lead.</description>
+        <formula>LastName &lt;&gt; &apos;&apos;</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead - Web-to-lead Pessoa Física</fullName>
+        <actions>
+            <name>LeadWebToLeadPessoaFisica</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Sempre que um lead é criado e o campo CPF está preenchido, irá ser atribuído o tipo de registro Pessoa Física. Informação atribuída quando contém &quot;Marketing Cloud&quot; no campo Origem do lead ou Levantada de mão seja diferente de nulo.</description>
+        <formula>AND(
+				OR(
+								NOT(ISBLANK(OrigemWebToLead__c)),
+								(CONTAINS(TEXT(LeadSource), &quot;Marketing Cloud&quot;))
+				),
+				NOT(ISBLANK(CPF__c)
+							)
+)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Lead - Web-to-lead Pessoa Jurídica</fullName>
+        <actions>
+            <name>LeadWebToLeadPessoaJuridica</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Sempre que um lead é criado e o campo CNPJ está preenchido, irá ser atribuído o tipo de registro Pessoa Física. Informação atribuída quando contém Marketing Cloud no campo Origem do lead ou Levantada de mão seja diferente de nulo.</description>
+        <formula>AND( 				
+				OR( 								
+								NOT(ISBLANK(OrigemWebToLead__c)),
+								(CONTAINS(TEXT(LeadSource),&quot;Marketing Cloud&quot;)
+								)
+				), 				
+				NOT(ISBLANK(CNPJ__c)
+							) 
+)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>LeadCaptacao</fullName>
+        <actions>
+            <name>AtualizaStatusLead</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>De acordo com o canal de entrada e tipo de registro do lead, esta regra atualiza o status do Lead para &apos;Captação&apos;</description>
+        <formula>OR(  OR( TEXT(CanalEntrada__c ) = &apos;Mailing&apos;,  TEXT(CanalEntrada__c ) = &apos;Call Center&apos;,  TEXT(CanalEntrada__c ) = &apos;Promotor&apos;,  TEXT(CanalEntrada__c ) = &apos;Consultor&apos;,  TEXT(CanalEntrada__c ) = &apos;Indicação interna UnimedBH&apos;, TEXT(CanalEntrada__c ) = &apos;Indicação&apos;)  ,  OR( RecordType.Name = &apos;Pessoa Jurídica - Enterprise&apos;,  RecordType.Name = &apos;Pessoa Física&apos;,  RecordType.Name = &apos;Pessoa Jurídica&apos;))</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>LeadQualificacao</fullName>
+        <actions>
+            <name>AtualizaStatusQualificacao</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>De acordo com o canal de entrada e tipo de registro do lead, esta regra atualiza o status do Lead para &apos;Qualificação&apos;</description>
+        <formula>OR( OR( TEXT(CanalEntrada__c ) = &apos;e-Commerce&apos;,  TEXT(CanalEntrada__c ) = &apos;Hotsite: Soluções Empresa&apos; )  ,  OR( RecordType.Name = &apos;Médico Cooperado&apos;, RecordType.Name = &apos;Pessoa Física RN&apos;) )</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>VerificaNumeroVidas</fullName>
+        <actions>
+            <name>AtualizaTipoRegistro</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Lead.NumeroVidas__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>30</value>
+        </criteriaItems>
+        <description>Verifica o número de vidas do Lead. Caso seja maior do que 29, o tipo de registro é alterado para Pessoa Jurídica - Enterprise</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

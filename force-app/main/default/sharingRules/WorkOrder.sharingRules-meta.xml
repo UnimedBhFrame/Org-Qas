@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>AtendenteCallCenter</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Atendente de Call Center</label>
+        <sharedTo>
+            <role>AtendenteCallCenter</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Gerente</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Promotor</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Promotor</label>
+        <sharedTo>
+            <role>Promotor</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Gerente</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>SupervisorBH</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Supervisor BH ver Supervisor Interior</description>
+        <label>Supervisor BH</label>
+        <sharedTo>
+            <role>SupervisorBH</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>SupervisorInterior</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>SupervisorPlanovendas</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Supervisor Planovendas</label>
+        <sharedTo>
+            <group>SupervisorPlanovendas</group>
+        </sharedTo>
+        <sharedFrom>
+            <role>SupervisorPlanovendas</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

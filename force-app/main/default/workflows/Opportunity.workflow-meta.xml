@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>ADMINISTRADORAS</fullName>
+        <field>Canal2__c</field>
+        <literalValue>ADMINISTRADORAS</literalValue>
+        <name>ADMINISTRADORAS</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>CALL_CENTER</fullName>
+        <field>Canal2__c</field>
+        <literalValue>CALL CENTER</literalValue>
+        <name>CALL CENTER</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>EQUIPE_CORPORATIVA</fullName>
+        <field>Canal2__c</field>
+        <literalValue>EQUIPE CORPORATIVA</literalValue>
+        <name>EQUIPE CORPORATIVA</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>E_COMMERCE</fullName>
+        <field>Canal2__c</field>
+        <literalValue>E-COMMERCE</literalValue>
+        <name>E-COMMERCE</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>GVEN_CONSULTORES</fullName>
+        <field>Canal2__c</field>
+        <literalValue>GVEN - CONSULTORES</literalValue>
+        <name>GVEN - CONSULTORES</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>LOJAS_AUTORIZADAS</fullName>
+        <field>Canal2__c</field>
+        <literalValue>LOJAS AUTORIZADAS</literalValue>
+        <name>LOJAS AUTORIZADAS</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>LOJAS_PR_PRIAS</fullName>
+        <field>Canal2__c</field>
+        <literalValue>LOJAS PRÓPRIAS</literalValue>
+        <name>LOJAS PRÓPRIAS</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OportunidadeFormatarCNPJ</fullName>
+        <field>CNPJ__c</field>
+        <formula>(LEFT(CNPJ__c , 2)
+&amp;&quot;.&quot;&amp;
+RIGHT(LEFT(CNPJ__c,5), 3)
+&amp;&quot;.&quot;&amp;
+RIGHT(LEFT(CNPJ__c,8), 3)
+&amp;&quot;/&quot;&amp;
+LEFT(RIGHT(CNPJ__c,6), 4)
+&amp;&quot;-&quot;&amp;
+RIGHT(CNPJ__c,2))</formula>
+        <name>Oportunidade - Formatar CNPJ</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>OportunidadeFormatarCPF</fullName>
+        <field>CPF__c</field>
+        <formula>(LEFT(CPF__c ,3)&amp;
+&quot;.&quot;&amp;
+RIGHT(LEFT(CPF__c ,6),3) &amp;
+&quot;.&quot; &amp;
+LEFT(RIGHT(CPF__c ,5),3) &amp; &quot;-&quot; &amp;
+RIGHT(CPF__c,2))</formula>
+        <name>Oportunidade - Formatar CPF</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>SINDILOJAS</fullName>
+        <field>Canal2__c</field>
+        <literalValue>SINDILOJAS</literalValue>
+        <name>SINDILOJAS</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TipoEnterprise</fullName>
+        <description>Sempre que o número de vidas for preenchido ou alterado pra um número maior ou igual a 30 vidas, o tipo de registro da Oportunidade vira Enterprise.</description>
+        <field>RecordTypeId</field>
+        <lookupValue>Enterprise</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Tipo Registro - Enterprise</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TipoRVarejo</fullName>
+        <description>Sempre que o número de vidas for preenchido ou alterado pra um número menor que 30 vidas, o tipo de registro da Oportunidade vira Varejo.</description>
+        <field>RecordTypeId</field>
+        <lookupValue>Varejo</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Tipo Registro - Varejo</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TipoVarejo</fullName>
+        <description>Sempre que o número de vidas for preenchido ou alterado pra um número menor que 30 vidas, o tipo de registro da Oportunidade vira Varejo.</description>
+        <field>RecordTypeId</field>
+        <lookupValue>Varejo</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Tipo Registro - Varejo</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Oportunidade - Canal - ADMINISTRADORAS</fullName>
+        <actions>
+            <name>ADMINISTRADORAS</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>Meta__r.Canal__c = &apos;ADMINISTRADORAS&apos;</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Oportunidade - Canal - CALL CENTER</fullName>
+        <actions>
+            <name>CALL_CENTER</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>Meta__r.Canal__c = &apos;CALL CENTER&apos;</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Oportunidade - Canal - E-COMMERCE</fullName>
+        <actions>
+            <name>E_COMMERCE</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>Meta__r.Canal__c = &apos;E-COMMERCE&apos;</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Oportunidade - Canal - EQUIPE CORPORATIVA</fullName>
+        <actions>
+            <name>EQUIPE_CORPORATIVA</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>Meta__r.Canal__c = &apos;EQUIPE CORPORATIVA&apos;</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Oportunidade - Canal - GVEN - CONSULTORES</fullName>
+        <actions>
+            <name>GVEN_CONSULTORES</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>Meta__r.Canal__c = &apos;GVEN - CONSULTORES&apos;</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Oportunidade - Canal - LOJAS AUTORIZADAS</fullName>
+        <actions>
+            <name>LOJAS_AUTORIZADAS</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>Meta__r.Canal__c = &apos;LOJAS AUTORIZADAS&apos;</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Oportunidade - Canal - LOJAS PRÓPRIAS</fullName>
+        <actions>
+            <name>LOJAS_PR_PRIAS</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>Meta__r.Canal__c = &apos;LOJAS PRÓPRIAS&apos;</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Oportunidade - Canal - SINDILOJAS</fullName>
+        <actions>
+            <name>SINDILOJAS</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>Meta__r.Canal__c = &apos;SINDILOJAS&apos;</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>Oportunidade - Formatar CNPJ</fullName>
+        <actions>
+            <name>OportunidadeFormatarCNPJ</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Formatar campo CNPJ__c automaticamente.</description>
+        <formula>(LEN(CNPJ__c)==14)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Oportunidade - Formatar CPF</fullName>
+        <actions>
+            <name>OportunidadeFormatarCPF</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Formatar campo CPF__c automaticamente.</description>
+        <formula>(LEN(CPF__c)==11)</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Oportunidade - Muda para Enterprise</fullName>
+        <actions>
+            <name>TipoEnterprise</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.NumeroVidas__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>30</value>
+        </criteriaItems>
+        <description>Altera o tipo de registro para Enterprise de acordo com o número de vidas da Oportunidade.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Oportunidade - Muda para Varejo</fullName>
+        <actions>
+            <name>TipoRVarejo</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Opportunity.NumeroVidas__c</field>
+            <operation>lessThan</operation>
+            <value>30</value>
+        </criteriaItems>
+        <description>Altera o tipo de registro para Varejo de acordo com o número de vidas da Oportunidade.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

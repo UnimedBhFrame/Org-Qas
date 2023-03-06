@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Proibido</fullName>
+        <default>false</default>
+        <label>Proibido</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Entrada de terceiros</fullName>
+        <default>false</default>
+        <label>Entrada de terceiros</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Lead Perdido</fullName>
+        <default>false</default>
+        <label>Lead Perdido</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Captação</fullName>
+        <default>true</default>
+        <label>Captação</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Qualificação</fullName>
+        <default>false</default>
+        <label>Qualificação</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Negociação</fullName>
+        <default>false</default>
+        <label>Negociação</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Alavancagem</fullName>
+        <default>false</default>
+        <label>Alavancagem</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Convertido</fullName>
+        <default>false</default>
+        <label>Convertido</label>
+        <converted>true</converted>
+    </standardValue>
+</StandardValueSet>

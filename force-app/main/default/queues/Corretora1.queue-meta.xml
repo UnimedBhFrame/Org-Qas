@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Corretora 1</name>
+    <queueMembers>
+        <users>
+            <user>milenacosta@frwk.com.br</user>
+            <user>pedrocampolina@frwk.com.br</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Corretora__c</sobjectType>
+    </queueSobject>
+</Queue>

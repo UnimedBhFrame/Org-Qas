@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Consultor Externo - Equipe Corporativa</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Consultor Externo - Equipe Corporativa</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>CoordenadorEquipeCorporativa</parentRole>
+</Role>
