@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SelecioneOpcionaisIncluidos</fullName>
+    <active>false</active>
+    <errorConditionFormula>(HouveInclusaoAdicionais__c==true
+&amp;&amp;
+ISBLANK(	 OpcionaisIncluidos__c ))
+&amp;&amp; RecordType.Name == &apos;Conclusão da Negociação&apos;</errorConditionFormula>
+    <errorDisplayField>OpcionaisIncluidos__c</errorDisplayField>
+    <errorMessage>Campo opcionais incluídos Obrigatório</errorMessage>
+</ValidationRule>

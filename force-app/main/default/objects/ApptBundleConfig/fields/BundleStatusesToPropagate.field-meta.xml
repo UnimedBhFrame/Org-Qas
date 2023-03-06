@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BundleStatusesToPropagate</fullName>
+    <inlineHelpText>Selecione os status de compromisso do serviço do pacote que são adicionados aos compromissos do serviço do membro do pacote. Use um valor vazio para propagar para todos os status.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+</CustomField>

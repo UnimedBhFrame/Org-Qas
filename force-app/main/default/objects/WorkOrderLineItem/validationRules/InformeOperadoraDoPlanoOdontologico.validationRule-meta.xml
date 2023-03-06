@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InformeOperadoraDoPlanoOdontologico</fullName>
+    <active>false</active>
+    <errorConditionFormula>(EmpresaPossuiPlanoOdontologico__c == true
+&amp;&amp;
+ISBLANK( OperadoraPlanoOdontologicoTexto__c ))
+&amp;&amp; RecordType.Name == &apos;Prospecção Empresarial&apos;</errorConditionFormula>
+    <errorDisplayField>OperadoraPlanoOdontologicoTexto__c</errorDisplayField>
+    <errorMessage>Campo operadora do plano odontológico Obrigatório</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ImpedeAlteracaoStatus</fullName>
+    <active>false</active>
+    <description>Impede que após o usuário definir a ata como concluída, ele altere o status novamente com o propósito de alterá-la.</description>
+    <errorConditionFormula>AND(  
+    ISPICKVAL(PRIORVALUE(Status),&quot;Completed&quot;),
+    NOT($Permission.FLSPermiteEditarAtaConcluida),
+    NOT(ISCHANGED(Account__c))
+)</errorConditionFormula>
+    <errorMessage>Uma ata concluída não pode ser alterada. Contate um administrador.</errorMessage>
+</ValidationRule>

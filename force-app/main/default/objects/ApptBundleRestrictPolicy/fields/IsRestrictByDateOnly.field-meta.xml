@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsRestrictByDateOnly</fullName>
+    <inlineHelpText>O Nome do campo da restrição deve ser do tipo Data/hora. Restrinja o pacote com base na data do calendário, ignorando a hora do dia.</inlineHelpText>
+</CustomField>

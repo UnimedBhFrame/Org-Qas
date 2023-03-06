@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QuantosAnosContratoEstaAtivo</fullName>
+    <active>false</active>
+    <errorConditionFormula>(EmpresaPossuiAssistenciaMedica__c == true
+&amp;&amp;
+ISBLANK( AnosContratoAtualAtivo__c))  
+&amp;&amp; RecordType.Name == &apos;Manutenção Relacionamento&apos;</errorConditionFormula>
+    <errorDisplayField>AnosContratoAtualAtivo__c</errorDisplayField>
+    <errorMessage>Campo anos de contrato ativo Obrigatório</errorMessage>
+</ValidationRule>

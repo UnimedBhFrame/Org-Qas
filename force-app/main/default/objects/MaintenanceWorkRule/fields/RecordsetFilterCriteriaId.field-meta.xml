@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RecordsetFilterCriteriaId</fullName>
+    <inlineHelpText>Defina o critério de filtro do conjunto de registro apenas para ordens de trabalho com uma regra de trabalho baseada em critério ou uso.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

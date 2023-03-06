@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnimationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <animationFrequency>always</animationFrequency>
+    <developerName>OportunidadeVarejo</developerName>
+    <isActive>true</isActive>
+    <masterLabel>Oportunidade - Varejo</masterLabel>
+    <recordTypeContext>Custom</recordTypeContext>
+    <recordTypeName>Varejo</recordTypeName>
+    <sobjectType>Opportunity</sobjectType>
+    <targetField>StageName</targetField>
+    <targetFieldChangeToValues>Oportunidade Ganha</targetFieldChangeToValues>
+</AnimationRule>

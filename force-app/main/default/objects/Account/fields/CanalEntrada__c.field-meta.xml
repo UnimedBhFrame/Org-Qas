@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CanalEntrada__c</fullName>
+    <externalId>false</externalId>
+    <label>Canal de Entrada</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Atendimento Loja</fullName>
+                <default>false</default>
+                <label>Atendimento Loja</label>
+            </value>
+            <value>
+                <fullName>Call Center</fullName>
+                <default>false</default>
+                <label>Call Center</label>
+            </value>
+            <value>
+                <fullName>Blended - AeC</fullName>
+                <default>false</default>
+                <label>Blended - AeC</label>
+            </value>
+            <value>
+                <fullName>Mailing</fullName>
+                <default>false</default>
+                <label>Mailing</label>
+            </value>
+            <value>
+                <fullName>Promotor</fullName>
+                <default>false</default>
+                <label>Promotor</label>
+            </value>
+            <value>
+                <fullName>Prospecção</fullName>
+                <default>false</default>
+                <label>Prospecção</label>
+            </value>
+            <value>
+                <fullName>Receptivo - AeC</fullName>
+                <default>false</default>
+                <label>Receptivo - AeC</label>
+            </value>
+            <value>
+                <fullName>Consultor</fullName>
+                <default>false</default>
+                <label>Consultor</label>
+            </value>
+            <value>
+                <fullName>Indicação interna UnimedBH</fullName>
+                <default>false</default>
+                <label>Indicação interna UnimedBH</label>
+            </value>
+            <value>
+                <fullName>Indicação</fullName>
+                <default>false</default>
+                <label>Indicação</label>
+            </value>
+            <value>
+                <fullName>e-Commerce</fullName>
+                <default>false</default>
+                <label>e-Commerce</label>
+            </value>
+            <value>
+                <fullName>Hotsite: Soluções Empresa</fullName>
+                <default>false</default>
+                <label>Hotsite: Soluções Empresa</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

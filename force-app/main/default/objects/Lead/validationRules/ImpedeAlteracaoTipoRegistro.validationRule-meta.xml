@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ImpedeAlteracaoTipoRegistro</fullName>
+    <active>true</active>
+    <description>Impede que o usuário altere o tipo de registro do Lead, sem preencher o campo &apos;Motivo da Alteração de tipo de Registro&apos;</description>
+    <errorConditionFormula>NOT($Permission.ByPassValidationRules) &amp;&amp; AND (ISCHANGED(RecordTypeId), ISPICKVAL(MotivoAlteracaoTipoAtendimento__c, &apos;&apos;))</errorConditionFormula>
+    <errorDisplayField>MotivoAlteracaoTipoAtendimento__c</errorDisplayField>
+    <errorMessage>Para alterar o tipo de atendimento, é necessário informar um motivo.</errorMessage>
+</ValidationRule>

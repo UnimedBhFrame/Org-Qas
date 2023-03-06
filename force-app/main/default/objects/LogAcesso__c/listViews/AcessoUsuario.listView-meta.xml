@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AcessoUsuario</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>IdRegistro__c</columns>
+    <columns>Objeto__c</columns>
+    <columns>OBJECT_ID</columns>
+    <columns>ObjetoAPI__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATEDBY_USER</field>
+        <operation>contains</operation>
+        <value>Paulo Vitor</value>
+    </filters>
+    <label>Log de Acesso por Usuário</label>
+</ListView>

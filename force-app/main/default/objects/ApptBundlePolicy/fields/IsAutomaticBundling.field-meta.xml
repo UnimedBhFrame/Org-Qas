@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsAutomaticBundling</fullName>
+    <inlineHelpText>Disponibilize essa política quando o empacotamento automático for acionado por um processo automatizado. Você pode ter empacotamento manual e empacotamento automático habilitados ao mesmo tempo.</inlineHelpText>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NaoConseguiuContato__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(text(MotivoNaoFechamento__c) = &apos;Não Atende /Caixa Posta /Ligação Muda&apos;,true,false)</formula>
+    <label>Não conseguiu contato</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

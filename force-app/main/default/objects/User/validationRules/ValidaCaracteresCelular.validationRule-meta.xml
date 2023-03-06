@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValidaCaracteresCelular</fullName>
+    <active>true</active>
+    <description>Valida os dígitos inseridos pelo usuário no campo Celular.</description>
+    <errorConditionFormula>AND
+(
+OR(
+(LEN( MobilePhone ) &lt;&gt; 11)
+,
+NOT((REGEX(MobilePhone , &quot;[0-9]{11}&quot;)))
+)
+,
+NOT(ISBLANK(MobilePhone))
+)</errorConditionFormula>
+    <errorMessage>Verifique se o Celular informado Contém 11 dígitos e possui somente Números.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SubMotivosObrigatorios</fullName>
+    <active>true</active>
+    <description>Quando o Motivo de Cancelamento for Cliente optou por ir a loja, Cliente sem documentação ou Adquiriu via outra operadora o sub Motivo tem que ser obrigatório</description>
+    <errorConditionFormula>OR(AND(ISPICKVAL(MotivoCancelamento__c, &apos;Cliente optou por ir a loja&apos;),ISBLANK(TEXT(SubMotivoCancelamento__c))),
+AND(ISPICKVAL(MotivoCancelamento__c, &apos;Cliente sem documentação&apos;),ISBLANK(TEXT(SubMotivoCancelamento__c))),
+AND(ISPICKVAL(MotivoCancelamento__c, &apos;Adquiriu via outra operadora&apos;),ISBLANK(TEXT(SubMotivoCancelamento__c))))</errorConditionFormula>
+    <errorDisplayField>SubMotivoCancelamento__c</errorDisplayField>
+    <errorMessage>Sub Motivo de cancelamento deve ser preenchido</errorMessage>
+</ValidationRule>

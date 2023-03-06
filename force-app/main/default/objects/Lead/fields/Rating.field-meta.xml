@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rating</fullName>
+    <description>Frio: A primeira proposta foi emitida e está sob avaliação / 
+Morno: A proposta foi revisada e seguiu para avaliação do tomador de decisão / 
+Quente: Proposta final apresentada, retorno com data definida</description>
+    <inlineHelpText>Frio: A primeira proposta foi emitida e está sob avaliação / 
+Morno: A proposta foi revisada e seguiu para avaliação do tomador de decisão / 
+Quente: Proposta final apresentada, retorno com data definida</inlineHelpText>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+</CustomField>

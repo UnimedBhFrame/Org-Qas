@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InformePercentualSinistralidade</fullName>
+    <active>false</active>
+    <errorConditionFormula>(EmpresaPossuiAssistenciaMedica__c == true
+&amp;&amp;
+ISBLANK( PercentualSinistralidade__c))  
+&amp;&amp; RecordType.Name == &apos;Manutenção Relacionamento&apos;</errorConditionFormula>
+    <errorDisplayField>PercentualSinistralidade__c</errorDisplayField>
+    <errorMessage>Campo percentual da sinistralidade Obrigatório</errorMessage>
+</ValidationRule>

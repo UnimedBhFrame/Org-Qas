@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <description>Campo para inserção das fotografias dos Corretores Unimed</description>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aguardando Aprovação</fullName>
+                <default>false</default>
+                <label>Aguardando Aprovação</label>
+            </value>
+            <value>
+                <fullName>Em Elaboração</fullName>
+                <default>false</default>
+                <label>Em Elaboração</label>
+            </value>
+            <value>
+                <fullName>Finalizada com Pendência</fullName>
+                <default>false</default>
+                <label>Finalizada com Pendência</label>
+            </value>
+            <value>
+                <fullName>Em Análise</fullName>
+                <default>false</default>
+                <label>Em Análise</label>
+            </value>
+            <value>
+                <fullName>Aguardando Análise</fullName>
+                <default>false</default>
+                <label>Aguardando Análise</label>
+            </value>
+            <value>
+                <fullName>Em Análise com Pendência;</fullName>
+                <default>false</default>
+                <label>Em Análise com Pendência;</label>
+            </value>
+            <value>
+                <fullName>Em Análise de Documentos</fullName>
+                <default>false</default>
+                <label>Em Análise de Documentos</label>
+            </value>
+            <value>
+                <fullName>Aguardando Resolução de Checklist</fullName>
+                <default>false</default>
+                <label>Aguardando Resolução de Checklist</label>
+            </value>
+            <value>
+                <fullName>Em Triagem</fullName>
+                <default>false</default>
+                <label>Em Triagem</label>
+            </value>
+            <value>
+                <fullName>Devolvido pelo Agendamento</fullName>
+                <default>false</default>
+                <label>Devolvido pelo Agendamento</label>
+            </value>
+            <value>
+                <fullName>A Iniciar Triagem</fullName>
+                <default>false</default>
+                <label>A Iniciar Triagem</label>
+            </value>
+            <value>
+                <fullName>Em Agendamento de Perícia Médica</fullName>
+                <default>false</default>
+                <label>Em Agendamento de Perícia Médica</label>
+            </value>
+            <value>
+                <fullName>Re-Agendar Perícia Médica</fullName>
+                <default>false</default>
+                <label>Re-Agendar Perícia Médica</label>
+            </value>
+            <value>
+                <fullName>Em Perícia Médica</fullName>
+                <default>false</default>
+                <label>Em Perícia Médica</label>
+            </value>
+            <value>
+                <fullName>A Iniciar Perícia Médica</fullName>
+                <default>false</default>
+                <label>A Iniciar Perícia Médica</label>
+            </value>
+            <value>
+                <fullName>Em Assinatura de Termo</fullName>
+                <default>false</default>
+                <label>Em Assinatura de Termo</label>
+            </value>
+            <value>
+                <fullName>Aguardando Entrega de Termo de CPT</fullName>
+                <default>false</default>
+                <label>Aguardando Entrega de Termo de CPT</label>
+            </value>
+            <value>
+                <fullName>A Iniciar Esclarecimento Médico por Telefone</fullName>
+                <default>false</default>
+                <label>A Iniciar Esclarecimento Médico por Telefone</label>
+            </value>
+            <value>
+                <fullName>Em Esclarecimento Médico por Telefone</fullName>
+                <default>false</default>
+                <label>Em Esclarecimento Médico por Telefone</label>
+            </value>
+            <value>
+                <fullName>Em Esclarecimento Médico por Telefone (Segunda Tentativa)</fullName>
+                <default>false</default>
+                <label>Em Esclarecimento Médico por Telefone (Segunda Tentativa)</label>
+            </value>
+            <value>
+                <fullName>A Iniciar Segunda Tentativa de Contato de Esclarecimento</fullName>
+                <default>false</default>
+                <label>A Iniciar Segunda Tentativa de Contato de Esclarecimento</label>
+            </value>
+            <value>
+                <fullName>Retorno de Exames Solicitados</fullName>
+                <default>false</default>
+                <label>Retorno de Exames Solicitados</label>
+            </value>
+            <value>
+                <fullName>Em Recebimento de Exames e Documentos</fullName>
+                <default>false</default>
+                <label>Em Recebimento de Exames e Documentos</label>
+            </value>
+            <value>
+                <fullName>Aguardando Entrega de Exames e Documentos</fullName>
+                <default>false</default>
+                <label>Aguardando Entrega de Exames e Documentos</label>
+            </value>
+            <value>
+                <fullName>Ciclo de Contato de Perícia Médica</fullName>
+                <default>false</default>
+                <label>Ciclo de Contato de Perícia Médica</label>
+            </value>
+            <value>
+                <fullName>Termo Rejeitado pelo Cliente</fullName>
+                <default>false</default>
+                <label>Termo Rejeitado pelo Cliente</label>
+            </value>
+            <value>
+                <fullName>A Iniciar Agendamento de Assinatura Termo</fullName>
+                <default>false</default>
+                <label>A Iniciar Agendamento de Assinatura Termo</label>
+            </value>
+            <value>
+                <fullName>Em Agendamento de Assinatura de Termo</fullName>
+                <default>false</default>
+                <label>Em Agendamento de Assinatura de Termo</label>
+            </value>
+            <value>
+                <fullName>Cliente não Assinou Termo Eletrônico Dentro do Prazo</fullName>
+                <default>false</default>
+                <label>Cliente não Assinou Termo Eletrônico Dentro do Prazo</label>
+            </value>
+            <value>
+                <fullName>Cliente não compareceu para Assinar Termo</fullName>
+                <default>false</default>
+                <label>Cliente não compareceu para Assinar Termo</label>
+            </value>
+            <value>
+                <fullName>Ciclo de Contato de Assinatura de Termo</fullName>
+                <default>false</default>
+                <label>Ciclo de Contato de Assinatura de Termo</label>
+            </value>
+            <value>
+                <fullName>Retorno de Esclarecimento por Telefone (Segundo Contato sem Sucesso)</fullName>
+                <default>false</default>
+                <label>Retorno de Esclarecimento por Telefone (Segundo Contato sem Sucesso)</label>
+            </value>
+            <value>
+                <fullName>Ativo</fullName>
+                <default>false</default>
+                <label>Ativo</label>
+            </value>
+            <value>
+                <fullName>Inativo</fullName>
+                <default>false</default>
+                <label>Inativo</label>
+            </value>
+            <value>
+                <fullName>Candidato</fullName>
+                <default>false</default>
+                <label>Candidato</label>
+            </value>
+            <value>
+                <fullName>A Iniciar Análise de Documentos</fullName>
+                <default>false</default>
+                <label>A Iniciar Análise de Documentos</label>
+            </value>
+            <value>
+                <fullName>A Iniciar Agendamento de Perícia Telessaúde</fullName>
+                <default>false</default>
+                <label>A Iniciar Agendamento de Perícia Telessaúde</label>
+            </value>
+            <value>
+                <fullName>RESCIN</fullName>
+                <default>false</default>
+                <label>RESCIN</label>
+            </value>
+            <value>
+                <fullName>Aguardando Assinatura Eletrônica de Termo</fullName>
+                <default>false</default>
+                <label>Aguardando Assinatura Eletrônica de Termo</label>
+            </value>
+            <value>
+                <fullName>Avaliando Exigência de Documentação</fullName>
+                <default>false</default>
+                <label>Avaliando Exigência de Documentação</label>
+            </value>
+            <value>
+                <fullName>Em Finalização com Sucesso</fullName>
+                <default>false</default>
+                <label>Em Finalização com Sucesso</label>
+            </value>
+            <value>
+                <fullName>Criada Aguardando Inicio Fluxo</fullName>
+                <default>false</default>
+                <label>Criada Aguardando Inicio Fluxo</label>
+            </value>
+            <value>
+                <fullName>PENDEN</fullName>
+                <default>false</default>
+                <label>PENDEN</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

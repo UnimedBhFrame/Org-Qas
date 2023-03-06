@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type</fullName>
+    <inlineHelpText>&quot;Baseado em calendário&quot; define um padrão de recorrência, como agendado na primeira segunda-feira de cada mês. &quot;Baseado em critérios&quot; seleciona um critério de filtro do conjunto de registro que define condições, como se a temperatura do motor excede 200 °F ou as milhas excedem 10 mil.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

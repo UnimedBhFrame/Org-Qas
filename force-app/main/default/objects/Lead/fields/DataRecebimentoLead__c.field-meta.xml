@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DataRecebimentoLead__c</fullName>
+    <description>Armazena a data que o lead foi atribuido pela primeira vez para equipe do comercial.
+Campo utilizado pela área de marketing</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Armazena a data em que o lead foi atribuído pela primeira vez para equipe de vendas.
+Campo utilizado pela área de marketing</inlineHelpText>
+    <label>Data de Recebido do Lead</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

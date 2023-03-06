@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ObrigaQualOutraOperadoraSaude</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT($Permission.ByPassValidationRules) &amp;&amp; ISPICKVAL(OperadoraSaude__c, &apos;Outros&apos;) &amp;&amp; ISBLANK(OutraOperadoraSaude__c)</errorConditionFormula>
+    <errorDisplayField>OutraOperadoraSaude__c</errorDisplayField>
+    <errorMessage>Obrigatório informar o nome da outra operadora de saúde.</errorMessage>
+</ValidationRule>

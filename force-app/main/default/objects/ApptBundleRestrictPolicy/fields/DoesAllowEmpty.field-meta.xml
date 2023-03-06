@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DoesAllowEmpty</fullName>
+    <inlineHelpText>Permite que um compromisso de serviço do membro do pacote com um Nome de campo de restrição vazio seja empacotado.</inlineHelpText>
+</CustomField>

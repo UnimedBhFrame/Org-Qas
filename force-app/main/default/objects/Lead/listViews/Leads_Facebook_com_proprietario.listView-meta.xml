@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Leads_Facebook_com_proprietario</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>CPFCNPJId__c</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.UNREAD</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>DataDoAtendimento__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>LEAD.RECORDTYPE</columns>
+    <columns>EtapaEcommerce__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>LEAD.LEAD_SOURCE</field>
+        <operation>equals</operation>
+        <value>Marketing Cloud: Lead Ads - Facebook,Marketing Cloud: Leads Ads - Facebook</value>
+    </filters>
+    <label>Leads Facebook (com proprietario)</label>
+    <sharedTo>
+        <group>LeadsFacebook</group>
+    </sharedTo>
+</ListView>

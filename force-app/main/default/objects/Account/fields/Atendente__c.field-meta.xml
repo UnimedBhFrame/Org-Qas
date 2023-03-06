@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Atendente__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Informe quem está realizando o cadastro.
+Destinado para usuários do call center.</inlineHelpText>
+    <label>Atendente</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ALINE QUARESMA DA SILVA</fullName>
+                <default>false</default>
+                <label>ALINE QUARESMA DA SILVA</label>
+            </value>
+            <value>
+                <fullName>ALLAN JUNIO DA COSTA SILVA</fullName>
+                <default>false</default>
+                <label>ALLAN JUNIO DA COSTA SILVA</label>
+            </value>
+            <value>
+                <fullName>BRUNA ISABELLA LEANDRO DA SILVA SANTANA</fullName>
+                <default>false</default>
+                <label>BRUNA ISABELLA LEANDRO DA SILVA SANTANA</label>
+            </value>
+            <value>
+                <fullName>CAROLINA MENDES BAIA DE CARVALHO</fullName>
+                <default>false</default>
+                <label>CAROLINA MENDES BAIA DE CARVALHO</label>
+            </value>
+            <value>
+                <fullName>DANIELA FERREIRA DA SILVA</fullName>
+                <default>false</default>
+                <label>DANIELA FERREIRA DA SILVA</label>
+            </value>
+            <value>
+                <fullName>DARLENE APARECIDA ANDRADE SILVA</fullName>
+                <default>false</default>
+                <label>DARLENE APARECIDA ANDRADE SILVA</label>
+            </value>
+            <value>
+                <fullName>DEBORA STEFANY SOUZA</fullName>
+                <default>false</default>
+                <label>DEBORA STEFANY SOUZA</label>
+            </value>
+            <value>
+                <fullName>EDUARDA ANDRADE FERREIRA</fullName>
+                <default>false</default>
+                <label>EDUARDA ANDRADE FERREIRA</label>
+            </value>
+            <value>
+                <fullName>ELIZANGELA DE LOURDES DA SILVA FREITAS</fullName>
+                <default>false</default>
+                <label>ELIZANGELA DE LOURDES DA SILVA FREITAS</label>
+            </value>
+            <value>
+                <fullName>ESTHER CAROLAINE MARTINS DE SOUZA</fullName>
+                <default>false</default>
+                <label>ESTHER CAROLAINE MARTINS DE SOUZA</label>
+            </value>
+            <value>
+                <fullName>FERNANDA CONCEICAO PEREIRA</fullName>
+                <default>false</default>
+                <label>FERNANDA CONCEICAO PEREIRA</label>
+            </value>
+            <value>
+                <fullName>GIULIA MAGALHAES SANTOS</fullName>
+                <default>false</default>
+                <label>GIULIA MAGALHAES SANTOS</label>
+            </value>
+            <value>
+                <fullName>HELOISA BATISTA HONORIO</fullName>
+                <default>false</default>
+                <label>HELOISA BATISTA HONORIO</label>
+            </value>
+            <value>
+                <fullName>HUDSON BRENO SANTOS AGANETE ANDRADE</fullName>
+                <default>false</default>
+                <label>HUDSON BRENO SANTOS AGANETE ANDRADE</label>
+            </value>
+            <value>
+                <fullName>ISABELE MONTEIRO GONCALVES</fullName>
+                <default>false</default>
+                <label>ISABELE MONTEIRO GONCALVES</label>
+            </value>
+            <value>
+                <fullName>ISADORA MULLER DE OLIVEIRA</fullName>
+                <default>false</default>
+                <label>ISADORA MULLER DE OLIVEIRA</label>
+            </value>
+            <value>
+                <fullName>JAISON FERNANDO FERREIRA DA SILVA</fullName>
+                <default>false</default>
+                <label>JAISON FERNANDO FERREIRA DA SILVA</label>
+            </value>
+            <value>
+                <fullName>JUCYMARA FERREIRA CORREIA</fullName>
+                <default>false</default>
+                <label>JUCYMARA FERREIRA CORREIA</label>
+            </value>
+            <value>
+                <fullName>LEONARDO RODRIGUES MARIANO</fullName>
+                <default>false</default>
+                <label>LEONARDO RODRIGUES MARIANO</label>
+            </value>
+            <value>
+                <fullName>LUCELIA RABELO COSTA SILVA</fullName>
+                <default>false</default>
+                <label>LUCELIA RABELO COSTA SILVA</label>
+            </value>
+            <value>
+                <fullName>RAFAEL REIS DA SILVA</fullName>
+                <default>false</default>
+                <label>RAFAEL REIS DA SILVA</label>
+            </value>
+            <value>
+                <fullName>RENAN MARCOS MATOZINHOS SILVA</fullName>
+                <default>false</default>
+                <label>RENAN MARCOS MATOZINHOS SILVA</label>
+            </value>
+            <value>
+                <fullName>RODRIGO DORNELLAS DE PINHO</fullName>
+                <default>false</default>
+                <label>RODRIGO DORNELLAS DE PINHO</label>
+            </value>
+            <value>
+                <fullName>SHANDEL REIS MENEZES</fullName>
+                <default>false</default>
+                <label>SHANDEL REIS MENEZES</label>
+            </value>
+            <value>
+                <fullName>ISABELA CRISTINA SILVA SCHINAIDER</fullName>
+                <default>false</default>
+                <label>ISABELA CRISTINA SILVA SCHINAIDER</label>
+            </value>
+            <value>
+                <fullName>ANA CAROLINA SILVA SOARES</fullName>
+                <default>false</default>
+                <label>ANA CAROLINA SILVA SOARES</label>
+            </value>
+            <value>
+                <fullName>INES CRISTINA DE ARAUJO</fullName>
+                <default>false</default>
+                <label>INES CRISTINA DE ARAUJO</label>
+            </value>
+            <value>
+                <fullName>EZEQUIEL JUNIO DA SILVA</fullName>
+                <default>false</default>
+                <label>EZEQUIEL JUNIO DA SILVA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

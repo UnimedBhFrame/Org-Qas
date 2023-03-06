@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VerificacaoValorTecnico</fullName>
+    <active>true</active>
+    <description>Campo padrão do sistema, manter o valor padrão: Técnico.</description>
+    <errorConditionFormula>NOT(ISPICKVAL(ResourceType , &apos;T&apos;))</errorConditionFormula>
+    <errorDisplayField>ResourceType</errorDisplayField>
+    <errorMessage>Campo padrão do sistema, manter o valor padrão: Técnico.</errorMessage>
+</ValidationRule>

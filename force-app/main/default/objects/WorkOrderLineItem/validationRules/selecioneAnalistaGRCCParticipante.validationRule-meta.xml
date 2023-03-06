@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>selecioneAnalistaGRCCParticipante</fullName>
+    <active>false</active>
+    <errorConditionFormula>(ParticipacaoAlgumAnalistaGRC__c == true
+&amp;&amp;
+ISPICKVAL(AnalistaGRCCParticipanteVisita__c , &apos;&apos;))
+&amp;&amp; RecordType.Name == &apos;Implantação&apos;</errorConditionFormula>
+    <errorDisplayField>AnalistaGRCCParticipanteVisita__c</errorDisplayField>
+    <errorMessage>Campo analista GRCC Obrigatório</errorMessage>
+</ValidationRule>

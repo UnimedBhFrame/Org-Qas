@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InformeDaBaseOuDataDoUltimoReajuste</fullName>
+    <active>false</active>
+    <errorConditionFormula>(EmpresaPossuiAssistenciaMedica__c == true
+&amp;&amp;
+ISBLANK( DataBaseUltimoReajuste__c))  
+&amp;&amp; RecordType.Name == &apos;Manutenção Relacionamento&apos;</errorConditionFormula>
+    <errorDisplayField>DataBaseUltimoReajuste__c</errorDisplayField>
+    <errorMessage>Campo Data Base Obrigatório</errorMessage>
+</ValidationRule>

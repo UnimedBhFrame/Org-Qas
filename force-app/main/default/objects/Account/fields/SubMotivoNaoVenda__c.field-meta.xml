@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SubMotivoNaoVenda__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub Motivo Não Venda</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>MotivoNaoVenda__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Amil</fullName>
+                <default>false</default>
+                <label>Amil</label>
+            </value>
+            <value>
+                <fullName>Bradesco</fullName>
+                <default>false</default>
+                <label>Bradesco</label>
+            </value>
+            <value>
+                <fullName>Hapivida</fullName>
+                <default>false</default>
+                <label>Hapivida</label>
+            </value>
+            <value>
+                <fullName>Notredame</fullName>
+                <default>false</default>
+                <label>Notredame</label>
+            </value>
+            <value>
+                <fullName>Premium</fullName>
+                <default>false</default>
+                <label>Premium</label>
+            </value>
+            <value>
+                <fullName>Promed</fullName>
+                <default>false</default>
+                <label>Promed</label>
+            </value>
+            <value>
+                <fullName>Samp</fullName>
+                <default>false</default>
+                <label>Samp</label>
+            </value>
+            <value>
+                <fullName>Saúde Sistema</fullName>
+                <default>false</default>
+                <label>Saúde Sistema</label>
+            </value>
+            <value>
+                <fullName>Sulamérica</fullName>
+                <default>false</default>
+                <label>Sulamérica</label>
+            </value>
+            <value>
+                <fullName>Unimed BH</fullName>
+                <default>false</default>
+                <label>Unimed BH</label>
+            </value>
+            <value>
+                <fullName>Unimed CO- Irmã</fullName>
+                <default>false</default>
+                <label>Unimed CO- Irmã</label>
+            </value>
+            <value>
+                <fullName>Outros</fullName>
+                <default>false</default>
+                <label>Outros</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Preço (concorrência valor menor)</controllingFieldValue>
+            <controllingFieldValue>Satisfação com a operadora atual</controllingFieldValue>
+            <valueName>Amil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preço (concorrência valor menor)</controllingFieldValue>
+            <controllingFieldValue>Satisfação com a operadora atual</controllingFieldValue>
+            <valueName>Bradesco</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preço (concorrência valor menor)</controllingFieldValue>
+            <controllingFieldValue>Satisfação com a operadora atual</controllingFieldValue>
+            <valueName>Hapivida</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preço (concorrência valor menor)</controllingFieldValue>
+            <controllingFieldValue>Satisfação com a operadora atual</controllingFieldValue>
+            <valueName>Notredame</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preço (concorrência valor menor)</controllingFieldValue>
+            <controllingFieldValue>Satisfação com a operadora atual</controllingFieldValue>
+            <valueName>Premium</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preço (concorrência valor menor)</controllingFieldValue>
+            <controllingFieldValue>Satisfação com a operadora atual</controllingFieldValue>
+            <valueName>Promed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preço (concorrência valor menor)</controllingFieldValue>
+            <controllingFieldValue>Satisfação com a operadora atual</controllingFieldValue>
+            <valueName>Samp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preço (concorrência valor menor)</controllingFieldValue>
+            <controllingFieldValue>Satisfação com a operadora atual</controllingFieldValue>
+            <valueName>Saúde Sistema</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preço (concorrência valor menor)</controllingFieldValue>
+            <controllingFieldValue>Satisfação com a operadora atual</controllingFieldValue>
+            <valueName>Sulamérica</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preço (concorrência valor menor)</controllingFieldValue>
+            <controllingFieldValue>Satisfação com a operadora atual</controllingFieldValue>
+            <valueName>Unimed BH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preço (concorrência valor menor)</controllingFieldValue>
+            <controllingFieldValue>Satisfação com a operadora atual</controllingFieldValue>
+            <valueName>Unimed CO- Irmã</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Preço (concorrência valor menor)</controllingFieldValue>
+            <controllingFieldValue>Satisfação com a operadora atual</controllingFieldValue>
+            <valueName>Outros</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

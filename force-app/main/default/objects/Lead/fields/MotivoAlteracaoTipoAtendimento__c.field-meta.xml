@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MotivoAlteracaoTipoAtendimento__c</fullName>
+    <externalId>false</externalId>
+    <label>Motivo Alteração Tipo do Atendimento</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Não possui contingente empresarial</fullName>
+                <default>false</default>
+                <label>Não possui contingente empresarial</label>
+            </value>
+            <value>
+                <fullName>Não possui documentação de vínculo</fullName>
+                <default>false</default>
+                <label>Não possui documentação de vínculo</label>
+            </value>
+            <value>
+                <fullName>CNPJ menos que 180 dias</fullName>
+                <default>false</default>
+                <label>CNPJ menos que 180 dias</label>
+            </value>
+            <value>
+                <fullName>CNPJ baixado/inapto</fullName>
+                <default>false</default>
+                <label>CNPJ baixado/inapto</label>
+            </value>
+            <value>
+                <fullName>Possui perfil empresarial</fullName>
+                <default>false</default>
+                <label>Possui perfil empresarial</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

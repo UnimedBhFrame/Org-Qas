@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CompetenciaCadastro__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(1,
+
+IF(( DATEVALUE(CreatedDate)  &lt;  DATE(2020,12,17)),1,0),&apos;Dezembro 2020&apos;,
+
+IF(( DATEVALUE(CreatedDate)  &gt;=  DATE(2020,12,17)   &amp;&amp;  DATEVALUE(CreatedDate)  &lt;=  DATE(2021,01,20)),1,0),&apos;Janeiro&apos;,
+
+IF(( DATEVALUE(CreatedDate)  &gt;=  DATE(2021,01,21)   &amp;&amp;  DATEVALUE(CreatedDate)  &lt;=  DATE(2021,02,17)),1,0),&apos;Fevereiro&apos;,
+
+IF(( DATEVALUE(CreatedDate)  &gt;=  DATE(2021,02,18)   &amp;&amp;  DATEVALUE(CreatedDate)  &lt;=  DATE(2021,03,22)),1,0),&apos;Março&apos;,
+
+IF(( DATEVALUE(CreatedDate)  &gt;=  DATE(2021,03,23)   &amp;&amp;  DATEVALUE(CreatedDate)  &lt;=  DATE(2021,04,19)),1,0),&apos;Abril&apos;,
+
+IF(( DATEVALUE(CreatedDate)  &gt;=  DATE(2021,04,20)   &amp;&amp;  DATEVALUE(CreatedDate)  &lt;=  DATE(2021,05,20)),1,0),&apos;Maio&apos;,
+
+IF(( DATEVALUE(CreatedDate)  &gt;=  DATE(2021,05,21)   &amp;&amp;  DATEVALUE(CreatedDate)  &lt;=  DATE(2021,06,21)),1,0),&apos;Junho&apos;,
+
+IF(( DATEVALUE(CreatedDate)  &gt;=  DATE(2021,06,22)   &amp;&amp;  DATEVALUE(CreatedDate)  &lt;=  DATE(2021,07,20)),1,0),&apos;Julho&apos;,
+
+IF(( DATEVALUE(CreatedDate)  &gt;=  DATE(2021,07,21)   &amp;&amp;  DATEVALUE(CreatedDate)  &lt;=  DATE(2021,08,20)),1,0),&apos;Agosto&apos;,
+
+IF(( DATEVALUE(CreatedDate)  &gt;=  DATE(2021,08,23)   &amp;&amp;  DATEVALUE(CreatedDate)  &lt;=  DATE(2021,09,21)),1,0),&apos;Setembro&apos;,
+
+IF(( DATEVALUE(CreatedDate)  &gt;=  DATE(2021,09,22)   &amp;&amp;  DATEVALUE(CreatedDate)  &lt;=  DATE(2021,10,20)),1,0),&apos;Outubro&apos;,
+
+IF(( DATEVALUE(CreatedDate)  &gt;=  DATE(2021,10,21)   &amp;&amp;  DATEVALUE(CreatedDate)  &lt;=  DATE(2021,11,19)),1,0),&apos;Novembro&apos;,
+
+IF(( DATEVALUE(CreatedDate)  &gt;=  DATE(2021,11,20)   &amp;&amp;  DATEVALUE(CreatedDate)  &lt;=  DATE(2022,12,17)),1,0),&apos;Dezembro&apos;,
+
+&apos; &apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Competência de cadastro</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SupervisorCallCenter</fullName>
+    <active>true</active>
+    <description>se o proprietário do lead não for do call center, o supervisor não pode trasnferir o lead</description>
+    <errorConditionFormula>AND(
+    !ISNEW(),
+    IF((ISCHANGED(OwnerId)) &amp;&amp; 
+    ($Profile.Name!=PerfilProprietario__c),true,false),
+     NOT($UserRole.Name != &quot;Supervisor de Call Center&quot;)
+
+)</errorConditionFormula>
+    <errorMessage>Você não tem permissão para alterar a propriedade do registro nessas condições</errorMessage>
+</ValidationRule>

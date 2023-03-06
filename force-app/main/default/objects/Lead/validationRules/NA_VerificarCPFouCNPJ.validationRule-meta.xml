@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NA_VerificarCPFouCNPJ</fullName>
+    <active>false</active>
+    <description>Verifica se o CPF__c ou CNPJ__C já é existente com base no campo CPFCNPJID__C</description>
+    <errorConditionFormula>(CreatedDate = NOW() &amp;&amp; datevalue(CreatedDate) &gt;= dateValue(&quot;2021-09-05&quot;)) &amp;&amp; (SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(CPF__c, &quot;.&quot;, &quot;&quot;), &quot;-&quot;, &quot;&quot;), &quot;/&quot;, &quot;&quot;)  = CPFCNPJId__c || SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(CNPJ__c, &quot;.&quot;, &quot;&quot;), &quot;-&quot;, &quot;&quot;), &quot;/&quot;, &quot;&quot;) = CPFCNPJId__c)</errorConditionFormula>
+    <errorMessage>Não é possível criar ou salvar o lead, pois já existe um lead com este documento de identificação.</errorMessage>
+</ValidationRule>

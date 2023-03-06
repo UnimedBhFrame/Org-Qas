@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Foto__c</fullName>
+    <description>Campo para inserção das fotografias dos Corretores Unimed</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Informe a url referente a foto deste colaborador.</inlineHelpText>
+    <label>Foto</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Url</type>
+</CustomField>

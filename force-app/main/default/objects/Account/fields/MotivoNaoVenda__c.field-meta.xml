@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MotivoNaoVenda__c</fullName>
+    <externalId>false</externalId>
+    <label>Motivo Não Venda</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>VendaRealizada__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Preço (concorrência valor menor)</fullName>
+                <default>false</default>
+                <label>Preço (concorrência valor menor)</label>
+            </value>
+            <value>
+                <fullName>Condições financeiras</fullName>
+                <default>false</default>
+                <label>Condições financeiras</label>
+            </value>
+            <value>
+                <fullName>Configuração do Plano (Linear, sem copart, fixo)</fullName>
+                <default>false</default>
+                <label>Configuração do Plano (Linear, sem copart, fixo)</label>
+            </value>
+            <value>
+                <fullName>Em cotação de mercado</fullName>
+                <default>false</default>
+                <label>Em cotação de mercado</label>
+            </value>
+            <value>
+                <fullName>Multa rescisória na contratante</fullName>
+                <default>false</default>
+                <label>Multa rescisória na contratante</label>
+            </value>
+            <value>
+                <fullName>Satisfação com a operadora atual</fullName>
+                <default>false</default>
+                <label>Satisfação com a operadora atual</label>
+            </value>
+            <value>
+                <fullName>Cliente Inadimplente</fullName>
+                <default>false</default>
+                <label>Cliente Inadimplente</label>
+            </value>
+            <value>
+                <fullName>MEI/EI com menos de 180 dias</fullName>
+                <default>false</default>
+                <label>MEI/EI com menos de 180 dias</label>
+            </value>
+            <value>
+                <fullName>SERASA</fullName>
+                <default>false</default>
+                <label>SERASA</label>
+            </value>
+            <value>
+                <fullName>Rede</fullName>
+                <default>false</default>
+                <label>Rede</label>
+            </value>
+            <value>
+                <fullName>Não elegível pela documentação/regras</fullName>
+                <default>false</default>
+                <label>Não elegível pela documentação/regras</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Não</controllingFieldValue>
+            <valueName>Preço (concorrência valor menor)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não</controllingFieldValue>
+            <valueName>Condições financeiras</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não</controllingFieldValue>
+            <valueName>Configuração do Plano (Linear, sem copart, fixo)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não</controllingFieldValue>
+            <valueName>Em cotação de mercado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não</controllingFieldValue>
+            <valueName>Multa rescisória na contratante</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não</controllingFieldValue>
+            <valueName>Satisfação com a operadora atual</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não</controllingFieldValue>
+            <valueName>Cliente Inadimplente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não</controllingFieldValue>
+            <valueName>MEI/EI com menos de 180 dias</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não</controllingFieldValue>
+            <valueName>SERASA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não</controllingFieldValue>
+            <valueName>Rede</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não</controllingFieldValue>
+            <valueName>Não elegível pela documentação/regras</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,935 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ManutencaoRelacionamento</fullName>
+    <active>true</active>
+    <label>Manutenção Relacionamento</label>
+    <picklistValues>
+        <picklist>AnalistaGRCCParticipanteVisita__c</picklist>
+        <values>
+            <fullName>Andrea Metzker Generoso</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Catulo Soares Miranda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Daiana Zeferino Soares</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Erika Soares Almeida Arantes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fabiana de Sousa Costa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Henrique Cezano Raos de Oliveira</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Henrique Jansen de Avelar Ribeiro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jaqueline Andrade Alves da Silva Costa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Klaus Cardoso</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lara do Carmo Pereira</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Luciana Bastos Guimarães Alves</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Matheus Anacleto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monalisa Fernanda Arantes S%2E Drumond</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paulo Colomarte de Castro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Páglia Perdosa Barboza</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Robson David Mahé</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Samila Fabiane Godoy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tamara Lúcia de Siqueira</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thiago Henrique de Castro Maforte</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Corretora__c</picklist>
+        <values>
+            <fullName>3C CORRETORA DE SEGUROS LTDA ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A %26 C NUNES CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A%2ER%2EG - MULTIPLA CORRETORA E ADMINISTRADORA DE SEGUROS LTDA AAGS CORRETORA DE SEGUROS LTDA - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ABNARA CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ADMINISTRACAO E SERVICOS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ADMINISTRADORA E CONSULTORIA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ADMINISTRADORA E CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ADMIRAL CORRETORA E ADMINISTRADORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ADMIX - ADMINISTRACAO%2C CONSULTORIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ALLCARE BENEFICIOS CORRETORA DE SEGUROS SAO PAULO LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ALV ADMINISTRADORA E CORRETORA DE SEGUROS LTDA ME%2C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AMMA %26 TORRES ADMINISTRADORA E CORRETORA DE SEGUROS EIRELI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AMPLA CONSULTORIA E CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AON HOLDINGS CORRETORES DE SEGUROS LTDA - FILIAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AON HOLDINGS CORRETORES DE SEGUROS LTDA - MATRIZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASPEN CORRETORA DE SEGUROS LTDA - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASSCONTAS ASSOCIACAO DOS SERVIDORES TRIBUNAL DE CONTAS DO ESTADO DE MINAS GERAIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASSOC DOS SERVID MUNICIPAIS DA PREFEIT DE B HORIZONTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASSOCIACAO COMERCIAL E EMPRESARIAL DE MINAS - ACMINAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASSOCIACAO DE ASSISTENCIA AOS SERVIDORES DO CEFET MG ASCEFET MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASSOCIACAO DOS EMPREGADOS DA COPASA DE SUAS SUBSIDIARIAS E PATROCINADAS AECO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASSOCIACAO DOS SERV PUBLICOS MUNICIPAIS DE SABARA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASSOCIACAO DOS SERVIDORES DA POLICIA FEDERAL DE BELO HORIZONTE MG ANSEF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASSOCIACAO DOS SERVIDORES MUNICIPAIS DE BETIM ASMUBE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASSOCIACAO DOS SERVIDORES MUNICIPAIS DE VESPASIANO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASSOCIACAO MEDICA DE MINAS GERAIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASSOCIACAO NACIONAL DAS EMPRESAS PROJETISTAS E PREST DE SERVICOS PARA AREA DE ENG E CONGENERES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASSOCIACAO NACIONAL DOS SERVIDORES PUBLICOS DA FEDERACAO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASTRUS ADMINISTRADORA E CORRETORA DE SEGUROS SAUDE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BEM BENEFICIOS ASSESSORIA EM BENEFICIOS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BENEFITS CONSULTING LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BENEFITS SOLUCOES EM SEGUROS LTDA - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BENIGNA CORRETORA DE SEGUROS LTDA - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BENS CONSULTORIA E CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BHMINAS ADMINISTRACAO E CORRETAGEM DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BR INSURANCE CORRETORA DE SEGUROS S%2EA%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAIXA DE ASSISTENCIA DOS ADVOGADOS DE MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CIA DO SEGURO CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLEMENTINO ADMINISTRADORA E CORRETORA DE SEGUROS DE VIDA LTD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLUBE DE BENEFICIOS PARA COOPERATIVAS ASSOCIACOES CONSELHOS SINDICATOS E SEGUROS CBCACSS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COMPACTA BENEFICIOS CORRETORA DE SEGUROS SAUDE LTDA - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CONFIANCE LIFE CORRETORA DE SEGUROS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CONVICTOS CORRETORA E CONSULTORIA LTDA - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DOR CONSULTORIA EM CORRETAGEM DE SEGUROS E BENEFICIOS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DUCAIS - CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DUOBENS CONSULTORIA E CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EXCLUSIVE CONSULTORIA E CORRETAGEM DE SEGUROS LTDA FEDERACAO DAS ASSOCIACOES COMERCIAIS E EMPRESARIAIS DO ESTADO DE MINAS GERAIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FEDERACAO DO COMERCIO DE BENS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FEDERACAO DOS CONTABILISTAS DO ESTADO DE MINAS GERAIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FIAT CHRYSLER RIMACO BRASIL CORRETAGENS DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FORT BEL ADMINISTRADORA E CORRETORA DE SEGUROS DE VIDA LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FORTIFY ADMINISTRACAO E CORRETAGEM DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FORTS ADMINISTRACAO E CORRETAGEM DE SEGUROS LTDA - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA CONSULTORIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GABRIEL TEIXEIRA REZENDE MATOS VERSIANI CORRETAGEM E SEGUROS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GERMANICA CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GRUPO SIMETRIA REPRESENTACOES LTDA - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GUEDES E CONFIANZA CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HARMONIA CORRETORA DE SEGUROS S%2EA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR%2E ADMINISTRADORA E CORRETORA DE SEGUROS LTDA%2E - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HUMANITTARE CONSULTORIA E CDORRETORA DE SEGUROS EIRELI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IBBCA 2008 CORRETORA DE SEGUROS LTDA - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INTERMEDIUM SAUDE LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INTERMEZZO ADMINISTRADORA E CORRETORA DE SEGUROS LTDA EPP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INTERPARS CONSULTORIA ADMINISTRACAO E CORRETAGEM DE SEGUROS LTDA ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ITSSEG CORRETORA DE SEGUROS S%2EA%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JLT SCK CORRETORA E ADMINISTRADORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LAZAM-MDS CORRETORA E ADMINISTRADORA DE SEGUROS S%2EA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LOCKTON BRASIL CONSULTORIA E CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LOGOS E CARVALHO CORRETORA E CONSULTORIA EM SEGUROS LTDA - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LS ADMINISTRACAO E CORRETAGEM DE SEGUROS S%2FC LTDA ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LUDI CORDEIRO CONSULTORIA E CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LUMA CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MANZALLI ADMINISTRADORA E CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MARSH CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MARSH CORRETORA DE SEGUROS LTDA - 61%2E038%2E592%2F0008-00 FILIAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAVC - ADMINISTRACAO CONSULTORIA E CORRETAGEM DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MBS PARTNERS CORRETORA DE SEGUROS E CONSULTORIA LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MENDES GOLDMAN CONSULTORIA EM BENEFICIOS COORPORATIVOS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MERCATO ADMINISTRADORA E CORRETORA DE SEGUROS LTDA - EPP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MINAS TENIS CLUBE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MINAS TENIS NAUTICO CLUBE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MONDIAL TOTAL CORRETORA DE SEGUROS - EIRELI - EPP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MORE SOLUTIONS CORRETORA DE SEGUROS E CONSULTORIA LTDA EPP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MULTISEG CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NEW CONSULTORIA E REPRESENTACAO LTDA - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NOVALIANCA CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OPUS CORRETORA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PARTICIPACOES E CORRETORA DE SEGUROS DE VIDAS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PREVIDENCIA E PLANOS DE SAUDE EIRELI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRO BONO CORRETORA DE SEGUROS LTDA - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PROMISSOR CORPORATE CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PUBLIC BROKER DO BRASIL CORRETORA DE SEGUROS LTDA %C2%BF ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QUALICORP CORRETORA DE SEGUROS S%2EA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RCLX CORRETORA DE SEGUROS E PARTICIPACOES LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REAL ADMINISTRADORA E CORRETORA DE SEGUROS LTDA - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RELIES CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RESEDA CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROMILT CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SABSEG MINAS CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAUSEG ADMINISTRADORA E CORRETORA DE SEGUROS DE VIDA E REPRESENTACOES COMERCIAIS LTDA - EPP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SECULUS DA AMAZONIA INDUSTRIA E COMERCIO S A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SERVICOS E TURISMO DO ESTADO DE MINAS GERAIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIMETRIA CORRETORA DE SEGUROS DE VIDA LTDA - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SINDICATO DOS DELEGADOS DE POLICIA DO ESTADO DE MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SINDICATO DOS POLICIAIS FEDERAIS EM MINAS GERAIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SINDICATO DOS PROFESSORES DO ESTADO DE MINAS GERAIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SINDICATO DOS SERVIDORES DA POLICIA CIVIL DO ESTADO DE MINAS GERAIS SINDPOL MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SINDICATO DOS SERVIDORES DO MINISTERIO PUBLICO DO ESTADO DE MINAS GERAIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SINDICATO DOS TRABALHADORES EM TRANSPORTES RODOVIARIOS DE BETIM E REGIAO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SUPER POSITIVO ADMINISTRACAO E CORRETAGEM DE SEGUROS LTDA - EPP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TORRES %26 ASSOCIADOS CONSULTORES DE BENEFICIOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UP MAIS CORRETORA DE SEGUROS LTDA - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VALEM ADMINISTRADORA DE BENEFICIOS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VALLOR CORRETORA DE SEGUROS E GESTAO DE BENEFICIOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VERTEX ADMINISTRADORA E CORRETORA DE SEGUROS S%2EA%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VICTOR SOARES ADMINISTRADORA E CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VIDA CAPITALIZACAO E PREVIDENCIA PRIVADA LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VORTICE CONSULTORIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WILLIS CORRETORES DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZETRASOFT LTDA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MotivoNaoFechamento__c</picklist>
+        <values>
+            <fullName>Cliente Fora da área de atuação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cliente Unimed Inadimplente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cliente não concorda com prazos e carências</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cliente sem documentação necessária</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deseja Plano Empresaria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Em negociação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Já Cliente Unimed Adesão</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Já cliente Unimed Empresarial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Já cliente Unimed Individual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preço Acima da Concorrência</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sem Condições Financeiras</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MotivoVisitaCall__c</picklist>
+        <values>
+            <fullName>Implantação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manutenção</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospecção PF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospecção PJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospecção PJ - Grandes Contas</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MotivoVisitaImplantacao__c</picklist>
+        <values>
+            <fullName>Complemento de Implantação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Início do Processo de Implantação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Passagem de Bastão</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MotivoVisitaPJClienteAusente__c</picklist>
+        <values>
+            <fullName>Implantação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manutenção</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospecção</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospecção PJ - Grandes Contas</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MotivoVisita__c</picklist>
+        <values>
+            <fullName>Implantação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manutenção</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospecção</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Motivo__c</picklist>
+        <values>
+            <fullName>Avaliar com decisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Avaliação orçamentária</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cliente Inadimplente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cobertura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Em cotação de mercado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Falta de interesse no produto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multa rescisória na contratante</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pendente de documentação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preço</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preço %28condições financeiras%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preço %28em relação à concorrência%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preço superior ao plano atual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rede</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Satisfação com o prestador atual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sem condição financeira</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OpcionaisIncluidos__c</picklist>
+        <values>
+            <fullName>Aero%2BProteção Familiar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aeromédico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Odonto%2BAero</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Odonto%2BAero%2BProteção Familiar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Odonto%2BProteção Familiar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Odontológico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proteção Familiar</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OperadoraPlanoOdontologico__c</picklist>
+        <values>
+            <fullName>Amil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belo Dente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bradesco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inpao</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metlife</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Odontoprev</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sulamérica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uniodonto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitallis %2F Keralty</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Operadora__c</picklist>
+        <values>
+            <fullName>Amil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bradesco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Med Senior</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Promed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sulamérica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unimed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitallis</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Canceled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cannot Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>On Hold</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TipoCliente__c</picklist>
+        <values>
+            <fullName>PF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PJ</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TipoCustoAtual__c</picklist>
+        <values>
+            <fullName>Faixa Etária</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Linear</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TipoVenda__c</picklist>
+        <values>
+            <fullName>Novo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transferência</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

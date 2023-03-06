@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValorMedioOutraOperadora</fullName>
+    <active>false</active>
+    <errorConditionFormula>((PossuiPlanoEmpresarial__c==true)
+&amp;&amp;
+ISBLANK(ValorMedioOutraOperadora__c))
+&amp;&amp; RecordType.Name == &apos;Apresentação de Proposta/Negociação&apos;</errorConditionFormula>
+    <errorDisplayField>ValorMedioOutraOperadora__c</errorDisplayField>
+    <errorMessage>Campo valor médio da outra operadora Obrigatório</errorMessage>
+</ValidationRule>

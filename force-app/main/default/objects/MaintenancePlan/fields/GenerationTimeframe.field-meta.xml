@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GenerationTimeframe</fullName>
+    <inlineHelpText>A antecedência com que os agendamentos são gerados em cada lote. A unidade é especificada no Tipo de período de geração.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

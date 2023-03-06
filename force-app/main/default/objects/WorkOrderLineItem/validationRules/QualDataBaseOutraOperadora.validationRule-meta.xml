@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QualDataBaseOutraOperadora</fullName>
+    <active>false</active>
+    <errorConditionFormula>((PossuiPlanoEmpresarial__c==true)
+&amp;&amp;
+ISBLANK(DataBaseOutraOperadora__c))
+&amp;&amp; RecordType.Name == &apos;Apresentação de Proposta/Negociação&apos;</errorConditionFormula>
+    <errorDisplayField>DataBaseOutraOperadora__c</errorDisplayField>
+    <errorMessage>Campo data base da outra operadora Obrigatório</errorMessage>
+</ValidationRule>

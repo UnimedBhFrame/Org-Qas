@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DownscaleSortDirection</fullName>
+    <inlineHelpText>Aplica-se apenas se a ação Definir duração reduzida está definida. Selecione a direção de classificação de redução dos compromissos de serviço do membro do pacote de acordo com a duração.</inlineHelpText>
+</CustomField>

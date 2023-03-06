@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InformeNomeRepresentanteCorretora</fullName>
+    <active>false</active>
+    <errorConditionFormula>(HouveAcompanhamentoCorretora__c == true
+&amp;&amp;
+ISBLANK( NomeRepresentanteCorretora__c))  
+&amp;&amp; RecordType.Name == &apos;Call&apos;</errorConditionFormula>
+    <errorDisplayField>NomeRepresentanteCorretora__c</errorDisplayField>
+    <errorMessage>Campo nome representante corretora Obrigatório</errorMessage>
+</ValidationRule>

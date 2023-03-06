@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AnalistaGRCCParticipanteVisita__c</fullName>
+    <externalId>false</externalId>
+    <label>Analista GRCC participante da visita</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Andrea Metzker Generoso</fullName>
+                <default>false</default>
+                <label>Andrea Metzker Generoso</label>
+            </value>
+            <value>
+                <fullName>Catulo Soares Miranda</fullName>
+                <default>false</default>
+                <label>Catulo Soares Miranda</label>
+            </value>
+            <value>
+                <fullName>Fabiana de Sousa Costa</fullName>
+                <default>false</default>
+                <label>Fabiana de Sousa Costa</label>
+            </value>
+            <value>
+                <fullName>Jaqueline Andrade Alves da Silva Costa</fullName>
+                <default>false</default>
+                <label>Jaqueline Andrade Alves da Silva Costa</label>
+            </value>
+            <value>
+                <fullName>Klaus Cardoso</fullName>
+                <default>false</default>
+                <label>Klaus Cardoso</label>
+            </value>
+            <value>
+                <fullName>Lara do Carmo Pereira</fullName>
+                <default>false</default>
+                <label>Lara do Carmo Pereira</label>
+            </value>
+            <value>
+                <fullName>Matheus Anacleto</fullName>
+                <default>false</default>
+                <label>Matheus Anacleto</label>
+            </value>
+            <value>
+                <fullName>Páglia Perdosa Barboza</fullName>
+                <default>false</default>
+                <label>Páglia Perdosa Barboza</label>
+            </value>
+            <value>
+                <fullName>Paulo Colomarte de Castro</fullName>
+                <default>false</default>
+                <label>Paulo Colomarte de Castro</label>
+            </value>
+            <value>
+                <fullName>Samila Fabiane Godoy</fullName>
+                <default>false</default>
+                <label>Samila Fabiane Godoy</label>
+            </value>
+            <value>
+                <fullName>Thiago Henrique de Castro Maforte</fullName>
+                <default>false</default>
+                <label>Thiago Henrique de Castro Maforte</label>
+            </value>
+            <value>
+                <fullName>Daiana Zeferino Soares</fullName>
+                <default>false</default>
+                <label>Daiana Zeferino Soares</label>
+            </value>
+            <value>
+                <fullName>Erika Soares Almeida Arantes</fullName>
+                <default>false</default>
+                <label>Erika Soares Almeida Arantes</label>
+            </value>
+            <value>
+                <fullName>Henrique Jansen de Avelar Ribeiro</fullName>
+                <default>false</default>
+                <label>Henrique Jansen de Avelar Ribeiro</label>
+            </value>
+            <value>
+                <fullName>Henrique Cezano Raos de Oliveira</fullName>
+                <default>false</default>
+                <label>Henrique Cezano Raos de Oliveira</label>
+            </value>
+            <value>
+                <fullName>Monalisa Fernanda Arantes S. Drumond</fullName>
+                <default>false</default>
+                <label>Monalisa Fernanda Arantes S. Drumond</label>
+            </value>
+            <value>
+                <fullName>Luciana Bastos Guimarães Alves</fullName>
+                <default>false</default>
+                <label>Luciana Bastos Guimarães Alves</label>
+            </value>
+            <value>
+                <fullName>Robson David Mahé</fullName>
+                <default>false</default>
+                <label>Robson David Mahé</label>
+            </value>
+            <value>
+                <fullName>Tamara Lúcia de Siqueira</fullName>
+                <default>false</default>
+                <label>Tamara Lúcia de Siqueira</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

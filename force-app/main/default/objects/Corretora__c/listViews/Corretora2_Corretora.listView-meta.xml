@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Corretora2_Corretora</fullName>
+    <columns>NAME</columns>
+    <filterScope>Queue</filterScope>
+    <label>Corretora 2</label>
+    <queue>Corretora2</queue>
+    <sharedTo>
+        <group>GrupoCorretora2</group>
+    </sharedTo>
+</ListView>

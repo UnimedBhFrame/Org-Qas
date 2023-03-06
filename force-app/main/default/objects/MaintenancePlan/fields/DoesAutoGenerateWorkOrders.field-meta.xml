@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DoesAutoGenerateWorkOrders</fullName>
+    <inlineHelpText>Defina se os agendamentos são gerados automaticamente. Essa regra desabilita a habilidade de gerar agendamentos manualmente.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

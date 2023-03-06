@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JustifiqueAusenciaDaAssinaturaProspectMa</fullName>
+    <active>false</active>
+    <errorConditionFormula>(AssinaturaProspectRegistrada__c == false
+&amp;&amp;
+ISBLANK(JustificativaAusenciaAsProspect__c ))
+&amp;&amp; RecordType.Name == &apos;Manutenção Relacionamento&apos;</errorConditionFormula>
+    <errorDisplayField>JustificativaAusenciaAsProspect__c</errorDisplayField>
+    <errorMessage>Campo justificativa da ausência de assinatura Obrigatório</errorMessage>
+</ValidationRule>

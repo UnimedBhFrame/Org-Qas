@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Trimestre__c</fullName>
+    <externalId>false</externalId>
+    <formula>Case(MesCompetencia__c, 
+					&apos;Janeiro&apos;, &apos;1º Trimestre&apos;,
+					&apos;Fevereiro&apos;, &apos;1º Trimestre&apos;,
+					&apos;Março&apos;, &apos;1º Trimestre&apos;,
+					&apos;Abril&apos;, &apos;2º Trimestre&apos;,
+					&apos;Maio&apos;,&apos;2º Trimestre&apos;,
+					&apos;Junho&apos;,&apos;2º Trimestre&apos;,
+					&apos;Julho&apos;,&apos;3º Trimestre&apos;,
+					&apos;Agosto&apos;,&apos;3º Trimestre&apos;,
+					&apos;Setembro&apos;,&apos;3º Trimestre&apos;,
+					&apos;Outubro&apos;,&apos;4º Trimestre&apos;,
+					&apos;Novembro&apos;,&apos;4º Trimestre&apos;,
+					&apos;Dezembro&apos;,&apos;4º Trimestre&apos;,
+					null
+				)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Trimestre</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

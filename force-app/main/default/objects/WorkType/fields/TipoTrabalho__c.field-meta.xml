@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TipoTrabalho__c</fullName>
+    <externalId>false</externalId>
+    <label>Tipo do Trabalho</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Apresentação Proposta/ Negociação</fullName>
+                <default>false</default>
+                <label>Apresentação Proposta/ Negociação</label>
+            </value>
+            <value>
+                <fullName>Call</fullName>
+                <default>false</default>
+                <label>Call</label>
+            </value>
+            <value>
+                <fullName>Cliente Ausente</fullName>
+                <default>false</default>
+                <label>Cliente Ausente</label>
+            </value>
+            <value>
+                <fullName>Conclusão de Negociação</fullName>
+                <default>false</default>
+                <label>Conclusão de Negociação</label>
+            </value>
+            <value>
+                <fullName>Implantação Corretora</fullName>
+                <default>false</default>
+                <label>Implantação Corretora</label>
+            </value>
+            <value>
+                <fullName>Loja Física</fullName>
+                <default>false</default>
+                <label>Loja Física</label>
+            </value>
+            <value>
+                <fullName>Manutenção Corretora</fullName>
+                <default>false</default>
+                <label>Manutenção Corretora</label>
+            </value>
+            <value>
+                <fullName>Manutenção Relacionamento</fullName>
+                <default>false</default>
+                <label>Manutenção Relacionamento</label>
+            </value>
+            <value>
+                <fullName>Prospecção Corretora</fullName>
+                <default>false</default>
+                <label>Prospecção Corretora</label>
+            </value>
+            <value>
+                <fullName>Prospecção Empresarial</fullName>
+                <default>false</default>
+                <label>Prospecção Empresarial</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

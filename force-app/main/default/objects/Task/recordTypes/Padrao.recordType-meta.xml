@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Padrao</fullName>
+    <active>true</active>
+    <label>Padrão</label>
+    <picklistValues>
+        <picklist>FSL__Event_Type__c</picklist>
+        <values>
+            <fullName>Ligações</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Resource Absence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Appointment</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Motivo__c</picklist>
+        <values>
+            <fullName>Achou alto o valor do plano</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agendado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CNPJ cadastrado a menos de 6 meses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cadastro de benefício RN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelamento%2FReagendamento de visita ou confirmação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cliente inadimplente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cliente optou por ir à loja</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deseja plano com abrangência nacional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Encaminhado para célula de vendas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fora da área de abrangência</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Informação para Terceiros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Informações da ativação da contratação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Informações sobre contratação via site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Já é cliente%2C Dúvidas %28Acomodação%2C opcionais%2C adaptação%2C ex-funcionário%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Não possui documentação obrigatória</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outras opções dentro do 4020-4020 ou Unidesk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Queda%2Fligação muda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RN acima de 28 dias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reagendamento de visita ou confirmação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Troca de plano</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vai pensar%2Favaliar</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Completa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EmProgresso</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EsperandoOutro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NaoIniciado</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Negada</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subject</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enviar Carta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EnviarCotacao</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ligacao</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ligação Ativa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ligação Receptiva</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visita</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TipoAtendimento__c</picklist>
+        <values>
+            <fullName>Médico Cooperado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pessoa Física</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pessoa Física RN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pessoa Jurídica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pessoa Jurídica - Enterprise</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

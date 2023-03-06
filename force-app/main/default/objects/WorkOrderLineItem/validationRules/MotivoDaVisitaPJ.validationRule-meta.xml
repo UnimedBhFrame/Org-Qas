@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MotivoDaVisitaPJ</fullName>
+    <active>false</active>
+    <errorConditionFormula>(ISPICKVAL( TipoCliente__c, &apos;PJ&apos;)
+&amp;&amp;
+ISPICKVAL( MotivoVisitaPJClienteAusente__c , &apos;&apos;))
+&amp;&amp; RecordType.Name == &apos;Cliente Ausente&apos;</errorConditionFormula>
+    <errorDisplayField>MotivoVisitaPJClienteAusente__c</errorDisplayField>
+    <errorMessage>Campo motivo da visita PJ Obrigatório</errorMessage>
+</ValidationRule>

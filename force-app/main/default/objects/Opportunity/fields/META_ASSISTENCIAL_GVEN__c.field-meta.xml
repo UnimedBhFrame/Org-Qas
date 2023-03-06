@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>META_ASSISTENCIAL_GVEN__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(1,
+
+IF(
+
+ Gerente__c   =    (IDMetaGerente__r.Usuario__r.FirstName + &apos; &apos; + IDMetaGerente__r.Usuario__r.LastName)    &amp;&amp;     TEXT(MONTH( Account.DataVigencia__c ))   =  TEXT(  IDMetaGerente__r.Competencia__c  )  
+&amp;&amp;   
+TEXT(YEAR(  Account.DataVigencia__c  )) = TEXT( IDMetaGerente__r.Ano__c )
+
+,1,0), TEXT( IDMetaGerente__r.Assistencial__c ),
+
+&apos;&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>META ASSISTENCIAL GVEN</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

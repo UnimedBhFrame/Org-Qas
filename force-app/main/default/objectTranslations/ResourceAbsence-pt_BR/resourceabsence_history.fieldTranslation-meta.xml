@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Histórico de bloqueio de agenda</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Histórico de bloqueios de agenda</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <name>resourceabsence_history</name>
+</CustomFieldTranslation>

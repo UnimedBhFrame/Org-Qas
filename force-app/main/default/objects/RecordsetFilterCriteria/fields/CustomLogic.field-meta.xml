@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CustomLogic</fullName>
+    <inlineHelpText>Defina a lógica das condições. Para agrupar condições, use parênteses em torno dos parâmetros, por exemplo, 1 E (2 OU 3). Ao adicionar outra condição, a lógica personalizada é automaticamente atualizada para 1 E 2 (2 OU 3) E 4.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

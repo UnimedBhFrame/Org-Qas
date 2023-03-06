@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Porte__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(1,
+IF((NumeroVidas__c=1)&amp;&amp;( Lead__r.RecordType.Name = &apos;Pessoa Física&apos; || Lead__r.RecordType.Name = &apos;Pessoa Física RN&apos; || Lead__r.RecordType.Name = &apos;Médico Cooperado&apos;),1,0),&apos;Individual&apos;,
+
+IF((NumeroVidas__c=1)&amp;&amp;( Lead__r.RecordType.Name = &apos;Pessoa Jurídica&apos; || Lead__r.RecordType.Name = &apos;Pessoa Jurídica - Enterprise&apos;),1,0),&apos;PME1&apos;,
+
+IF((NumeroVidas__c&gt;=2)&amp;&amp;(NumeroVidas__c&lt;=29),1,0),&apos;PME&apos;,
+
+IF((NumeroVidas__c &gt; 29)&amp;&amp; (NumeroVidas__c&lt;=99),1,0), &apos;PME2&apos;,
+
+IF((NumeroVidas__c &gt; 99)&amp;&amp; (NumeroVidas__c&lt;=300),1,0), &apos;ME&apos;,
+
+IF((NumeroVidas__c &gt; 300)&amp;&amp; (NumeroVidas__c&lt;=600),1,0), &apos;GC&apos;,
+
+IF((NumeroVidas__c &gt; 600),1,0), &apos;CE&apos;,
+
+&apos; &apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Porte</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

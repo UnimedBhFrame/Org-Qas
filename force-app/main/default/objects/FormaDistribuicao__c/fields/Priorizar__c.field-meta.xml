@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Priorizar__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Quando selecionado, a loja sempre receberá visita independente dos valores de &quot;Quantidade atual&quot; e &quot;Quantidade permitida&quot;.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Quando selecionado, a loja sempre receberá visita independente dos valores de &quot;Quantidade atual&quot; e &quot;Quantidade permitida&quot;.</inlineHelpText>
+    <label>Priorizar</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Meta_do_Gerente</fullName>
+    <columns>NAME</columns>
+    <columns>Ano__c</columns>
+    <columns>Competencia__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>Canal__c</columns>
+    <columns>Loja__c</columns>
+    <columns>Assistencial__c</columns>
+    <columns>Aeromedico__c</columns>
+    <columns>Odontologico__c</columns>
+    <columns>MetaDesafio__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Cargo__c</field>
+        <operation>equals</operation>
+        <value>Gerente</value>
+    </filters>
+    <label>Meta do Gerente</label>
+</ListView>

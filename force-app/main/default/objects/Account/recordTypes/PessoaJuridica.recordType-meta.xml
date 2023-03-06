@@ -1,0 +1,1068 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PessoaJuridica</fullName>
+    <active>true</active>
+    <label>Pessoa Jurídica</label>
+    <picklistValues>
+        <picklist>AccountSource</picklist>
+        <values>
+            <fullName>Call Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chatbot%2FIndicação Interna Unimed-BH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HubSpot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAGINA DE PLANOS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Atendente__c</picklist>
+        <values>
+            <fullName>ALINE QUARESMA DA SILVA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ALLAN JUNIO DA COSTA SILVA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ANA CAROLINA SILVA SOARES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BRUNA ISABELLA LEANDRO DA SILVA SANTANA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAROLINA MENDES BAIA DE CARVALHO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DANIELA FERREIRA DA SILVA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DARLENE APARECIDA ANDRADE SILVA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DEBORA STEFANY SOUZA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EDUARDA ANDRADE FERREIRA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ELIZANGELA DE LOURDES DA SILVA FREITAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ESTHER CAROLAINE MARTINS DE SOUZA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EZEQUIEL JUNIO DA SILVA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FERNANDA CONCEICAO PEREIRA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GIULIA MAGALHAES SANTOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HELOISA BATISTA HONORIO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HUDSON BRENO SANTOS AGANETE ANDRADE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INES CRISTINA DE ARAUJO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISABELA CRISTINA SILVA SCHINAIDER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISABELE MONTEIRO GONCALVES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISADORA MULLER DE OLIVEIRA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JAISON FERNANDO FERREIRA DA SILVA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JUCYMARA FERREIRA CORREIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LEONARDO RODRIGUES MARIANO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LUCELIA RABELO COSTA SILVA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RAFAEL REIS DA SILVA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RENAN MARCOS MATOZINHOS SILVA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RODRIGO DORNELLAS DE PINHO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SHANDEL REIS MENEZES</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AtivaMaisSeisMeses__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CanalComunicacao__c</picklist>
+        <values>
+            <fullName>Campanhas de vendas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jornal%2F Panfleto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Redes sociais</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sem mídia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tv%2FRádio</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CanalEntrada__c</picklist>
+        <values>
+            <fullName>Atendimento Loja</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blended - AeC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consultor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hotsite%3A Soluções Empresa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indicação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indicação interna UnimedBH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mailing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Promotor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospecção</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Receptivo - AeC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>e-Commerce</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ClienteIraLojaFisica__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ClienteUnimedBH__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DetalhamentoMotivo__c</picklist>
+        <values>
+            <fullName>BH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Betim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CNPJ menor que 180 dias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Doc%2E Saúde menor de 12 anos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Doc%2E de vínculo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lagoa Santa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pedro Leopoldo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planomed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planovendas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salutia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santa Bárbara</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santa Luzia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unisaúde</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>União estável</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>EmpresaAtiva__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ExCliente__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>HouveAgendamento__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry</picklist>
+        <values>
+            <fullName>Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apparel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Banking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biotechnology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemicals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food %26 Beverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machinery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not For Profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recreation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecommunications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utilities</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LojaFisicaClienteIraVisitar__c</picklist>
+        <values>
+            <fullName>BH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Betim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lagoa Santa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pedro Leopoldo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planomed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planovendas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salutia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santa Bárbara</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santa Luzia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unisaúde</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MesVencimentoContrato__c</picklist>
+        <values>
+            <fullName>Abril</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agosto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dezembro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fevereiro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Janeiro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Julho</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Junho</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Março</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Novembro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Não sabe informar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outubro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Setembro</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MotivoAlteracaoTipoAtendimento__c</picklist>
+        <values>
+            <fullName>CNPJ baixado%2Finapto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CNPJ menos que 180 dias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Não possui contingente empresarial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Não possui documentação de vínculo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Possui perfil empresarial</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MotivoNaoAgendamento__c</picklist>
+        <values>
+            <fullName>Achou alto o valor do plano</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CNPJ cadastrado a menos de 6 meses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cadastro de benefício RN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelamento%2FReagendamento de visita ou confirmação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cliente inadimplente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cliente optou por ir à loja</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deseja plano com abrangência nacional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Encaminhado para célula de vendas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ficou de pensar na proposta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fora da área de abrangência</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Informação para Terceiros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Informações da ativação da contratação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Informações sobre contratação via site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Não possui documentação obrigatória</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outras opções dentro do 4020-4020 ou Unidesk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Queda%2Fligação muda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RN acima de 28 dias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reagendamento de visita ou confirmação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sem contingente mínimo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Troca de plano</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vai pensar%2Favaliar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Área de risco</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MotivoNaoVenda__c</picklist>
+        <values>
+            <fullName>Cliente Inadimplente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Condições financeiras</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Configuração do Plano %28Linear%2C sem copart%2C fixo%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Em cotação de mercado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEI%2FEI com menos de 180 dias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multa rescisória na contratante</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Não elegível pela documentação%2Fregras</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preço %28concorrência valor menor%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rede</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SERASA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Satisfação com a operadora atual</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NovoCliente__c</picklist>
+        <values>
+            <fullName>N</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OperadoraSaude__c</picklist>
+        <values>
+            <fullName>Amil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Autogestão</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bradesco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hapivida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notredame</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Promed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Samp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saúde Sistema</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sulamérica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unimed CO- Irmã</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unimed-BH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitallis</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ownership</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subsidiary</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PessoaDecisoraCompra__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PossuiPlano__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PotencialVidas__c</picklist>
+        <values>
+            <fullName>Acima de 30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>De 1 a 5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>De 11 a 20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>De 21 a 29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>De 6 a 10</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating</picklist>
+        <values>
+            <fullName>Frio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Morno</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quente</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ReceberContatoUnimed__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ReceberInformacoesUnimed__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Revenda__c</picklist>
+        <values>
+            <fullName>N</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SituacaoSerasa__c</picklist>
+        <values>
+            <fullName>Liberado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negado</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SubMotivoNaoVenda__c</picklist>
+        <values>
+            <fullName>Amil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bradesco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hapivida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notredame</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Promed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Samp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saúde Sistema</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sulamérica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unimed BH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unimed CO- Irmã</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TipoBeneficiario__c</picklist>
+        <values>
+            <fullName>Dependente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Titular</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TipoCliente__c</picklist>
+        <values>
+            <fullName>Admissão %28Novo%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inclusão de dependente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inclusão de módulo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transferência</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TipoContratacao__c</picklist>
+        <values>
+            <fullName>1 a 29 pessoas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>100 a 299 pessoas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30 a%C2%A099 pessoas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>300 a 599 pessoas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Individual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a partir de 600 pessoas</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VendaRealizada__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

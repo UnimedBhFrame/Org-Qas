@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Metadado que armazena informações referentes ao horário de encerramento dos consultores. Caso o horário atual esteja fora do expediente de trabalho, o (a) consultor(a), não poderá iniciar ou finalizar um compromisso de serviço.</description>
+    <label>Expediente</label>
+    <pluralLabel>Expediente</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

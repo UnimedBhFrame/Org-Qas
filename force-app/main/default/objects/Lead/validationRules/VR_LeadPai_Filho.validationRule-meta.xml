@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_LeadPai_Filho</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ ISCHANGED( LeadPai__c ),
+ Owner:User.Id != LeadPai__r.Owner:User.Id 
+)</errorConditionFormula>
+    <errorMessage>O proprietario e o Status do lead precisam ser os mesmo entre pai e filho</errorMessage>
+</ValidationRule>

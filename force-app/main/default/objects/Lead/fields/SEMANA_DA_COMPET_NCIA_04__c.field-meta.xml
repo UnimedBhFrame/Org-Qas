@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SEMANA_DA_COMPET_NCIA_04__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(1,
+
+IF(( DataAtendimento__c &gt;= DATEVALUE(&apos;2021-09-29&apos;) &amp;&amp; DataAtendimento__c &lt;= DATEVALUE(&apos;2021-10-05&apos;)) ,1,0),&apos;2ª SEMANA&apos;,
+IF(( DataAtendimento__c &gt;= DATEVALUE(&apos;2021-10-06&apos;) &amp;&amp; DataAtendimento__c &lt;= DATEVALUE(&apos;2021-10-12&apos;)) ,1,0),&apos;3ª SEMANA&apos;,
+IF(( DataAtendimento__c &gt;= DATEVALUE(&apos;2021-10-13&apos;) &amp;&amp; DataAtendimento__c &lt;= DATEVALUE(&apos;2021-10-20&apos;)) ,1,0),&apos;4ª SEMANA&apos;,
+IF(( DataAtendimento__c &gt;= DATEVALUE(&apos;2021-10-21&apos;) &amp;&amp; DataAtendimento__c &lt;= DATEVALUE(&apos;2021-10-27&apos;)) ,1,0),&apos;1ª SEMANA&apos;,
+IF(( DataAtendimento__c &gt;= DATEVALUE(&apos;2021-10-28&apos;) &amp;&amp; DataAtendimento__c &lt;= DATEVALUE(&apos;2021-11-03&apos;)) ,1,0),&apos;2ª SEMANA&apos;,
+IF(( DataAtendimento__c &gt;= DATEVALUE(&apos;2021-11-04&apos;) &amp;&amp; DataAtendimento__c &lt;= DATEVALUE(&apos;2021-11-10&apos;)) ,1,0),&apos;3ª SEMANA&apos;,
+IF(( DataAtendimento__c &gt;= DATEVALUE(&apos;2021-11-11&apos;) &amp;&amp; DataAtendimento__c &lt;= DATEVALUE(&apos;2021-11-19&apos;)) ,1,0),&apos;4ª SEMANA&apos;,
+IF(( DataAtendimento__c &gt;= DATEVALUE(&apos;2021-11-20&apos;) &amp;&amp; DataAtendimento__c &lt;= DATEVALUE(&apos;2021-11-26&apos;)) ,1,0),&apos;1ª SEMANA&apos;,
+IF(( DataAtendimento__c &gt;= DATEVALUE(&apos;2021-11-27&apos;) &amp;&amp; DataAtendimento__c &lt;= DATEVALUE(&apos;2021-12-03&apos;)) ,1,0),&apos;2ª SEMANA&apos;,
+IF(( DataAtendimento__c &gt;= DATEVALUE(&apos;2021-12-04&apos;) &amp;&amp; DataAtendimento__c &lt;= DATEVALUE(&apos;2021-12-10&apos;)) ,1,0),&apos;3ª SEMANA&apos;,
+IF(( DataAtendimento__c &gt;= DATEVALUE(&apos;2021-12-11&apos;) &amp;&amp; DataAtendimento__c &lt;= DATEVALUE(&apos;2021-12-17&apos;)) ,1,0),&apos;4ª SEMANA&apos;,
+
+
+&apos; &apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>SEMANA DA COMPETÊNCIA 04</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

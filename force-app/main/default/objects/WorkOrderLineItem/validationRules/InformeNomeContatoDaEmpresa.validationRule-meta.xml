@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InformeNomeContatoDaEmpresa</fullName>
+    <active>false</active>
+    <errorConditionFormula>(((ISPICKVAL( TipoCliente__c, &apos;PJ&apos;) &amp;&amp; ISPICKVAL( MotivoVisitaPJClienteAusente__c, &apos;Prospecção&apos;))&amp;&amp;
+	 ISBLANK(NomeContatoEmpresa__c ))
+||
+((ISPICKVAL( TipoCliente__c, &apos;PJ&apos;) &amp;&amp; ISPICKVAL( MotivoVisitaPJClienteAusente__c, &apos;Prospecção PJ - Grandes Contas&apos;))&amp;&amp;
+	ISBLANK(NomeContatoEmpresa__c )))
+&amp;&amp; RecordType.Name == &apos;Cliente Ausente&apos;</errorConditionFormula>
+    <errorDisplayField>NomeContatoEmpresa__c</errorDisplayField>
+    <errorMessage>Campo nome do contato da empresa Obrigatório</errorMessage>
+</ValidationRule>

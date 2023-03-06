@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValidaCNPJ</fullName>
+    <active>false</active>
+    <description>Valida se o CNPJ é valido com exceção de integrações.</description>
+    <errorConditionFormula>CreatedDate &gt; DATETIMEVALUE(&quot;2022-11-05 17:00:00&quot;) &amp;&amp; (NOT($Permission.ByPassValidationRules)) &amp;&amp; (NOT($Permission.Integracao)) &amp;&amp; CONTAINS(TipoAtendimento__c, &apos;Jurídica&apos;) &amp;&amp;(NOT(OR(LEN(CPFCNPJId__c)=0,AND(MOD(MOD(11-MOD(VALUE(MID(CPFCNPJId__c,1,1))*5+VALUE(MID(CPFCNPJId__c,2,1))*4+VALUE(MID(CPFCNPJId__c,3,1))*3+VALUE(MID(CPFCNPJId__c,4,1))*2+VALUE(MID(CPFCNPJId__c,5,1))*9+VALUE(MID(CPFCNPJId__c,6,1))*8+VALUE(MID(CPFCNPJId__c,7,1))*7+VALUE(MID(CPFCNPJId__c,8,1))*6+VALUE(MID(CPFCNPJId__c,9,1))*5+VALUE(MID(CPFCNPJId__c,10,1))*4+VALUE(MID(CPFCNPJId__c,11,1))*3+VALUE(MID(CPFCNPJId__c,12,1))*2,11),11),10) =VALUE(MID(CPFCNPJId__c,13,1)),MOD(MOD(11-MOD(VALUE(MID(CPFCNPJId__c,1,1))*6+VALUE(MID(CPFCNPJId__c,2,1))*5+VALUE(MID(CPFCNPJId__c,3,1))*4+VALUE(MID(CPFCNPJId__c,4,1))*3+VALUE(MID(CPFCNPJId__c,5,1))*2+VALUE(MID(CPFCNPJId__c,6,1))*9+VALUE(MID(CPFCNPJId__c,7,1))*8+VALUE(MID(CPFCNPJId__c,8,1))*7+VALUE(MID(CPFCNPJId__c,9,1))*6+VALUE(MID(CPFCNPJId__c,10,1))*5+VALUE(MID(CPFCNPJId__c,11,1))*4+VALUE(MID(CPFCNPJId__c,12,1))*3+VALUE(MID(CPFCNPJId__c,13,1))*2,11),11),10) =VALUE(MID(CPFCNPJId__c,14,1))))))</errorConditionFormula>
+    <errorDisplayField>CNPJ__c</errorDisplayField>
+    <errorMessage>CNPJ informado é invalido</errorMessage>
+</ValidationRule>

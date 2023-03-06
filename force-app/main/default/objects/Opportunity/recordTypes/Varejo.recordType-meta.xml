@@ -1,0 +1,959 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Varejo</fullName>
+    <active>true</active>
+    <businessProcess>Varejo</businessProcess>
+    <label>Varejo</label>
+    <picklistValues>
+        <picklist>Canal2__c</picklist>
+        <values>
+            <fullName>ADMINISTRADORAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CALL CENTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-COMMERCE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EQUIPE CORPORATIVA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GVEN - CONSULTORES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LOJAS AUTORIZADAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LOJAS PRÓPRIAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SINDILOJAS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CanalEntrada__c</picklist>
+        <values>
+            <fullName>Atendimento Loja</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ativo - AeC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blended - AeC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mailing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Promotor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospecção</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Receptivo - AeC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DB_Competitor__c</picklist>
+        <values>
+            <fullName>Competitor A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor C</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DetalhamentoMotivo__c</picklist>
+        <values>
+            <fullName>BH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Betim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CNPJ menor que 180 dias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Doc%2E Saúde menor de 12 anos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Doc%2E de vínculo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lagoa Santa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pedro Leopoldo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planomed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planovendas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salutia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santa Bárbara</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santa Luzia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unisaúde</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>União estável</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ExCliente__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ForecastCategoryName</picklist>
+        <values>
+            <fullName>Best Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipeline</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>HouveAgendamento__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Call Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chatbot%2FIndicação Interna Unimed-BH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HubSpot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAGINA DE PLANOS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Loss_Reason__c</picklist>
+        <values>
+            <fullName>Lost to Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Budget %2F Lost Funding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Decision %2F Non-Responsive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MotivoNaoAgendamento__c</picklist>
+        <values>
+            <fullName>Achou alto o valor do plano</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CNPJ cadastrado a menos de 6 meses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cadastro de benefício RN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelamento%2FReagendamento de visita ou confirmação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cliente inadimplente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cliente optou por ir à loja</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deseja plano com abrangência nacional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Encaminhado para célula de vendas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ficou de pensar na proposta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fora da área de abrangência</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Informação para Terceiros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Informações da ativação da contratação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Não possui documentação obrigatória</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outras opções dentro do 4020-4020 ou Unidesk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Queda%2Fligação muda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RN acima de 28 dias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sem contingente mínimo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Troca de plano</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vai pensar%2Favaliar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Área de risco</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NovoCliente__c</picklist>
+        <values>
+            <fullName>N</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Produto__c</picklist>
+        <values>
+            <fullName>ADAPTADO COLETIVO EMPRESARIAL ENFERMARIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BEM DIGITAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BEM DIGITAL REG APARTAMENTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BEM DIGITAL REG ENFERMARIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ODONTO DOC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ODONTO ESSENCIAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ODONTO MASTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ODONTOLOGICO ODONTOPREV EMPRESARIAL AMPLIADO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ODONTOLOGICO ODONTOPREV EMPRESARIAL ROL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UBT - CASA DO LAR%C2%A0- CUSTO OPERACIONAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UBT - PIF 24 ENFERMARIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UBT - PIF 24 ENFERMARIA%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UBT - PIF 24 ENFERMARIA%C2%A0 %28ADAPTADO%29 - 4000100304A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UBT - PIF ESPECIAL%C2%A0 APTO %28ADAPTADO%29 - 4000100304</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UBT - REAL MAIS FACIL - INDIVIDUAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UBT - REAL MAIS FACIL - INDIVIDUAL%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UBT - REAL MAIS FACIL EMPRESARIAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UBT - REAL MAIS FACIL EMPRESARIAL%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UBT - REAL PARTICIPATIVO ESTADUAL ENFERMARIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UBT - REAL PARTICIPATIVO ESTADUAL ENFERMARIA%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UBT - UNIMED MAX COPARTICIPATIVO ENFERMARIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UBT - UNIMED MAX COPARTICIPATIVO ENFERMARIA%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UBT - UNIMED MAX PARTICIPATIVO APARTAMENTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UBT - UNIMED MAX PARTICIPATIVO APARTAMENTO%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UBT - UNIMED MAX PARTICIPATIVO ENFERMARIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UBT - UNIMED MAX PARTICIPATIVO ENFERMARIA%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UBT - UNIMED MAX PRE AMBULATORIAL E HOSPITALAR APARTAMENTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UBT - UNIMED MAX PRE AMBULATORIAL E HOSPITALAR APARTAMENTO%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UBT - UNIMED MAX PRE AMBULATORIAL E HOSPITALAR ENFERMARIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UBT - UNIMED MAX PRE AMBULATORIAL E HOSPITALAR ENFERMARIA%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UBT - UNIMED MAX PREMIUM ENFERMARIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UBT - UNIMED MAX PREMIUM ENFERMARIA%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UBT - UNIMED REAL PART ENFERMARIA INDIVIDUAL E FAMILIAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UBT - UNIMED REAL PART ENFERMARIA INDIVIDUAL E FAMILIAR%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UBT - UNIMED REAL PART PART COLETIVO EMPRESARIAL ENFERMARIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UBT - UNIMED REAL PART PART COLETIVO EMPRESARIAL ENFERMARIA%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UBT -UNIMED MAX PARTICIPATIVO ENFERMARIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNIFACIL COPART ADESAO REG ENFERMARIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNIFACIL EST ENFERMARIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNIFACIL FLEX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNIFACIL FLEX COPART REGIONAL EMPRESARIAL ENF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNIFACIL REG APARTAMENTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNIFACIL REG ENFERMARIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNIMAX ADESAO EST ENFERMARIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNIMAX EST APARTAMENTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNIMAX EST ENFERMARIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNIMAX ESTADUAL EMPRESARIAL APARTAMENTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNIMAX NAC APARTAMENTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNIMAX NAC ENFERMARIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNIMAX REG APARTAMENTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNIMAX REG ENFERMARIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNIMAX REGIONAL EMPRESARIAL APARTAMENTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNIMAX REGIONAL INDIVIDUAL APARTAMENTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNIMAX REGIONAL INDIVIDUAL ENFERMARIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNIMED PLENO ADESAO ENFERMARIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNIMED PLENO COPART REGIONAL INDIVIDUAL APARTAMENTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNIMED PLENO COPART REGIONAL INDIVIDUAL ENFERMARIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNIMED PLENO EMPRESARIAL APARTAMENTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNIMED PLENO EMPRESARIAL ENFERMARIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNIPART ADESAO EST ENFERMARIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNIPART ADESAO REG ENFERMARIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNIPART EST APARTAMENTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNIPART EST ENFERMARIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNIPART FLEX NAC S%2F OBSTETRICIA ENF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNIPART FLEX REGIONAL EMPRESARIAL APARTAMENTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNIPART FLEX REGIONAL EMPRESARIAL ENFERMARIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNIPART NAC APARTAMENTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNIPART NAC ENFERMARIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNIPART REGIONAL INDIVIDUAL APARTAMENTO FLEX 30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNIPART REGIONAL INDIVIDUAL APARTAMENTO FLEX 50</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNIPART REGIONAL INDIVIDUAL ENFERMARIA FLEX 30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNIPART REGIONAL INDIVIDUAL ENFERMARIA FLEX 50</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPC - AMBULAT %2B HOSPITALAR COM OBSTETRICIA - QUARTO PRIVATIVO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPC - AMBULAT %2B HOSPITALAR COM OBSTETRICIA - QUARTO PRIVATIVO%C2%A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPC - AMBULATORIAL %2B HOSPITALAR COM OBSTETRICIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPC - PARTICIPATIVO INDIVIDUAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPC - PIF INDIVIDUAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPC - UNIMAX EST ENFERMARIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPL - PIF PLANO INDIVIDUAL FAMILIAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPL - POP UNIMED POPULAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPL - UNIMAX REGIONAL INDIVIDUAL APARTAMENTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPL - UNIPART COPARTICIPATIVO REGIONAL INDIVIDUAL APARTAMENTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPL - UNIPART COPARTICIPATIVO REGIONAL INDIVIDUAL ENFERMARIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPL - UNIPART REGIONAL INDIVIDUAL ENFERMARIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USC - AMBULAT %2B HOSPITALAR SEM OBSTETRÍCIA - QUARTO PRIVATIVO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USC - AMBULATORIAL %2B HOSPITALAR SEM OBSTETRICIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USC - UNI-MAIS 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USC - UNIMED FACIL 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unifacil Flex 30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unifacil Flex 50</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unimax  Apartamento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unimax Enfermaria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unimed Pleno  Apartamento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unimed Pleno  Enfermaria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unipart Flex 30 Apartamento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unipart Flex 30 Enfermaria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unipart Flex 50 Apartamento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unipart Flex 50 Enfermaria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VIVA EMPRESA ESSENCIAL ENFERMARIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VIVA EMPRESA IDEAL ENFERMARIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VIVA EMPRESA INTEGRAL ENFERMARIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VIVA IDEAL APARTAMENTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VIVA IDEAL ENFERMARIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VIVA PLENO APARTAMENTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VIVA PLENO ENFERMARIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VIVA PLUS APARTAMENTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VIVA PLUS ENFERMARIA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Revenda__c</picklist>
+        <values>
+            <fullName>N</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SituacaoPJ__c</picklist>
+        <values>
+            <fullName>AT - Reserva ativa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D - Disponível para reserva</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DC - Disponível para cadastro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I - Indisponível</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>A Iniciar Agendamento de Assinatura Termo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A Iniciar Análise de Documentos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A Iniciar Esclarecimento Médico por Telefone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A Iniciar Perícia Médica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A Iniciar Segunda Tentativa de Contato de Esclarecimento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A Iniciar Triagem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aguardando Análise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aguardando Aprovação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aguardando Entrega de Exames e Documentos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aguardando Entrega de Termo de CPT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aguardando Resolução de Checklist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ativo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Candidato</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ciclo de Contato de Assinatura de Termo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ciclo de Contato de Perícia Médica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cliente não Assinou Termo Eletrônico Dentro do Prazo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cliente não compareceu para Assinar Termo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devolvido pelo Agendamento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Em Agendamento de Assinatura de Termo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Em Agendamento de Perícia Médica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Em Análise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Em Análise com Pendência%3B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Em Análise de Documentos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Em Assinatura de Termo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Em Elaboração</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Em Esclarecimento Médico por Telefone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Em Esclarecimento Médico por Telefone %28Segunda Tentativa%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Em Perícia Médica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Em Recebimento de Exames e Documentos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Em Triagem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finalizada com Pendência</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inativo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Re-Agendar Perícia Médica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retorno de Esclarecimento por Telefone %28Segundo Contato sem Sucesso%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retorno de Exames Solicitados</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Termo Rejeitado pelo Cliente</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Admissão</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inclusão de dependente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transferência</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

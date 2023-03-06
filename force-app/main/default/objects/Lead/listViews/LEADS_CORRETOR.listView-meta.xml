@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LEADS_CORRETOR</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.CITY</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>Porte__c</columns>
+    <columns>NumeroVidas__c</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>CREATEDBY_USER.ALIAS</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Email__c</columns>
+    <columns>CPF__c</columns>
+    <columns>CNPJ__c</columns>
+    <columns>CPFCNPJId__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>notContain</operation>
+        <value>ppa</value>
+    </filters>
+    <filters>
+        <field>Fila__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Corretora__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>ProprietarioOriginal__c</field>
+        <operation>contains</operation>
+        <value>Henrique Jansen</value>
+    </filters>
+    <label>LEADS CORRETOR</label>
+    <sharedTo>
+        <role>ConsultorExternoEquipeCorporativa</role>
+    </sharedTo>
+</ListView>

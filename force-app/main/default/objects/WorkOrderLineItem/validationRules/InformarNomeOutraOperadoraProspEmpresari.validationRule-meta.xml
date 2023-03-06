@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InformarNomeOutraOperadoraProspEmpresari</fullName>
+    <active>false</active>
+    <errorConditionFormula>(ISPICKVAL( Operadora__c , &apos;Outra&apos;)
+&amp;&amp;
+ISBLANK( OutraOperadora__c ))
+&amp;&amp; RecordType.Name == &apos;Prospecção Empresarial&apos;</errorConditionFormula>
+    <errorDisplayField>OutraOperadora__c</errorDisplayField>
+    <errorMessage>Campo outra operadora Obrigatório</errorMessage>
+</ValidationRule>

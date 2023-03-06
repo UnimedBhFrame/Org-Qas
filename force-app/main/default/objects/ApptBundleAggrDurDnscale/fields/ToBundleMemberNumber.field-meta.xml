@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ToBundleMemberNumber</fullName>
+    <inlineHelpText>Insira o número do último membro do pacote ao qual a redução se aplica. Para sempre reduzir o último membro do pacote, use um valor vazio.</inlineHelpText>
+</CustomField>

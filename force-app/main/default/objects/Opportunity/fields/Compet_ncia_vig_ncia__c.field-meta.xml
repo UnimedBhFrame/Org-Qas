@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Compet_ncia_vig_ncia__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(1,
+IF(((  Account.DataVigencia__c &gt;=  DATE(2021,01,02)   &amp;&amp;  Account.DataVigencia__c  &lt;=  DATE(2021,02,01)) || ISBLANK(Account.DataVigencia__c)),1,0),&apos;Janeiro&apos;,
+
+IF(( Account.DataVigencia__c  &gt;=  DATE(2021,02,02)   &amp;&amp;  Account.DataVigencia__c  &lt;=  DATE(2021,03,01)),1,0),&apos;Fevereiro&apos;,
+
+IF(( Account.DataVigencia__c  &gt;=  DATE(2021,03,02)   &amp;&amp;  Account.DataVigencia__c  &lt;=  DATE(2021,04,01)),1,0),&apos;Março&apos;,
+
+IF(( Account.DataVigencia__c  &gt;=  DATE(2021,04,02)   &amp;&amp;  Account.DataVigencia__c  &lt;=  DATE(2021,05,01)),1,0),&apos;Abril&apos;,
+
+IF(( Account.DataVigencia__c  &gt;=  DATE(2021,05,02)   &amp;&amp;  Account.DataVigencia__c  &lt;=  DATE(2021,06,01)),1,0),&apos;Maio&apos;,
+
+IF(( Account.DataVigencia__c  &gt;=  DATE(2021,06,02)   &amp;&amp;  Account.DataVigencia__c  &lt;=  DATE(2021,07,01)),1,0),&apos;Junho&apos;,
+
+IF(( Account.DataVigencia__c  &gt;=  DATE(2021,07,02)   &amp;&amp;  Account.DataVigencia__c    &lt;=  DATE(2021,08,01)),1,0),&apos;Julho&apos;,
+
+IF(( Account.DataVigencia__c  &gt;=  DATE(2021,08,02)   &amp;&amp;  Account.DataVigencia__c  &lt;=  DATE(2021,09,01)),1,0),&apos;Agosto&apos;,
+
+IF(( Account.DataVigencia__c  &gt;=  DATE(2021,09,02)   &amp;&amp;  Account.DataVigencia__c  &lt;=  DATE(2021,10,01)),1,0),&apos;Setembro&apos;,
+
+IF(( Account.DataVigencia__c  &gt;=  DATE(2021,10,02)   &amp;&amp;  Account.DataVigencia__c  &lt;=  DATE(2021,11,01)),1,0),&apos;Outubro&apos;,
+
+IF(( Account.DataVigencia__c  &gt;=  DATE(2021,11,02)   &amp;&amp;  Account.DataVigencia__c  &lt;=  DATE(2021,12,01)),1,0),&apos;Novembro&apos;,
+
+IF(( Account.DataVigencia__c  &gt;=  DATE(2021,12,02)   &amp;&amp;  Account.DataVigencia__c  &lt;=  DATE(2022,01,01)),1,0),&apos;Dezembro&apos;,
+
+&apos;Janeiro&apos;)</formula>
+    <label>Competência vigência</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

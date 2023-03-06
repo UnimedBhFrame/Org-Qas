@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Canal__c</fullName>
+    <externalId>false</externalId>
+    <label>Canal</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>CORRETORA</fullName>
+                <default>false</default>
+                <label>CORRETORA</label>
+            </value>
+            <value>
+                <fullName>EQUIPE CORPORATIVA</fullName>
+                <default>false</default>
+                <label>EQUIPE CORPORATIVA</label>
+            </value>
+            <value>
+                <fullName>EQUIPE PME II</fullName>
+                <default>false</default>
+                <label>EQUIPE PME II</label>
+            </value>
+            <value>
+                <fullName>LOJAS AUTORIZADAS</fullName>
+                <default>false</default>
+                <label>LOJAS AUTORIZADAS</label>
+            </value>
+            <value>
+                <fullName>NOVOS NEGÓCIOS</fullName>
+                <default>false</default>
+                <label>NOVOS NEGÓCIOS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Canais__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF ( INCLUDES (CanalAtribuicao__c, &quot;Call Center&quot; ), &quot;Call Center; &quot;,null ) &amp;  IF ( INCLUDES (CanalAtribuicao__c, &quot;Equipe Corporativa&quot;  ), &quot;Equipe Corporativa; &quot;,null ) &amp; IF ( INCLUDES (CanalAtribuicao__c, &quot;GVEN - Consultores&quot; ), &quot;GVEN - Consultores; &quot;,null ) &amp; IF ( INCLUDES (CanalAtribuicao__c, &quot;Lojas Autorizadas&quot; ), &quot;Lojas Autorizadas; &quot;,null ) &amp; IF ( INCLUDES (CanalAtribuicao__c, &quot;Lojas Próprias&quot; ), &quot;Lojas Próprias; &quot;,null ) &amp; IF ( INCLUDES (CanalAtribuicao__c, &quot;Promotores&quot; ), &quot;Promotores; &quot;,null ) &amp; IF ( INCLUDES (CanalAtribuicao__c, &quot;Novos Negocios&quot; ), &quot;Novos Negocios; &quot;,null )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Canais</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

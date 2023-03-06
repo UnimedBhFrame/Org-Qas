@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DataDeRetorno</fullName>
+    <active>false</active>
+    <errorConditionFormula>((ISPICKVAL( Motivo__c, &apos;Avaliar com decisor&apos;)||
+	ISPICKVAL( Motivo__c, &apos;Pendente de documentação&apos;)||
+	ISPICKVAL( Motivo__c, &apos;Sem condição financeira&apos;)||
+	ISPICKVAL( Motivo__c, &apos;Em cotação de mercado&apos;)||
+	ISPICKVAL( Motivo__c, &apos;Preço superior ao plano atual&apos;))
+&amp;&amp;
+ISBLANK( DataRetorno__c ))
+&amp;&amp; RecordType.Name == &apos;Apresentação de Proposta/Negociação&apos;</errorConditionFormula>
+    <errorDisplayField>DataRetorno__c</errorDisplayField>
+    <errorMessage>Campo Data de Retorno Obrigatório</errorMessage>
+</ValidationRule>

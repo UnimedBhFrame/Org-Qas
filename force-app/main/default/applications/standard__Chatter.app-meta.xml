@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-Chatter</defaultLandingTab>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <tabs>standard-Chatter</tabs>
+    <tabs>standard-File</tabs>
+    <tabs>MobileLanding</tabs>
+    <tabs>DevVarGlobal__c</tabs>
+    <tabs>PeriodoTrabalho__c</tabs>
+    <tabs>PeriodoTrabalhoAtendente__c</tabs>
+    <tabs>FormaDistribuicao__c</tabs>
+    <tabs>Corretora__c</tabs>
+    <tabs>Ferias__c</tabs>
+</CustomApplication>

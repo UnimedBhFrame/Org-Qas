@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValidaMotivoNaoAgendamento</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT($Permission.ByPassValidationRules) &amp;&amp; AND(ISPICKVAL(HouveAgendamento__c, &apos;Não&apos;),ISBLANK(TEXT(MotivoNaoAgendamento__c)))</errorConditionFormula>
+    <errorDisplayField>MotivoNaoAgendamento__c</errorDisplayField>
+    <errorMessage>Campo obrigatório.</errorMessage>
+</ValidationRule>

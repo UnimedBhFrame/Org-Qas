@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tipo__c</fullName>
+    <externalId>false</externalId>
+    <label>Tipo de equipe</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Call center</fullName>
+                <default>false</default>
+                <label>Call center</label>
+            </value>
+            <value>
+                <fullName>Consultores</fullName>
+                <default>false</default>
+                <label>Consultores</label>
+            </value>
+            <value>
+                <fullName>Equipe corporativa</fullName>
+                <default>false</default>
+                <label>Equipe corporativa</label>
+            </value>
+            <value>
+                <fullName>Loja autorizada</fullName>
+                <default>false</default>
+                <label>Loja autorizada</label>
+            </value>
+            <value>
+                <fullName>Loja própria</fullName>
+                <default>false</default>
+                <label>Loja própria</label>
+            </value>
+            <value>
+                <fullName>Promotores</fullName>
+                <default>false</default>
+                <label>Promotores</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

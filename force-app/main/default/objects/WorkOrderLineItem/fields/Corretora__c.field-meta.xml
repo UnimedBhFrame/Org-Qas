@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Corretora__c</fullName>
+    <externalId>false</externalId>
+    <label>Intermediadora</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>3C CORRETORA DE SEGUROS LTDA ME</fullName>
+                <default>false</default>
+                <label>3C CORRETORA DE SEGUROS LTDA ME</label>
+            </value>
+            <value>
+                <fullName>A &amp; C NUNES CORRETORA DE SEGUROS LTDA</fullName>
+                <default>false</default>
+                <label>A &amp; C NUNES CORRETORA DE SEGUROS LTDA</label>
+            </value>
+            <value>
+                <fullName>A.R.G - MULTIPLA CORRETORA E ADMINISTRADORA DE SEGUROS LTDA AAGS CORRETORA DE SEGUROS LTDA - ME</fullName>
+                <default>false</default>
+                <label>A.R.G - MULTIPLA CORRETORA E ADMINISTRADORA DE SEGUROS LTDA AAGS CORRETORA DE SEGUROS LTDA - ME</label>
+            </value>
+            <value>
+                <fullName>ABNARA CORRETORA DE SEGUROS LTDA</fullName>
+                <default>false</default>
+                <label>ABNARA CORRETORA DE SEGUROS LTDA</label>
+            </value>
+            <value>
+                <fullName>ADMIRAL CORRETORA E ADMINISTRADORA DE SEGUROS LTDA</fullName>
+                <default>false</default>
+                <label>ADMIRAL CORRETORA E ADMINISTRADORA DE SEGUROS LTDA</label>
+            </value>
+            <value>
+                <fullName>ADMIX - ADMINISTRACAO, CONSULTORIA</fullName>
+                <default>false</default>
+                <label>ADMIX - ADMINISTRACAO, CONSULTORIA</label>
+            </value>
+            <value>
+                <fullName>PARTICIPACOES E CORRETORA DE SEGUROS DE VIDAS LTDA</fullName>
+                <default>false</default>
+                <label>PARTICIPACOES E CORRETORA DE SEGUROS DE VIDAS LTDA</label>
+            </value>
+            <value>
+                <fullName>ALLCARE BENEFICIOS CORRETORA DE SEGUROS SAO PAULO LTDA</fullName>
+                <default>false</default>
+                <label>ALLCARE BENEFICIOS CORRETORA DE SEGUROS SAO PAULO LTDA</label>
+            </value>
+            <value>
+                <fullName>ALV ADMINISTRADORA E CORRETORA DE SEGUROS LTDA ME,</fullName>
+                <default>false</default>
+                <label>ALV ADMINISTRADORA E CORRETORA DE SEGUROS LTDA ME,</label>
+            </value>
+            <value>
+                <fullName>AMMA &amp; TORRES ADMINISTRADORA E CORRETORA DE SEGUROS EIRELI</fullName>
+                <default>false</default>
+                <label>AMMA &amp; TORRES ADMINISTRADORA E CORRETORA DE SEGUROS EIRELI</label>
+            </value>
+            <value>
+                <fullName>ME</fullName>
+                <default>false</default>
+                <label>ME</label>
+            </value>
+            <value>
+                <fullName>AMPLA CONSULTORIA E CORRETORA DE SEGUROS LTDA</fullName>
+                <default>false</default>
+                <label>AMPLA CONSULTORIA E CORRETORA DE SEGUROS LTDA</label>
+            </value>
+            <value>
+                <fullName>AON HOLDINGS CORRETORES DE SEGUROS LTDA - FILIAL</fullName>
+                <default>false</default>
+                <label>AON HOLDINGS CORRETORES DE SEGUROS LTDA - FILIAL</label>
+            </value>
+            <value>
+                <fullName>AON HOLDINGS CORRETORES DE SEGUROS LTDA - MATRIZ</fullName>
+                <default>false</default>
+                <label>AON HOLDINGS CORRETORES DE SEGUROS LTDA - MATRIZ</label>
+            </value>
+            <value>
+                <fullName>ASPEN CORRETORA DE SEGUROS LTDA - ME</fullName>
+                <default>false</default>
+                <label>ASPEN CORRETORA DE SEGUROS LTDA - ME</label>
+            </value>
+            <value>
+                <fullName>ASSCONTAS ASSOCIACAO DOS SERVIDORES TRIBUNAL DE CONTAS DO ESTADO DE MINAS GERAIS</fullName>
+                <default>false</default>
+                <label>ASSCONTAS ASSOCIACAO DOS SERVIDORES TRIBUNAL DE CONTAS DO ESTADO DE MINAS GERAIS</label>
+            </value>
+            <value>
+                <fullName>ASSOC DOS SERVID MUNICIPAIS DA PREFEIT DE B HORIZONTE</fullName>
+                <default>false</default>
+                <label>ASSOC DOS SERVID MUNICIPAIS DA PREFEIT DE B HORIZONTE</label>
+            </value>
+            <value>
+                <fullName>ASSOCIACAO COMERCIAL E EMPRESARIAL DE MINAS - ACMINAS</fullName>
+                <default>false</default>
+                <label>ASSOCIACAO COMERCIAL E EMPRESARIAL DE MINAS - ACMINAS</label>
+            </value>
+            <value>
+                <fullName>ASSOCIACAO DE ASSISTENCIA AOS SERVIDORES DO CEFET MG ASCEFET MG</fullName>
+                <default>false</default>
+                <label>ASSOCIACAO DE ASSISTENCIA AOS SERVIDORES DO CEFET MG ASCEFET MG</label>
+            </value>
+            <value>
+                <fullName>ASSOCIACAO DOS EMPREGADOS DA COPASA DE SUAS SUBSIDIARIAS E PATROCINADAS AECO</fullName>
+                <default>false</default>
+                <label>ASSOCIACAO DOS EMPREGADOS DA COPASA DE SUAS SUBSIDIARIAS E PATROCINADAS AECO</label>
+            </value>
+            <value>
+                <fullName>ASSOCIACAO DOS SERV PUBLICOS MUNICIPAIS DE SABARA</fullName>
+                <default>false</default>
+                <label>ASSOCIACAO DOS SERV PUBLICOS MUNICIPAIS DE SABARA</label>
+            </value>
+            <value>
+                <fullName>ASSOCIACAO DOS SERVIDORES DA POLICIA FEDERAL DE BELO HORIZONTE MG ANSEF</fullName>
+                <default>false</default>
+                <label>ASSOCIACAO DOS SERVIDORES DA POLICIA FEDERAL DE BELO HORIZONTE MG ANSEF</label>
+            </value>
+            <value>
+                <fullName>ASSOCIACAO DOS SERVIDORES MUNICIPAIS DE BETIM ASMUBE</fullName>
+                <default>false</default>
+                <label>ASSOCIACAO DOS SERVIDORES MUNICIPAIS DE BETIM ASMUBE</label>
+            </value>
+            <value>
+                <fullName>ASSOCIACAO DOS SERVIDORES MUNICIPAIS DE VESPASIANO</fullName>
+                <default>false</default>
+                <label>ASSOCIACAO DOS SERVIDORES MUNICIPAIS DE VESPASIANO</label>
+            </value>
+            <value>
+                <fullName>ASSOCIACAO MEDICA DE MINAS GERAIS</fullName>
+                <default>false</default>
+                <label>ASSOCIACAO MEDICA DE MINAS GERAIS</label>
+            </value>
+            <value>
+                <fullName>ASSOCIACAO NACIONAL DAS EMPRESAS PROJETISTAS E PREST DE SERVICOS PARA AREA DE ENG E CONGENERES</fullName>
+                <default>false</default>
+                <label>ASSOCIACAO NACIONAL DAS EMPRESAS PROJETISTAS E PREST DE SERVICOS PARA AREA DE ENG E CONGENERES</label>
+            </value>
+            <value>
+                <fullName>ASSOCIACAO NACIONAL DOS SERVIDORES PUBLICOS DA FEDERACAO</fullName>
+                <default>false</default>
+                <label>ASSOCIACAO NACIONAL DOS SERVIDORES PUBLICOS DA FEDERACAO</label>
+            </value>
+            <value>
+                <fullName>ASTRUS ADMINISTRADORA E CORRETORA DE SEGUROS SAUDE</fullName>
+                <default>false</default>
+                <label>ASTRUS ADMINISTRADORA E CORRETORA DE SEGUROS SAUDE</label>
+            </value>
+            <value>
+                <fullName>VIDA CAPITALIZACAO E PREVIDENCIA PRIVADA LTDA</fullName>
+                <default>false</default>
+                <label>VIDA CAPITALIZACAO E PREVIDENCIA PRIVADA LTDA</label>
+            </value>
+            <value>
+                <fullName>BEM BENEFICIOS ASSESSORIA EM BENEFICIOS LTDA</fullName>
+                <default>false</default>
+                <label>BEM BENEFICIOS ASSESSORIA EM BENEFICIOS LTDA</label>
+            </value>
+            <value>
+                <fullName>BENEFITS CONSULTING LTDA</fullName>
+                <default>false</default>
+                <label>BENEFITS CONSULTING LTDA</label>
+            </value>
+            <value>
+                <fullName>BENEFITS SOLUCOES EM SEGUROS LTDA - ME</fullName>
+                <default>false</default>
+                <label>BENEFITS SOLUCOES EM SEGUROS LTDA - ME</label>
+            </value>
+            <value>
+                <fullName>BENIGNA CORRETORA DE SEGUROS LTDA - ME</fullName>
+                <default>false</default>
+                <label>BENIGNA CORRETORA DE SEGUROS LTDA - ME</label>
+            </value>
+            <value>
+                <fullName>BENS CONSULTORIA E CORRETORA DE SEGUROS LTDA</fullName>
+                <default>false</default>
+                <label>BENS CONSULTORIA E CORRETORA DE SEGUROS LTDA</label>
+            </value>
+            <value>
+                <fullName>BHMINAS ADMINISTRACAO E CORRETAGEM DE SEGUROS LTDA</fullName>
+                <default>false</default>
+                <label>BHMINAS ADMINISTRACAO E CORRETAGEM DE SEGUROS LTDA</label>
+            </value>
+            <value>
+                <fullName>BR INSURANCE CORRETORA DE SEGUROS S.A.</fullName>
+                <default>false</default>
+                <label>BR INSURANCE CORRETORA DE SEGUROS S.A.</label>
+            </value>
+            <value>
+                <fullName>CAIXA DE ASSISTENCIA DOS ADVOGADOS DE MG</fullName>
+                <default>false</default>
+                <label>CAIXA DE ASSISTENCIA DOS ADVOGADOS DE MG</label>
+            </value>
+            <value>
+                <fullName>CIA DO SEGURO CORRETORA DE SEGUROS LTDA</fullName>
+                <default>false</default>
+                <label>CIA DO SEGURO CORRETORA DE SEGUROS LTDA</label>
+            </value>
+            <value>
+                <fullName>CLEMENTINO ADMINISTRADORA E CORRETORA DE SEGUROS DE VIDA LTD</fullName>
+                <default>false</default>
+                <label>CLEMENTINO ADMINISTRADORA E CORRETORA DE SEGUROS DE VIDA LTD</label>
+            </value>
+            <value>
+                <fullName>CLUBE DE BENEFICIOS PARA COOPERATIVAS ASSOCIACOES CONSELHOS SINDICATOS E SEGUROS CBCACSS</fullName>
+                <default>false</default>
+                <label>CLUBE DE BENEFICIOS PARA COOPERATIVAS ASSOCIACOES CONSELHOS SINDICATOS E SEGUROS CBCACSS</label>
+            </value>
+            <value>
+                <fullName>COMPACTA BENEFICIOS CORRETORA DE SEGUROS SAUDE LTDA - ME</fullName>
+                <default>false</default>
+                <label>COMPACTA BENEFICIOS CORRETORA DE SEGUROS SAUDE LTDA - ME</label>
+            </value>
+            <value>
+                <fullName>CONFIANCE LIFE CORRETORA DE SEGUROS</fullName>
+                <default>false</default>
+                <label>CONFIANCE LIFE CORRETORA DE SEGUROS</label>
+            </value>
+            <value>
+                <fullName>PREVIDENCIA E PLANOS DE SAUDE EIRELI</fullName>
+                <default>false</default>
+                <label>PREVIDENCIA E PLANOS DE SAUDE EIRELI</label>
+            </value>
+            <value>
+                <fullName>CONVICTOS CORRETORA E CONSULTORIA LTDA - ME</fullName>
+                <default>false</default>
+                <label>CONVICTOS CORRETORA E CONSULTORIA LTDA - ME</label>
+            </value>
+            <value>
+                <fullName>DOR CONSULTORIA EM CORRETAGEM DE SEGUROS E BENEFICIOS LTDA</fullName>
+                <default>false</default>
+                <label>DOR CONSULTORIA EM CORRETAGEM DE SEGUROS E BENEFICIOS LTDA</label>
+            </value>
+            <value>
+                <fullName>DUCAIS - CORRETORA DE SEGUROS LTDA</fullName>
+                <default>false</default>
+                <label>DUCAIS - CORRETORA DE SEGUROS LTDA</label>
+            </value>
+            <value>
+                <fullName>DUOBENS CONSULTORIA E CORRETORA DE SEGUROS LTDA</fullName>
+                <default>false</default>
+                <label>DUOBENS CONSULTORIA E CORRETORA DE SEGUROS LTDA</label>
+            </value>
+            <value>
+                <fullName>EXCLUSIVE CONSULTORIA E CORRETAGEM DE SEGUROS LTDA FEDERACAO DAS ASSOCIACOES COMERCIAIS E EMPRESARIAIS DO ESTADO DE MINAS GERAIS</fullName>
+                <default>false</default>
+                <label>EXCLUSIVE CONSULTORIA E CORRETAGEM DE SEGUROS LTDA FEDERACAO DAS ASSOCIACOES COMERCIAIS E EMPRESARIAIS DO ESTADO DE MINAS GERAIS</label>
+            </value>
+            <value>
+                <fullName>FEDERACAO DO COMERCIO DE BENS</fullName>
+                <default>false</default>
+                <label>FEDERACAO DO COMERCIO DE BENS</label>
+            </value>
+            <value>
+                <fullName>SERVICOS E TURISMO DO ESTADO DE MINAS GERAIS</fullName>
+                <default>false</default>
+                <label>SERVICOS E TURISMO DO ESTADO DE MINAS GERAIS</label>
+            </value>
+            <value>
+                <fullName>FEDERACAO DOS CONTABILISTAS DO ESTADO DE MINAS GERAIS</fullName>
+                <default>false</default>
+                <label>FEDERACAO DOS CONTABILISTAS DO ESTADO DE MINAS GERAIS</label>
+            </value>
+            <value>
+                <fullName>FIAT CHRYSLER RIMACO BRASIL CORRETAGENS DE SEGUROS LTDA</fullName>
+                <default>false</default>
+                <label>FIAT CHRYSLER RIMACO BRASIL CORRETAGENS DE SEGUROS LTDA</label>
+            </value>
+            <value>
+                <fullName>FORT BEL ADMINISTRADORA E CORRETORA DE SEGUROS DE VIDA LTDA</fullName>
+                <default>false</default>
+                <label>FORT BEL ADMINISTRADORA E CORRETORA DE SEGUROS DE VIDA LTDA</label>
+            </value>
+            <value>
+                <fullName>FORTIFY ADMINISTRACAO E CORRETAGEM DE SEGUROS LTDA</fullName>
+                <default>false</default>
+                <label>FORTIFY ADMINISTRACAO E CORRETAGEM DE SEGUROS LTDA</label>
+            </value>
+            <value>
+                <fullName>FORTS ADMINISTRACAO E CORRETAGEM DE SEGUROS LTDA - ME</fullName>
+                <default>false</default>
+                <label>FORTS ADMINISTRACAO E CORRETAGEM DE SEGUROS LTDA - ME</label>
+            </value>
+            <value>
+                <fullName>GA CONSULTORIA</fullName>
+                <default>false</default>
+                <label>GA CONSULTORIA</label>
+            </value>
+            <value>
+                <fullName>ADMINISTRACAO E SERVICOS LTDA</fullName>
+                <default>false</default>
+                <label>ADMINISTRACAO E SERVICOS LTDA</label>
+            </value>
+            <value>
+                <fullName>GABRIEL TEIXEIRA REZENDE MATOS VERSIANI CORRETAGEM E SEGUROS</fullName>
+                <default>false</default>
+                <label>GABRIEL TEIXEIRA REZENDE MATOS VERSIANI CORRETAGEM E SEGUROS</label>
+            </value>
+            <value>
+                <fullName>GERMANICA CORRETORA DE SEGUROS LTDA</fullName>
+                <default>false</default>
+                <label>GERMANICA CORRETORA DE SEGUROS LTDA</label>
+            </value>
+            <value>
+                <fullName>GRUPO SIMETRIA REPRESENTACOES LTDA - ME</fullName>
+                <default>false</default>
+                <label>GRUPO SIMETRIA REPRESENTACOES LTDA - ME</label>
+            </value>
+            <value>
+                <fullName>GUEDES E CONFIANZA CORRETORA DE SEGUROS LTDA</fullName>
+                <default>false</default>
+                <label>GUEDES E CONFIANZA CORRETORA DE SEGUROS LTDA</label>
+            </value>
+            <value>
+                <fullName>HARMONIA CORRETORA DE SEGUROS S.A</fullName>
+                <default>false</default>
+                <label>HARMONIA CORRETORA DE SEGUROS S.A</label>
+            </value>
+            <value>
+                <fullName>HR. ADMINISTRADORA E CORRETORA DE SEGUROS LTDA. - ME</fullName>
+                <default>false</default>
+                <label>HR. ADMINISTRADORA E CORRETORA DE SEGUROS LTDA. - ME</label>
+            </value>
+            <value>
+                <fullName>HUMANITTARE CONSULTORIA E CDORRETORA DE SEGUROS EIRELI</fullName>
+                <default>false</default>
+                <label>HUMANITTARE CONSULTORIA E CDORRETORA DE SEGUROS EIRELI</label>
+            </value>
+            <value>
+                <fullName>IBBCA 2008 CORRETORA DE SEGUROS LTDA - ME</fullName>
+                <default>false</default>
+                <label>IBBCA 2008 CORRETORA DE SEGUROS LTDA - ME</label>
+            </value>
+            <value>
+                <fullName>INTERMEDIUM SAUDE LTDA</fullName>
+                <default>false</default>
+                <label>INTERMEDIUM SAUDE LTDA</label>
+            </value>
+            <value>
+                <fullName>INTERMEZZO ADMINISTRADORA E CORRETORA DE SEGUROS LTDA EPP</fullName>
+                <default>false</default>
+                <label>INTERMEZZO ADMINISTRADORA E CORRETORA DE SEGUROS LTDA EPP</label>
+            </value>
+            <value>
+                <fullName>INTERPARS CONSULTORIA ADMINISTRACAO E CORRETAGEM DE SEGUROS LTDA ME</fullName>
+                <default>false</default>
+                <label>INTERPARS CONSULTORIA ADMINISTRACAO E CORRETAGEM DE SEGUROS LTDA ME</label>
+            </value>
+            <value>
+                <fullName>ITSSEG CORRETORA DE SEGUROS S.A.</fullName>
+                <default>false</default>
+                <label>ITSSEG CORRETORA DE SEGUROS S.A.</label>
+            </value>
+            <value>
+                <fullName>JLT SCK CORRETORA E ADMINISTRADORA DE SEGUROS LTDA</fullName>
+                <default>false</default>
+                <label>JLT SCK CORRETORA E ADMINISTRADORA DE SEGUROS LTDA</label>
+            </value>
+            <value>
+                <fullName>LAZAM-MDS CORRETORA E ADMINISTRADORA DE SEGUROS S.A</fullName>
+                <default>false</default>
+                <label>LAZAM-MDS CORRETORA E ADMINISTRADORA DE SEGUROS S.A</label>
+            </value>
+            <value>
+                <fullName>LOCKTON BRASIL CONSULTORIA E CORRETORA DE SEGUROS LTDA</fullName>
+                <default>false</default>
+                <label>LOCKTON BRASIL CONSULTORIA E CORRETORA DE SEGUROS LTDA</label>
+            </value>
+            <value>
+                <fullName>LOGOS E CARVALHO CORRETORA E CONSULTORIA EM SEGUROS LTDA - ME</fullName>
+                <default>false</default>
+                <label>LOGOS E CARVALHO CORRETORA E CONSULTORIA EM SEGUROS LTDA - ME</label>
+            </value>
+            <value>
+                <fullName>LS ADMINISTRACAO E CORRETAGEM DE SEGUROS S/C LTDA ME</fullName>
+                <default>false</default>
+                <label>LS ADMINISTRACAO E CORRETAGEM DE SEGUROS S/C LTDA ME</label>
+            </value>
+            <value>
+                <fullName>LUDI CORDEIRO CONSULTORIA E CORRETORA DE SEGUROS LTDA</fullName>
+                <default>false</default>
+                <label>LUDI CORDEIRO CONSULTORIA E CORRETORA DE SEGUROS LTDA</label>
+            </value>
+            <value>
+                <fullName>LUMA CORRETORA DE SEGUROS LTDA</fullName>
+                <default>false</default>
+                <label>LUMA CORRETORA DE SEGUROS LTDA</label>
+            </value>
+            <value>
+                <fullName>MANZALLI ADMINISTRADORA E CORRETORA DE SEGUROS LTDA</fullName>
+                <default>false</default>
+                <label>MANZALLI ADMINISTRADORA E CORRETORA DE SEGUROS LTDA</label>
+            </value>
+            <value>
+                <fullName>MARSH CORRETORA DE SEGUROS LTDA</fullName>
+                <default>false</default>
+                <label>MARSH CORRETORA DE SEGUROS LTDA</label>
+            </value>
+            <value>
+                <fullName>MARSH CORRETORA DE SEGUROS LTDA - 61.038.592/0008-00 FILIAL</fullName>
+                <default>false</default>
+                <label>MARSH CORRETORA DE SEGUROS LTDA - 61.038.592/0008-00 FILIAL</label>
+            </value>
+            <value>
+                <fullName>MAVC - ADMINISTRACAO CONSULTORIA E CORRETAGEM DE SEGUROS LTDA</fullName>
+                <default>false</default>
+                <label>MAVC - ADMINISTRACAO CONSULTORIA E CORRETAGEM DE SEGUROS LTDA</label>
+            </value>
+            <value>
+                <fullName>MBS PARTNERS CORRETORA DE SEGUROS E CONSULTORIA LTDA</fullName>
+                <default>false</default>
+                <label>MBS PARTNERS CORRETORA DE SEGUROS E CONSULTORIA LTDA</label>
+            </value>
+            <value>
+                <fullName>MENDES GOLDMAN CONSULTORIA EM BENEFICIOS COORPORATIVOS LTDA</fullName>
+                <default>false</default>
+                <label>MENDES GOLDMAN CONSULTORIA EM BENEFICIOS COORPORATIVOS LTDA</label>
+            </value>
+            <value>
+                <fullName>MERCATO ADMINISTRADORA E CORRETORA DE SEGUROS LTDA - EPP</fullName>
+                <default>false</default>
+                <label>MERCATO ADMINISTRADORA E CORRETORA DE SEGUROS LTDA - EPP</label>
+            </value>
+            <value>
+                <fullName>MINAS TENIS CLUBE</fullName>
+                <default>false</default>
+                <label>MINAS TENIS CLUBE</label>
+            </value>
+            <value>
+                <fullName>MINAS TENIS NAUTICO CLUBE</fullName>
+                <default>false</default>
+                <label>MINAS TENIS NAUTICO CLUBE</label>
+            </value>
+            <value>
+                <fullName>MONDIAL TOTAL CORRETORA DE SEGUROS - EIRELI - EPP</fullName>
+                <default>false</default>
+                <label>MONDIAL TOTAL CORRETORA DE SEGUROS - EIRELI - EPP</label>
+            </value>
+            <value>
+                <fullName>MORE SOLUTIONS CORRETORA DE SEGUROS E CONSULTORIA LTDA EPP</fullName>
+                <default>false</default>
+                <label>MORE SOLUTIONS CORRETORA DE SEGUROS E CONSULTORIA LTDA EPP</label>
+            </value>
+            <value>
+                <fullName>MULTISEG CORRETORA DE SEGUROS LTDA</fullName>
+                <default>false</default>
+                <label>MULTISEG CORRETORA DE SEGUROS LTDA</label>
+            </value>
+            <value>
+                <fullName>NEW CONSULTORIA E REPRESENTACAO LTDA - ME</fullName>
+                <default>false</default>
+                <label>NEW CONSULTORIA E REPRESENTACAO LTDA - ME</label>
+            </value>
+            <value>
+                <fullName>NOVALIANCA CORRETORA DE SEGUROS LTDA</fullName>
+                <default>false</default>
+                <label>NOVALIANCA CORRETORA DE SEGUROS LTDA</label>
+            </value>
+            <value>
+                <fullName>OPUS CORRETORA</fullName>
+                <default>false</default>
+                <label>OPUS CORRETORA</label>
+            </value>
+            <value>
+                <fullName>ADMINISTRADORA E CONSULTORIA DE SEGUROS LTDA</fullName>
+                <default>false</default>
+                <label>ADMINISTRADORA E CONSULTORIA DE SEGUROS LTDA</label>
+            </value>
+            <value>
+                <fullName>PRO BONO CORRETORA DE SEGUROS LTDA - ME</fullName>
+                <default>false</default>
+                <label>PRO BONO CORRETORA DE SEGUROS LTDA - ME</label>
+            </value>
+            <value>
+                <fullName>PROMISSOR CORPORATE CORRETORA DE SEGUROS LTDA</fullName>
+                <default>false</default>
+                <label>PROMISSOR CORPORATE CORRETORA DE SEGUROS LTDA</label>
+            </value>
+            <value>
+                <fullName>PUBLIC BROKER DO BRASIL CORRETORA DE SEGUROS LTDA ¿ ME</fullName>
+                <default>false</default>
+                <label>PUBLIC BROKER DO BRASIL CORRETORA DE SEGUROS LTDA ¿ ME</label>
+            </value>
+            <value>
+                <fullName>QUALICORP CORRETORA DE SEGUROS S.A</fullName>
+                <default>false</default>
+                <label>QUALICORP CORRETORA DE SEGUROS S.A</label>
+            </value>
+            <value>
+                <fullName>RCLX CORRETORA DE SEGUROS E PARTICIPACOES LTDA</fullName>
+                <default>false</default>
+                <label>RCLX CORRETORA DE SEGUROS E PARTICIPACOES LTDA</label>
+            </value>
+            <value>
+                <fullName>REAL ADMINISTRADORA E CORRETORA DE SEGUROS LTDA - ME</fullName>
+                <default>false</default>
+                <label>REAL ADMINISTRADORA E CORRETORA DE SEGUROS LTDA - ME</label>
+            </value>
+            <value>
+                <fullName>RELIES CORRETORA DE SEGUROS LTDA</fullName>
+                <default>false</default>
+                <label>RELIES CORRETORA DE SEGUROS LTDA</label>
+            </value>
+            <value>
+                <fullName>RESEDA CORRETORA DE SEGUROS LTDA</fullName>
+                <default>false</default>
+                <label>RESEDA CORRETORA DE SEGUROS LTDA</label>
+            </value>
+            <value>
+                <fullName>ROMILT CORRETORA DE SEGUROS LTDA</fullName>
+                <default>false</default>
+                <label>ROMILT CORRETORA DE SEGUROS LTDA</label>
+            </value>
+            <value>
+                <fullName>SABSEG MINAS CORRETORA DE SEGUROS LTDA</fullName>
+                <default>false</default>
+                <label>SABSEG MINAS CORRETORA DE SEGUROS LTDA</label>
+            </value>
+            <value>
+                <fullName>SAUSEG ADMINISTRADORA E CORRETORA DE SEGUROS DE VIDA E REPRESENTACOES COMERCIAIS LTDA - EPP</fullName>
+                <default>false</default>
+                <label>SAUSEG ADMINISTRADORA E CORRETORA DE SEGUROS DE VIDA E REPRESENTACOES COMERCIAIS LTDA - EPP</label>
+            </value>
+            <value>
+                <fullName>SECULUS DA AMAZONIA INDUSTRIA E COMERCIO S A</fullName>
+                <default>false</default>
+                <label>SECULUS DA AMAZONIA INDUSTRIA E COMERCIO S A</label>
+            </value>
+            <value>
+                <fullName>SIMETRIA CORRETORA DE SEGUROS DE VIDA LTDA - ME</fullName>
+                <default>false</default>
+                <label>SIMETRIA CORRETORA DE SEGUROS DE VIDA LTDA - ME</label>
+            </value>
+            <value>
+                <fullName>SINDICATO DOS DELEGADOS DE POLICIA DO ESTADO DE MG</fullName>
+                <default>false</default>
+                <label>SINDICATO DOS DELEGADOS DE POLICIA DO ESTADO DE MG</label>
+            </value>
+            <value>
+                <fullName>SINDICATO DOS POLICIAIS FEDERAIS EM MINAS GERAIS</fullName>
+                <default>false</default>
+                <label>SINDICATO DOS POLICIAIS FEDERAIS EM MINAS GERAIS</label>
+            </value>
+            <value>
+                <fullName>SINDICATO DOS PROFESSORES DO ESTADO DE MINAS GERAIS</fullName>
+                <default>false</default>
+                <label>SINDICATO DOS PROFESSORES DO ESTADO DE MINAS GERAIS</label>
+            </value>
+            <value>
+                <fullName>SINDICATO DOS SERVIDORES DA POLICIA CIVIL DO ESTADO DE MINAS GERAIS SINDPOL MG</fullName>
+                <default>false</default>
+                <label>SINDICATO DOS SERVIDORES DA POLICIA CIVIL DO ESTADO DE MINAS GERAIS SINDPOL MG</label>
+            </value>
+            <value>
+                <fullName>SINDICATO DOS SERVIDORES DO MINISTERIO PUBLICO DO ESTADO DE MINAS GERAIS</fullName>
+                <default>false</default>
+                <label>SINDICATO DOS SERVIDORES DO MINISTERIO PUBLICO DO ESTADO DE MINAS GERAIS</label>
+            </value>
+            <value>
+                <fullName>SINDICATO DOS TRABALHADORES EM TRANSPORTES RODOVIARIOS DE BETIM E REGIAO</fullName>
+                <default>false</default>
+                <label>SINDICATO DOS TRABALHADORES EM TRANSPORTES RODOVIARIOS DE BETIM E REGIAO</label>
+            </value>
+            <value>
+                <fullName>SUPER POSITIVO ADMINISTRACAO E CORRETAGEM DE SEGUROS LTDA - EPP</fullName>
+                <default>false</default>
+                <label>SUPER POSITIVO ADMINISTRACAO E CORRETAGEM DE SEGUROS LTDA - EPP</label>
+            </value>
+            <value>
+                <fullName>TORRES &amp; ASSOCIADOS CONSULTORES DE BENEFICIOS</fullName>
+                <default>false</default>
+                <label>TORRES &amp; ASSOCIADOS CONSULTORES DE BENEFICIOS</label>
+            </value>
+            <value>
+                <fullName>UP MAIS CORRETORA DE SEGUROS LTDA - ME</fullName>
+                <default>false</default>
+                <label>UP MAIS CORRETORA DE SEGUROS LTDA - ME</label>
+            </value>
+            <value>
+                <fullName>VALEM ADMINISTRADORA DE BENEFICIOS LTDA</fullName>
+                <default>false</default>
+                <label>VALEM ADMINISTRADORA DE BENEFICIOS LTDA</label>
+            </value>
+            <value>
+                <fullName>VALLOR CORRETORA DE SEGUROS E GESTAO DE BENEFICIOS</fullName>
+                <default>false</default>
+                <label>VALLOR CORRETORA DE SEGUROS E GESTAO DE BENEFICIOS</label>
+            </value>
+            <value>
+                <fullName>VERTEX ADMINISTRADORA E CORRETORA DE SEGUROS S.A.</fullName>
+                <default>false</default>
+                <label>VERTEX ADMINISTRADORA E CORRETORA DE SEGUROS S.A.</label>
+            </value>
+            <value>
+                <fullName>VICTOR SOARES ADMINISTRADORA E CORRETORA DE SEGUROS LTDA</fullName>
+                <default>false</default>
+                <label>VICTOR SOARES ADMINISTRADORA E CORRETORA DE SEGUROS LTDA</label>
+            </value>
+            <value>
+                <fullName>VORTICE CONSULTORIA</fullName>
+                <default>false</default>
+                <label>VORTICE CONSULTORIA</label>
+            </value>
+            <value>
+                <fullName>ADMINISTRADORA E CORRETORA DE SEGUROS LTDA</fullName>
+                <default>false</default>
+                <label>ADMINISTRADORA E CORRETORA DE SEGUROS LTDA</label>
+            </value>
+            <value>
+                <fullName>WILLIS CORRETORES DE SEGUROS LTDA</fullName>
+                <default>false</default>
+                <label>WILLIS CORRETORES DE SEGUROS LTDA</label>
+            </value>
+            <value>
+                <fullName>ZETRASOFT LTDA</fullName>
+                <default>false</default>
+                <label>ZETRASOFT LTDA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

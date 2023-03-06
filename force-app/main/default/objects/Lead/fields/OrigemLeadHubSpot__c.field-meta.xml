@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OrigemLeadHubSpot__c</fullName>
+    <description>Forma como o lead teve seu primeiro contato com a Unimed-BH, mas apenas quando a informação vier do HubSpot</description>
+    <externalId>false</externalId>
+    <label>Origem do Lead HubSpot</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ORGANIC_SEARCH</fullName>
+                <default>false</default>
+                <label>Pesquisa orgânica</label>
+            </value>
+            <value>
+                <fullName>PAID_SEARCH</fullName>
+                <default>false</default>
+                <label>Pesquisa paga</label>
+            </value>
+            <value>
+                <fullName>SOCIAL_MEDIA</fullName>
+                <default>false</default>
+                <label>Social Orgânico</label>
+            </value>
+            <value>
+                <fullName>PAID_SOCIAL</fullName>
+                <default>false</default>
+                <label>Social Pago</label>
+            </value>
+            <value>
+                <fullName>OFFLINE</fullName>
+                <default>false</default>
+                <label>Fontes off-line</label>
+            </value>
+            <value>
+                <fullName>DIRECT_TRAFFIC</fullName>
+                <default>false</default>
+                <label>Tráfego direto</label>
+            </value>
+            <value>
+                <fullName>EMAIL_MARKETING</fullName>
+                <default>false</default>
+                <label>E-mail marketing</label>
+            </value>
+            <value>
+                <fullName>REFERRALS</fullName>
+                <default>false</default>
+                <label>Referências</label>
+            </value>
+            <value>
+                <fullName>OTHER_CAMPAIGNS</fullName>
+                <default>false</default>
+                <label>Outras campanhas</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

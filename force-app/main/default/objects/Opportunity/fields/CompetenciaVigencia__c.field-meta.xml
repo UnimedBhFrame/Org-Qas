@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CompetenciaVigencia__c</fullName>
+    <description>A competência de vigência refere-se ao segundo dia do mês até o primeiro dia do mês seguinte.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+				Account.DataVigencia__c &gt;= DATE(YEAR(Account.DataVigencia__c),MONTH(Account.DataVigencia__c),02) &amp;&amp; 
+				Account.DataVigencia__c &lt;= DATE(YEAR(Account.DataVigencia__c),MONTH(Account.DataVigencia__c)+1,01), 
+				DATE(YEAR(Account.DataVigencia__c),MONTH(Account.DataVigencia__c),01),
+				/* Se for o primeiro dia do Ano */
+				IF(
+								Account.DataVigencia__c = DATE(YEAR(Account.DataVigencia__c),01,01), 
+								DATE(YEAR(Account.DataVigencia__c)-1, MONTH(Account.DataVigencia__c)+11,01),
+								/* Se for o primeiro dia de qualquer mês, exceto janeiro */
+								IF(
+												Account.DataVigencia__c = DATE(YEAR(Account.DataVigencia__c),MONTH(Account.DataVigencia__c),01),
+												DATE(YEAR(Account.DataVigencia__c),MONTH(Account.DataVigencia__c)-1,01),null)
+												
+									
+				)
+)
+/*
+Pseudocódigo
+n1 = 02/01/2021 ou 01/01/2021 ou 01/02/2021
+
+n1 &gt;= 02/month/year e n1 &lt;= 01/month+1/year então 01/01/2021, se não,
+n1 = 01/01/year então 01/month+11/year-1, se não,
+n1 = 01/month/year então 01/month-1/year
+*/</formula>
+    <label>Competencia de Vigência_N</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_DataVigencia_Convertido</fullName>
+    <active>true</active>
+    <description>Impede a conversão quando faltar a Data de vigência.</description>
+    <errorConditionFormula>NOT($Permission.ByPassValidationRules) &amp;&amp; (ISBLANK(DataVigencia__c) || (ISBLANK(CPF__c) &amp;&amp; ISBLANK(CNPJ__c))) &amp;&amp; ISPICKVAL(Status, &apos;Convertido&apos;) &amp;&amp; CreatedDate &gt; DATETIMEVALUE(&quot;2021-04-01 17:00:00&quot;)</errorConditionFormula>
+    <errorDisplayField>DataVigencia__c</errorDisplayField>
+    <errorMessage>Data de vigência ou CPF/CNPJ obrigatório para a conversão.</errorMessage>
+</ValidationRule>

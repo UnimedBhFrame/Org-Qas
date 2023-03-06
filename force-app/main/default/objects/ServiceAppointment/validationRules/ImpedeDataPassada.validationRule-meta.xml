@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ImpedeDataPassada</fullName>
+    <active>true</active>
+    <description>Impede que o usuário realize um agendamento com uma data anterior ao dia atual.</description>
+    <errorConditionFormula>AND(EarliestStartTime &lt; NOW()
+,
+ISNEW()
+)</errorConditionFormula>
+    <errorMessage>Data do agendamento não pode ser anterior ao dia de hoje.</errorMessage>
+</ValidationRule>

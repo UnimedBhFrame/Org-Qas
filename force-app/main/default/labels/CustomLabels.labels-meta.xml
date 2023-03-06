@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>ProfileId_AtendenteCallCenter</fullName>
+        <language>pt_BR</language>
+        <protected>true</protected>
+        <shortDescription>ProfileId_AtendenteCallCenter</shortDescription>
+        <value>00e5w000001U1I3AAK</value>
+    </labels>
+    <labels>
+        <fullName>ProfileId_Promotor</fullName>
+        <language>pt_BR</language>
+        <protected>true</protected>
+        <shortDescription>ProfileId_Promotor</shortDescription>
+        <value>00e5w000001U1HPAA0</value>
+    </labels>
+    <labels>
+        <fullName>TimeZone</fullName>
+        <language>pt_BR</language>
+        <protected>false</protected>
+        <shortDescription>TimeZone</shortDescription>
+        <value>3</value>
+    </labels>
+</CustomLabels>

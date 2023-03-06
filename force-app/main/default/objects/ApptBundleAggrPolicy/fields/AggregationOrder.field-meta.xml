@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AggregationOrder</fullName>
+    <inlineHelpText>Defina a ordem para acionar a agregação. Por exemplo, insira 1 para acionar essa política primeiro.</inlineHelpText>
+</CustomField>

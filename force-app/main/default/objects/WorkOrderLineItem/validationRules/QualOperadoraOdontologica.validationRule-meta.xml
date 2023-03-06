@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QualOperadoraOdontologica</fullName>
+    <active>false</active>
+    <errorConditionFormula>((PossuiPlanoOdontologico__c==true)  
+&amp;&amp;
+ISPICKVAL(OperadoraPlanoOdontologico__c, &apos;&apos;))
+&amp;&amp; RecordType.Name == &apos;Apresentação de Proposta/Negociação&apos;</errorConditionFormula>
+    <errorDisplayField>OperadoraPlanoOdontologico__c</errorDisplayField>
+    <errorMessage>Campo operadora plano odontológico Obrigatório</errorMessage>
+</ValidationRule>

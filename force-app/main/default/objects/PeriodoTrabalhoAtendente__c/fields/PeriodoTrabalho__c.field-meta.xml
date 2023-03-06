@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PeriodoTrabalho__c</fullName>
+    <externalId>false</externalId>
+    <label>Período de Trabalho</label>
+    <referenceTo>PeriodoTrabalho__c</referenceTo>
+    <relationshipLabel>Períodos de Trabalho dos Atendentes</relationshipLabel>
+    <relationshipName>PeriodosTrabalhoAtendentes</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

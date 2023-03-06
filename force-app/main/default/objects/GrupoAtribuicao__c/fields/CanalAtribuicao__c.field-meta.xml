@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CanalAtribuicao__c</fullName>
+    <description>Informa o canal dos usuários que poderão receber o registro</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Informa o canal dos usuários que poderão receber o registro</inlineHelpText>
+    <label>Canal de Atribuição</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Canal</valueSetName>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SortFieldName</fullName>
+    <inlineHelpText>Selecione o campo de compromisso de serviço que classifica os membros do pacote.</inlineHelpText>
+</CustomField>

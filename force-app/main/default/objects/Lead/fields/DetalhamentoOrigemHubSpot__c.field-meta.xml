@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DetalhamentoOrigemHubSpot__c</fullName>
+    <description>Detalhamento do campo de origem HubSpot, usado apenas quando a informação vier do HubSpot
+ATENÇÃO!
+ESTE CAMPO NÃO PODE SER ALTERADO SEM PRÉVIA AUTORIZAÇÃO DO MARKETING E VENDAS.</description>
+    <externalId>false</externalId>
+    <label>Detalhamento da Origem HubSpot</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

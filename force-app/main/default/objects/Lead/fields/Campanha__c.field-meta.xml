@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campanha__c</fullName>
+    <description>Campo utilizado pelo Marketing Cloud para definir a campanha vinculadas ao lead</description>
+    <externalId>false</externalId>
+    <label>Campanha</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Mensalidade Grátis</fullName>
+                <default>false</default>
+                <label>Mensalidade Grátis</label>
+            </value>
+            <value>
+                <fullName>Mensalidade Grátis - Individual</fullName>
+                <default>false</default>
+                <label>Mensalidade Grátis - Individual</label>
+            </value>
+            <value>
+                <fullName>Mensalidade Grátis - MEI</fullName>
+                <default>false</default>
+                <label>Mensalidade Grátis - MEI</label>
+            </value>
+            <value>
+                <fullName>Mensalidade Grátis - PME</fullName>
+                <default>false</default>
+                <label>Mensalidade Grátis - PME</label>
+            </value>
+            <value>
+                <fullName>Black November 2021 Individual</fullName>
+                <default>false</default>
+                <label>Black November 2021 Individual</label>
+            </value>
+            <value>
+                <fullName>Black November 2021 MEI</fullName>
+                <default>false</default>
+                <label>Black November 2021 MEI</label>
+            </value>
+            <value>
+                <fullName>Black November 2021 PME</fullName>
+                <default>false</default>
+                <label>Black November 2021 PME</label>
+            </value>
+            <value>
+                <fullName>Leads Perdidos Recuperados - régua de emails</fullName>
+                <default>false</default>
+                <label>Leads Perdidos Recuperados - régua de emails</label>
+            </value>
+            <value>
+                <fullName>E-commerce</fullName>
+                <default>false</default>
+                <label>E-commerce</label>
+            </value>
+            <value>
+                <fullName>Bem Digital</fullName>
+                <default>false</default>
+                <label>Bem Digital</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

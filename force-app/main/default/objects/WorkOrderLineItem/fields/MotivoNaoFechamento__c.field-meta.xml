@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MotivoNaoFechamento__c</fullName>
+    <externalId>false</externalId>
+    <label>Motivo não fechamento</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sem Condições Financeiras</fullName>
+                <default>false</default>
+                <label>Sem Condições Financeiras</label>
+            </value>
+            <value>
+                <fullName>Preço Acima da Concorrência</fullName>
+                <default>false</default>
+                <label>Preço Acima da Concorrência</label>
+            </value>
+            <value>
+                <fullName>Já cliente Unimed Empresarial</fullName>
+                <default>false</default>
+                <label>Já cliente Unimed Empresarial</label>
+            </value>
+            <value>
+                <fullName>Já cliente Unimed Individual</fullName>
+                <default>false</default>
+                <label>Já cliente Unimed Individual</label>
+            </value>
+            <value>
+                <fullName>Deseja Plano Empresaria</fullName>
+                <default>false</default>
+                <label>Deseja Plano Empresaria</label>
+            </value>
+            <value>
+                <fullName>Já Cliente Unimed Adesão</fullName>
+                <default>false</default>
+                <label>Já Cliente Unimed Adesão</label>
+            </value>
+            <value>
+                <fullName>Cliente Unimed Inadimplente</fullName>
+                <default>false</default>
+                <label>Cliente Unimed Inadimplente</label>
+            </value>
+            <value>
+                <fullName>Cliente não concorda com prazos e carências</fullName>
+                <default>false</default>
+                <label>Cliente não concorda com prazos e carências</label>
+            </value>
+            <value>
+                <fullName>Cliente Fora da área de atuação</fullName>
+                <default>false</default>
+                <label>Cliente Fora da área de atuação</label>
+            </value>
+            <value>
+                <fullName>Cliente sem documentação necessária</fullName>
+                <default>false</default>
+                <label>Cliente sem documentação necessária</label>
+            </value>
+            <value>
+                <fullName>Em negociação</fullName>
+                <default>false</default>
+                <label>Em negociação</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DoesAddTravelTime</fullName>
+    <inlineHelpText>Se os compromissos de serviço do membro do pacote não estiverem no mesmo local, adicione tempo de deslocamento entre eles à duração do pacote conforme a ordem de classificação.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

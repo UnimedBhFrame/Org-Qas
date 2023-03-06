@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OpcionaisIncluidos__c</fullName>
+    <externalId>false</externalId>
+    <label>Opcionais incluídos</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Odontológico</fullName>
+                <default>false</default>
+                <label>Odontológico</label>
+            </value>
+            <value>
+                <fullName>Aeromédico</fullName>
+                <default>false</default>
+                <label>Aeromédico</label>
+            </value>
+            <value>
+                <fullName>Odonto+Aero</fullName>
+                <default>false</default>
+                <label>Odonto+Aero</label>
+            </value>
+            <value>
+                <fullName>Proteção Familiar</fullName>
+                <default>false</default>
+                <label>Proteção Familiar</label>
+            </value>
+            <value>
+                <fullName>Odonto+Proteção Familiar</fullName>
+                <default>false</default>
+                <label>Odonto+Proteção Familiar</label>
+            </value>
+            <value>
+                <fullName>Aero+Proteção Familiar</fullName>
+                <default>false</default>
+                <label>Aero+Proteção Familiar</label>
+            </value>
+            <value>
+                <fullName>Odonto+Aero+Proteção Familiar</fullName>
+                <default>false</default>
+                <label>Odonto+Aero+Proteção Familiar</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

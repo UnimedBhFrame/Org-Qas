@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValidaNumerosVida</fullName>
+    <active>true</active>
+    <description>Verifica se os campos NumeroVidas__c e QtdeVidasTransferencia__c não são menores que 1.</description>
+    <errorConditionFormula>AND(NOT($Permission.ByPassValidationRules), NOT(ISBLANK(NumeroVidas__c)) || NOT(ISBLANK(QtdeVidasTransferencia__c)), NumeroVidas__c &lt; 1 || QtdeVidasTransferencia__c &lt; 1)</errorConditionFormula>
+    <errorMessage>Insira números acima de zero nos campos Quantidade de Vidas Novas, caso o lead seja diferente de transferência ou Quantidade de Vidas Transferência caso o lead seja transferência.</errorMessage>
+</ValidationRule>

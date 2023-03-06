@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QuantidadeVidasLojaFisica</fullName>
+    <active>false</active>
+    <errorConditionFormula>(VendaConcluida__c==true
+	&amp;&amp;
+	ISBLANK( NumeroVidas__c ))
+&amp;&amp; RecordType.Name == &apos;Loja Física&apos;</errorConditionFormula>
+    <errorDisplayField>NumeroVidas__c</errorDisplayField>
+    <errorMessage>Campo número de vidas Obrigatório</errorMessage>
+</ValidationRule>

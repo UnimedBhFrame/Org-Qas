@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QuaNumeroDeVidas</fullName>
+    <active>false</active>
+    <errorConditionFormula>((ISPICKVAL( TipoCliente__c, &apos;PJ&apos;)&amp;&amp;
+	(VendaConcluida__c ==true))
+&amp;&amp;
+ISBLANK( NumeroVidas__c))
+&amp;&amp; RecordType.Name == &apos;Apresentação de Proposta/Negociação&apos;</errorConditionFormula>
+    <errorDisplayField>NumeroVidas__c</errorDisplayField>
+    <errorMessage>Campo número de vidas Obrigatório</errorMessage>
+</ValidationRule>

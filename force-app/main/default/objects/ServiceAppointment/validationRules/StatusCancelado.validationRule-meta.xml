@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StatusCancelado</fullName>
+    <active>true</active>
+    <description>Obrigar o preenchimento do Motivo do cancelamento quando o Status for Cancelado</description>
+    <errorConditionFormula>AND(ISPICKVAL(Status, &apos;Canceled&apos;),ISBLANK(TEXT(MotivoCancelamento__c)))</errorConditionFormula>
+    <errorDisplayField>MotivoCancelamento__c</errorDisplayField>
+    <errorMessage>Motivo de cancelamento deve ser preenchido</errorMessage>
+</ValidationRule>

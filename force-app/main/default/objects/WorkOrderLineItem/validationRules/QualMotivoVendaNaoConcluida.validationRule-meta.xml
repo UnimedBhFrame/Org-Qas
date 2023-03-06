@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QualMotivoVendaNaoConcluida</fullName>
+    <active>false</active>
+    <errorConditionFormula>((VendaConcluida__c == false)
+&amp;&amp;
+ISPICKVAL( Motivo__c, &apos;&apos;))
+&amp;&amp; RecordType.Name == &apos;Apresentação de Proposta/Negociação&apos;</errorConditionFormula>
+    <errorDisplayField>Motivo__c</errorDisplayField>
+    <errorMessage>Campo motivo Obrigatório</errorMessage>
+</ValidationRule>

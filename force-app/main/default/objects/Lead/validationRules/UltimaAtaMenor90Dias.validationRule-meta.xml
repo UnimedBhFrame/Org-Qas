@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UltimaAtaMenor90Dias</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT($Permission.ByPassValidationRules) &amp;&amp; AND(ISCHANGED(OwnerId), NOT(ISBLANK(DataUltimaAta__c)),(TODAY() - DataUltimaAta__c) &lt; 90)</errorConditionFormula>
+    <errorDisplayField>OwnerId</errorDisplayField>
+    <errorMessage>Proprietário do Lead não pode ser trocado enquanto a última ata está dentro dos últimos 90 dias.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InformeCNPJDoGrupo</fullName>
+    <active>false</active>
+    <errorConditionFormula>(EmpresaPertenceAlgumGrupo__c == true
+&amp;&amp;
+ISBLANK( CNPJGrupo__c ))  
+&amp;&amp; RecordType.Name == &apos;Prospecção Empresarial&apos;</errorConditionFormula>
+    <errorDisplayField>CNPJGrupo__c</errorDisplayField>
+    <errorMessage>Campo CNPJ Obrigatório</errorMessage>
+</ValidationRule>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NumeroDeVidasMaiorQueTrinta</fullName>
+    <active>false</active>
+    <description>Não permite trocar de proprietário se o numero de vidas for maior que 30</description>
+    <errorConditionFormula>AND(NumeroVidas__c&gt;30, ISCHANGED(OwnerId), NOT($Permission.TrocaProprietarioLead), NOT(LEFT(PRIORVALUE(OwnerId), 3) = &quot;00G&quot;))</errorConditionFormula>
+    <errorMessage>Proprietário do Lead não pode ser alterado caso número de vidas seja maior que 30.</errorMessage>
+</ValidationRule>

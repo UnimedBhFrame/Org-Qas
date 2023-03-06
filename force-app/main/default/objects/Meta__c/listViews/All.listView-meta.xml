@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Usuario__c</columns>
+    <columns>Competencia__c</columns>
+    <columns>Assistencial__c</columns>
+    <columns>Aeromedico__c</columns>
+    <columns>Odontologico__c</columns>
+    <columns>Cargo__c</columns>
+    <columns>Loja__c</columns>
+    <columns>Canal__c</columns>
+    <columns>MetaDesafio__c</columns>
+    <columns>Coordenacao__c</columns>
+    <columns>Supervisao__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>DiasTrabalhados__c</columns>
+    <columns>PCompetencia__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Canal__c</field>
+        <operation>equals</operation>
+        <value>EQUIPE CORPORATIVA</value>
+    </filters>
+    <filters>
+        <field>Cargo__c</field>
+        <operation>equals</operation>
+        <value>COORDENADOR DE VENDAS</value>
+    </filters>
+    <filters>
+        <field>MetaDesafio__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>Tudo</label>
+</ListView>

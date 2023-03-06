@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pepita__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Pepita são empresas mais estratégicas que envolvem a superintendência. Geralmente são empresas com mais de 300 vidas, mas existe outros critérios para definir se uma empresa tem o atributo &quot;Pepita&quot;, sendo estes critérios definidos pelo comercial.</description>
+    <externalId>false</externalId>
+    <label>Pepita</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

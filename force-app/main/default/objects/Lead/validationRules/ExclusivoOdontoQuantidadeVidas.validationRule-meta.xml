@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ExclusivoOdontoQuantidadeVidas</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT($Permission.ByPassValidationRules) &amp;&amp; ISBLANK(QtdeOdontoExclusivoOdonto__c)  &amp;&amp; TEXT(ExclusivoOdontoConverteu__c) = &apos;Sim&apos;</errorConditionFormula>
+    <errorDisplayField>QtdeOdontoExclusivoOdonto__c</errorDisplayField>
+    <errorMessage>Preencha a quantidade de vidas no exclusivo odonto</errorMessage>
+</ValidationRule>

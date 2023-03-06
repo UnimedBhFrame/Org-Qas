@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SEMANA_DA_COMPET_NCIA_2__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(1,
+IF(( DataAtendimento__c &gt;= DATEVALUE(&apos;2020-12-17&apos;) &amp;&amp; DataAtendimento__c &lt;= DATEVALUE(&apos;2020-12-23&apos;)) ,1,0),&apos;1ª SEMANA&apos;,
+IF(( DataAtendimento__c &gt;= DATEVALUE(&apos;2020-12-24&apos;) &amp;&amp; DataAtendimento__c &lt;= DATEVALUE(&apos;2020-12-30&apos;)) ,1,0),&apos;2ª SEMANA&apos;,
+IF(( DataAtendimento__c &gt;= DATEVALUE(&apos;2020-12-31&apos;) &amp;&amp; DataAtendimento__c &lt;= DATEVALUE(&apos;2021-01-06&apos;)) ,1,0),&apos;3ª SEMANA&apos;,
+IF(( DataAtendimento__c &gt;= DATEVALUE(&apos;2021-01-07&apos;) &amp;&amp; DataAtendimento__c &lt;= DATEVALUE(&apos;2021-01-13&apos;)) ,1,0),&apos;4ª SEMANA&apos;,
+IF(( DataAtendimento__c &gt;= DATEVALUE(&apos;2021-01-14&apos;) &amp;&amp; DataAtendimento__c &lt;= DATEVALUE(&apos;2021-01-20&apos;)) ,1,0),&apos;5ª SEMANA&apos;,
+IF(( DataAtendimento__c &gt;= DATEVALUE(&apos;2021-01-21&apos;) &amp;&amp; DataAtendimento__c &lt;= DATEVALUE(&apos;2021-01-27&apos;)) ,1,0),&apos;1ª SEMANA&apos;,
+IF(( DataAtendimento__c &gt;= DATEVALUE(&apos;2021-01-28&apos;) &amp;&amp; DataAtendimento__c &lt;= DATEVALUE(&apos;2021-02-03&apos;)) ,1,0),&apos;2ª SEMANA&apos;,
+IF(( DataAtendimento__c &gt;= DATEVALUE(&apos;2021-02-04&apos;) &amp;&amp; DataAtendimento__c &lt;= DATEVALUE(&apos;2021-02-10&apos;)) ,1,0),&apos;3ª SEMANA&apos;,
+IF(( DataAtendimento__c &gt;= DATEVALUE(&apos;2021-02-11&apos;) &amp;&amp; DataAtendimento__c &lt;= DATEVALUE(&apos;2021-02-17&apos;)) ,1,0),&apos;4ª SEMANA&apos;,
+IF(( DataAtendimento__c &gt;= DATEVALUE(&apos;2021-02-18&apos;) &amp;&amp; DataAtendimento__c &lt;= DATEVALUE(&apos;2021-02-24&apos;)) ,1,0),&apos;1ª SEMANA&apos;,
+IF(( DataAtendimento__c &gt;= DATEVALUE(&apos;2021-02-25&apos;) &amp;&amp; DataAtendimento__c &lt;= DATEVALUE(&apos;2021-03-03&apos;)) ,1,0),&apos;2ª SEMANA&apos;,
+IF(( DataAtendimento__c &gt;= DATEVALUE(&apos;2021-03-04&apos;) &amp;&amp; DataAtendimento__c &lt;= DATEVALUE(&apos;2021-03-10&apos;)) ,1,0),&apos;3ª SEMANA&apos;,
+IF(( DataAtendimento__c &gt;= DATEVALUE(&apos;2021-03-11&apos;) &amp;&amp; DataAtendimento__c &lt;= DATEVALUE(&apos;2021-03-17&apos;)) ,1,0),&apos;4ª SEMANA&apos;,
+IF(( DataAtendimento__c &gt;= DATEVALUE(&apos;2021-03-18&apos;) &amp;&amp; DataAtendimento__c &lt;= DATEVALUE(&apos;2021-03-22&apos;)) ,1,0),&apos;5ª SEMANA&apos;,
+IF(( DataAtendimento__c &gt;= DATEVALUE(&apos;2021-03-23&apos;) &amp;&amp; DataAtendimento__c &lt;= DATEVALUE(&apos;2021-03-29&apos;)) ,1,0),&apos;1ª SEMANA&apos;,
+IF(( DataAtendimento__c &gt;= DATEVALUE(&apos;2021-03-30&apos;) &amp;&amp; DataAtendimento__c &lt;= DATEVALUE(&apos;2021-04-05&apos;)) ,1,0),&apos;2ª SEMANA&apos;,
+
+&apos; &apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>SEMANA DA COMPETÊNCIA</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DetalhamentoOrigem__c</fullName>
+    <description>Detalhamento do campo de origem do lead</description>
+    <externalId>false</externalId>
+    <label>Detalhamento da Origem</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Lista Neoway</fullName>
+                <default>false</default>
+                <label>Lista Neoway</label>
+            </value>
+            <value>
+                <fullName>Lead Scoring</fullName>
+                <default>false</default>
+                <label>Lead Scoring</label>
+            </value>
+            <value>
+                <fullName>Página - Planos</fullName>
+                <default>false</default>
+                <label>Página - Planos</label>
+            </value>
+            <value>
+                <fullName>Página - Bem Digital</fullName>
+                <default>false</default>
+                <label>Página - Bem Digital</label>
+            </value>
+            <value>
+                <fullName>E-commerce</fullName>
+                <default>false</default>
+                <label>E-commerce</label>
+            </value>
+            <value>
+                <fullName>Campanha - Odonto Exclusivo</fullName>
+                <default>false</default>
+                <label>Campanha - Odonto Exclusivo</label>
+            </value>
+            <value>
+                <fullName>Campanha - Mude Para Unimed-BH</fullName>
+                <default>false</default>
+                <label>Campanha - Mude Para Unimed-BH</label>
+            </value>
+            <value>
+                <fullName>Campanha - Pra Você</fullName>
+                <default>false</default>
+                <label>Campanha - Pra Você</label>
+            </value>
+            <value>
+                <fullName>Formulário</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Formulário</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

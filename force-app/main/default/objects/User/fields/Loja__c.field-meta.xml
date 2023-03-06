@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loja__c</fullName>
+    <description>Informa de qual loja o usuário pertence</description>
+    <externalId>false</externalId>
+    <label>Loja</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>CANAL__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BH</fullName>
+                <default>false</default>
+                <label>BH</label>
+            </value>
+            <value>
+                <fullName>Betim</fullName>
+                <default>false</default>
+                <label>Betim</label>
+            </value>
+            <value>
+                <fullName>Lagoa Santa</fullName>
+                <default>false</default>
+                <label>Lagoa Santa</label>
+            </value>
+            <value>
+                <fullName>Santa Luzia</fullName>
+                <default>false</default>
+                <label>Santa Luzia</label>
+            </value>
+            <value>
+                <fullName>Pedro Leopoldo</fullName>
+                <default>false</default>
+                <label>Pedro Leopoldo</label>
+            </value>
+            <value>
+                <fullName>Santa Barbara</fullName>
+                <default>false</default>
+                <label>Santa Barbara</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>LOJAS PRÓPRIAS</controllingFieldValue>
+            <valueName>BH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LOJAS PRÓPRIAS</controllingFieldValue>
+            <valueName>Betim</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LOJAS PRÓPRIAS</controllingFieldValue>
+            <valueName>Lagoa Santa</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LOJAS PRÓPRIAS</controllingFieldValue>
+            <valueName>Santa Luzia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LOJAS PRÓPRIAS</controllingFieldValue>
+            <valueName>Pedro Leopoldo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LOJAS PRÓPRIAS</controllingFieldValue>
+            <valueName>Santa Barbara</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

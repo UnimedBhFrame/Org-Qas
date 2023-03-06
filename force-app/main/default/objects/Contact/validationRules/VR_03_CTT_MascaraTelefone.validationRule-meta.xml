@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_03_CTT_MascaraTelefone</fullName>
+    <active>true</active>
+    <description>Máscara do campo telefone</description>
+    <errorConditionFormula>NOT($Permission.ByPassValidationRules)
+&amp;&amp;
+NOT(ISBLANK(Phone))
+&amp;&amp;
+!REGEX(Phone ,&quot;^(\\(\\d{2}\\)\\ \\d{4}\\d?\\-\\d{4})|(\\d{8,13})?$&quot;)</errorConditionFormula>
+    <errorDisplayField>Phone</errorDisplayField>
+    <errorMessage>O Telefone deve estar no seguinte formato: (xx)xxxx-xxxx</errorMessage>
+</ValidationRule>

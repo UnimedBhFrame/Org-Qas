@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IDMetaCoordenador__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Busca a informação da meta do coordenador no objeto meta__c, a meta é compatível com o canal e com a competência. Esta meta não é a desafio.</description>
+    <externalId>false</externalId>
+    <label>ID da Meta do Coordenador</label>
+    <referenceTo>Meta__c</referenceTo>
+    <relationshipLabel>Movimentações (ID da Meta do Coordenador)</relationshipLabel>
+    <relationshipName>Movimenta_es4</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

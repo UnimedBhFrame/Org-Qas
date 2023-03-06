@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FilterCriteriaId</fullName>
+    <inlineHelpText>Insira os critérios de filtro do conjunto de registros usados para agregar membros do pacote. Você pode agregar apenas compromissos de serviço que cumprem esses critérios.</inlineHelpText>
+    <type>Lookup</type>
+</CustomField>

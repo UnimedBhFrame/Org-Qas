@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Metadado que permite que os emails cadastrados no campo &apos;Emails opcionais&apos; também recebam os emails</description>
+    <label>Emails Opcionais</label>
+    <pluralLabel>Emails Opcionais</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

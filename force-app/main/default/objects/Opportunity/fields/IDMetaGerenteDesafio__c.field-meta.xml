@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IDMetaGerenteDesafio__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Busca a informação da meta desafio do gerente no objeto meta__c, a meta é compatível com o canal e com a competência.</description>
+    <externalId>false</externalId>
+    <label>Id da Meta Desafio do Gerente</label>
+    <referenceTo>Meta__c</referenceTo>
+    <relationshipLabel>Oportunidades (Id da Meta Desafio do Gerente)</relationshipLabel>
+    <relationshipName>Oportunidades6</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

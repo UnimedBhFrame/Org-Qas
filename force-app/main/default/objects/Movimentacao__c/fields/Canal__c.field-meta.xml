@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Canal__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+				OR(CanalComercializador__c = &quot;ALLCARE BENEFICIOS CORRETORA DE SEGUROS&quot;,
+							CanalComercializador__c = &quot;GERENTE DE VENDAS&quot;,
+							CanalComercializador__c = &quot;QUALICORP CONSULTORIA E CORRETORA DE SEGUROS&quot;,
+                                                        CanalComercializador__c = &quot;TELE UNI CORRETORA DE SEGUROS LTDA&quot;,
+							CanalComercializador__c = &quot;ALPER CONSULTORIA&quot;,
+							CanalComercializador__c = &quot;VALLOR CORRETORA DE SEGUROS&quot; ),
+				
+				&quot;ADMINISTRADORAS&quot;,
+				
+IF(
+				CanalComercializador__c = &quot;CANAL CALL CENTER&quot;,
+				&quot;CALL CENTER&quot;,
+				
+IF(
+				OR(CanalComercializador__c = &quot;GVEN - ECOMMERCE EMPRESARIAL&quot;,
+							CanalComercializador__c = &quot;GVEN - ECOMMERCE INDIVIDUAL&quot;,
+							CanalComercializador__c = &quot;REVENDA E-COMMERCE INDIVIDUAL&quot;),
+				
+				&quot;E-COMMERCE&quot;,				
+				
+IF(
+				OR(CanalComercializador__c = &quot;EQUIPE CORPORATIVA&quot;,
+							CanalComercializador__c = &quot;EQUIPE CORPORATIVA - COORDENACAO&quot;,
+							CanalComercializador__c = &quot;EQUIPE CORPORATIVA - CORRETOR&quot;,
+							CanalComercializador__c = &quot;EQUIPE CORPORATIVA - GC&quot;,
+							CanalComercializador__c = &quot;EQUIPE CORPORATIVA - ME&quot;,
+							CanalComercializador__c = &quot;EQUIPE CORPORATIVA - PME II&quot;,
+						 CanalComercializador__c = &quot;MULTISEG CORRETORA DE SEGUROS LTDA&quot;),
+				   
+				&quot;EQUIPE CORPORATIVA&quot;, 
+
+IF(
+				CanalComercializador__c = &quot;GVEN - CONSULTORES&quot;,
+			 
+				&quot;GVEN - CONSULTORES&quot;,
+				
+IF(
+			OR(CanalComercializador__c = &quot;AC SAUDE SC LTDA&quot;,
+			CanalComercializador__c = &quot;PLANOMED REPRESENTACOES LTDA&quot;,
+			CanalComercializador__c = &quot;PLANOVENDAS ADMINISTRADORA E CORRETORA DE SEGUROS LTDA&quot;,
+			CanalComercializador__c = &quot;SALUTIA REPRESENTACOES LTDA&quot; ),
+								
+								&quot;LOJAS AUTORIZADAS&quot;,
+
+IF(
+				OR(CanalComercializador__c = &quot;VENDAS LJ PROPRIA BETIM&quot;,
+							CanalComercializador__c = &quot;VENDAS LJ PROPRIA CONTAGEM&quot;,
+							CanalComercializador__c = &quot;VENDAS LJ PROPRIA LAGOA SANTA&quot;,
+							CanalComercializador__c = &quot;VENDAS LJ PROPRIA PEDRO LEOPOLDO&quot;,
+							CanalComercializador__c = &quot;VENDAS LJ PROPRIA SANTA BARBARA&quot;,
+							CanalComercializador__c = &quot;VENDAS LJ PROPRIA SANTA LUZIA&quot;,
+							CanalComercializador__c = &quot;VENDAS LOJA PROPRIA BH&quot;),
+				
+				&quot;LOJAS PRÓPRIAS&quot;,
+				
+IF( 
+				CanalComercializador__c = &quot;SINDILOJAS BH&quot;,
+				&quot;SINDILOJAS&quot;, null
+	
+))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Canal</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

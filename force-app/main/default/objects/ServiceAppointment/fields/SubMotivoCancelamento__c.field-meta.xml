@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SubMotivoCancelamento__c</fullName>
+    <externalId>false</externalId>
+    <label>SubMotivo de Cancelamento</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>MotivoCancelamento__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Amil</fullName>
+                <default>false</default>
+                <label>Amil</label>
+            </value>
+            <value>
+                <fullName>Betim</fullName>
+                <default>false</default>
+                <label>Betim</label>
+            </value>
+            <value>
+                <fullName>BH</fullName>
+                <default>false</default>
+                <label>BH</label>
+            </value>
+            <value>
+                <fullName>Bradesco</fullName>
+                <default>false</default>
+                <label>Bradesco</label>
+            </value>
+            <value>
+                <fullName>CNPJ menor que 180 dias</fullName>
+                <default>false</default>
+                <label>CNPJ menor que 180 dias</label>
+            </value>
+            <value>
+                <fullName>CPF</fullName>
+                <default>false</default>
+                <label>CPF</label>
+            </value>
+            <value>
+                <fullName>Doc. de vínculo</fullName>
+                <default>false</default>
+                <label>Doc. de vínculo</label>
+            </value>
+            <value>
+                <fullName>Doc. saúde menor de 12 meses</fullName>
+                <default>false</default>
+                <label>Doc. saúde menor de 12 meses</label>
+            </value>
+            <value>
+                <fullName>Lagoa Santa</fullName>
+                <default>false</default>
+                <label>Lagoa Santa</label>
+            </value>
+            <value>
+                <fullName>Outros</fullName>
+                <default>false</default>
+                <label>Outros</label>
+            </value>
+            <value>
+                <fullName>Planomed</fullName>
+                <default>false</default>
+                <label>Planomed</label>
+            </value>
+            <value>
+                <fullName>Pedro Leopoldo</fullName>
+                <default>false</default>
+                <label>Pedro Leopoldo</label>
+            </value>
+            <value>
+                <fullName>Planovendas</fullName>
+                <default>false</default>
+                <label>Planovendas</label>
+            </value>
+            <value>
+                <fullName>Premium</fullName>
+                <default>false</default>
+                <label>Premium</label>
+            </value>
+            <value>
+                <fullName>Promed</fullName>
+                <default>false</default>
+                <label>Promed</label>
+            </value>
+            <value>
+                <fullName>Samp</fullName>
+                <default>false</default>
+                <label>Samp</label>
+            </value>
+            <value>
+                <fullName>Santa Bárbara</fullName>
+                <default>false</default>
+                <label>Santa Bárbara</label>
+            </value>
+            <value>
+                <fullName>Santa Luzia</fullName>
+                <default>false</default>
+                <label>Santa Luzia</label>
+            </value>
+            <value>
+                <fullName>Satulia</fullName>
+                <default>false</default>
+                <label>Satulia</label>
+            </value>
+            <value>
+                <fullName>Saúde Sistema</fullName>
+                <default>false</default>
+                <label>Saúde Sistema</label>
+            </value>
+            <value>
+                <fullName>Sulamérica</fullName>
+                <default>false</default>
+                <label>Sulamérica</label>
+            </value>
+            <value>
+                <fullName>União estável</fullName>
+                <default>false</default>
+                <label>União estável</label>
+            </value>
+            <value>
+                <fullName>Unimed BH</fullName>
+                <default>false</default>
+                <label>Unimed BH</label>
+            </value>
+            <value>
+                <fullName>Unimed CO - Irmã</fullName>
+                <default>false</default>
+                <label>Unimed CO - Irmã</label>
+            </value>
+            <value>
+                <fullName>Unisaúde</fullName>
+                <default>false</default>
+                <label>Unisaúde</label>
+            </value>
+            <value>
+                <fullName>Palnomed</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Palnomed</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Adquiriu via outra operadora</controllingFieldValue>
+            <valueName>Amil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Adquiriu via outra operadora</controllingFieldValue>
+            <valueName>Bradesco</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Adquiriu via outra operadora</controllingFieldValue>
+            <controllingFieldValue>Cliente sem documentação</controllingFieldValue>
+            <valueName>Outros</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Adquiriu via outra operadora</controllingFieldValue>
+            <valueName>Premium</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Adquiriu via outra operadora</controllingFieldValue>
+            <valueName>Promed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Adquiriu via outra operadora</controllingFieldValue>
+            <valueName>Samp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Adquiriu via outra operadora</controllingFieldValue>
+            <valueName>Saúde Sistema</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Adquiriu via outra operadora</controllingFieldValue>
+            <valueName>Sulamérica</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Adquiriu via outra operadora</controllingFieldValue>
+            <valueName>Unimed BH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Adquiriu via outra operadora</controllingFieldValue>
+            <valueName>Unimed CO - Irmã</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cliente optou por ir a loja</controllingFieldValue>
+            <valueName>Betim</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cliente optou por ir a loja</controllingFieldValue>
+            <valueName>BH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cliente optou por ir a loja</controllingFieldValue>
+            <valueName>Pedro Leopoldo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cliente optou por ir a loja</controllingFieldValue>
+            <valueName>Planovendas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cliente optou por ir a loja</controllingFieldValue>
+            <valueName>Santa Bárbara</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cliente optou por ir a loja</controllingFieldValue>
+            <valueName>Santa Luzia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cliente optou por ir a loja</controllingFieldValue>
+            <valueName>Satulia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cliente optou por ir a loja</controllingFieldValue>
+            <valueName>Unisaúde</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cliente sem documentação</controllingFieldValue>
+            <valueName>CNPJ menor que 180 dias</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cliente sem documentação</controllingFieldValue>
+            <valueName>CPF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cliente sem documentação</controllingFieldValue>
+            <valueName>Doc. de vínculo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cliente sem documentação</controllingFieldValue>
+            <valueName>Doc. saúde menor de 12 meses</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cliente sem documentação</controllingFieldValue>
+            <valueName>União estável</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

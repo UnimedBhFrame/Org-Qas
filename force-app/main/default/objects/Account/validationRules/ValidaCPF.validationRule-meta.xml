@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValidaCPF</fullName>
+    <active>false</active>
+    <description>Valida se o CPF é valido, ou seja, se realmente existe.</description>
+    <errorConditionFormula>NOT(OR(LEN(CPF__c)=0,AND(MOD(MOD(11-MOD(VALUE(MID(CPF__c,1,1))*10+VALUE(MID(CPF__c,2,1))*9+VALUE(MID(CPF__c,3,1))*8+VALUE(MID(CPF__c,5,1))*7+VALUE(MID(CPF__c,6,1))*6+VALUE(MID(CPF__c,7,1))*5+VALUE(MID(CPF__c,9,1))*4+VALUE(MID(CPF__c,10,1))*3+VALUE(MID(CPF__c,11,1))*2,11),11),10)=VALUE(MID(CPF__c,13,1)),MOD(MOD(11-MOD(VALUE(MID(CPF__c,1,1))*11+VALUE(MID(CPF__c,2,1))*10+VALUE(MID(CPF__c,3,1))*9+VALUE(MID(CPF__c,5,1))*8+VALUE(MID(CPF__c,6,1))*7+VALUE(MID(CPF__c,7,1))*6+VALUE(MID(CPF__c,9,1))*5+VALUE(MID(CPF__c,10,1))*4+VALUE(MID(CPF__c,11,1))*3+VALUE(MID(CPF__c,13,1))*2,11),11),10)=VALUE(MID(CPF__c,14,1))))) &amp;&amp; NOT(OR(LEN(CPF__c)=0,AND(MOD(MOD(11-MOD(VALUE(MID(CPF__c,1,1))*10+VALUE(MID(CPF__c,2,1))*9+VALUE(MID(CPF__c,3,1))*8+VALUE(MID(CPF__c,4,1))*7+VALUE(MID(CPF__c,5,1))*6+VALUE(MID(CPF__c,6,1))*5+VALUE(MID(CPF__c,7,1))*4+VALUE(MID(CPF__c,8,1))*3+VALUE(MID(CPF__c,9,1))*2,11),11),10)=VALUE(MID(CPF__c,10,1)),MOD(MOD(11-MOD(VALUE(MID(CPF__c,1,1))*11+VALUE(MID(CPF__c,2,1))*10+VALUE(MID(CPF__c,3,1))*9+VALUE(MID(CPF__c,4,1))*8+VALUE(MID(CPF__c,5,1))*7+VALUE(MID(CPF__c,6,1))*6+VALUE(MID(CPF__c,7,1))*5+VALUE(MID(CPF__c,8,1))*4+VALUE(MID(CPF__c,9,1))*3+VALUE(MID(CPF__c,10,1))*2,11),11),10)=VALUE(MID(CPF__c,11,1)))))  &amp;&amp; NOT($Permission.ByPassValidationRules) &amp;&amp; NOT($Permission.Integracao)</errorConditionFormula>
+    <errorDisplayField>CPF__c</errorDisplayField>
+    <errorMessage>O Número do CPF informado é invalido.</errorMessage>
+</ValidationRule>

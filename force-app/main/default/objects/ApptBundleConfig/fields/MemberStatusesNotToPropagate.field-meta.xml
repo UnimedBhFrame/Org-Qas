@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MemberStatusesNotToPropagate</fullName>
+    <inlineHelpText>Selecione os status do compromisso do serviço do membro do pacote que não são substituídos quando o status do compromisso do serviço do pacote é atualizado. use um valor vazio para propagar todos os status.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+</CustomField>

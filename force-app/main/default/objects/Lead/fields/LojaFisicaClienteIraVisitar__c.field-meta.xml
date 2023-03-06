@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LojaFisicaClienteIraVisitar__c</fullName>
+    <externalId>false</externalId>
+    <label>Qual loja física o cliente irá visitar?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BH</fullName>
+                <default>false</default>
+                <label>BH</label>
+            </value>
+            <value>
+                <fullName>Pedro Leopoldo</fullName>
+                <default>false</default>
+                <label>Pedro Leopoldo</label>
+            </value>
+            <value>
+                <fullName>Santa Luzia</fullName>
+                <default>false</default>
+                <label>Santa Luzia</label>
+            </value>
+            <value>
+                <fullName>Betim</fullName>
+                <default>false</default>
+                <label>Betim</label>
+            </value>
+            <value>
+                <fullName>Lagoa Santa</fullName>
+                <default>false</default>
+                <label>Lagoa Santa</label>
+            </value>
+            <value>
+                <fullName>Santa Bárbara</fullName>
+                <default>false</default>
+                <label>Santa Bárbara</label>
+            </value>
+            <value>
+                <fullName>Planomed</fullName>
+                <default>false</default>
+                <label>Planomed</label>
+            </value>
+            <value>
+                <fullName>Salutia</fullName>
+                <default>false</default>
+                <label>Salutia</label>
+            </value>
+            <value>
+                <fullName>Unisaúde</fullName>
+                <default>false</default>
+                <label>Unisaúde</label>
+            </value>
+            <value>
+                <fullName>Planovendas</fullName>
+                <default>false</default>
+                <label>Planovendas</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

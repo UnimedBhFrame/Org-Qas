@@ -1,0 +1,3674 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PessoaJuridica</fullName>
+    <active>true</active>
+    <businessProcess>Varejo</businessProcess>
+    <label>Pessoa Jurídica</label>
+    <picklistValues>
+        <picklist>Atendente__c</picklist>
+        <values>
+            <fullName>ALINE QUARESMA DA SILVA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ALLAN JUNIO DA COSTA SILVA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ANA CAROLINA SILVA SOARES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BRUNA ISABELLA LEANDRO DA SILVA SANTANA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAROLINA MENDES BAIA DE CARVALHO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DANIELA FERREIRA DA SILVA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DARLENE APARECIDA ANDRADE SILVA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DEBORA STEFANY SOUZA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EDUARDA ANDRADE FERREIRA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ELIANDRO CRISPIM DA SILVA JUNIOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ELIZANGELA DE LOURDES DA SILVA FREITAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ESTHER CAROLAINE MARTINS DE SOUZA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EZEQUIEL JUNIO DA SILVA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FERNANDA CONCEICAO PEREIRA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GIULIA MAGALHAES SANTOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HELOISA BATISTA HONORIO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HUDSON BRENO SANTOS AGANETE ANDRADE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INES CRISTINA DE ARAUJO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISABELA CRISTINA SILVA SCHINAIDER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISABELE MONTEIRO GONCALVES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ISADORA MULLER DE OLIVEIRA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JAISON FERNANDO FERREIRA DA SILVA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JUCYMARA FERREIRA CORREIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LARISSA MILENY DE PAIVA SILVA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LEONARDO RODRIGUES MARIANO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LUCELIA RABELO COSTA SILVA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NATIELLE DE ASSIS CARVALHO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PALOMA ROBERTA DE SOUZA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RAFAEL REIS DA SILVA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RENAN MARCOS MATOZINHOS SILVA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RODRIGO DORNELLAS DE PINHO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SHANDEL REIS MENEZES</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>AtivaMaisSeisMeses__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Campanha__c</picklist>
+        <values>
+            <fullName>Bem Digital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Black November 2021 Individual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Black November 2021 MEI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Black November 2021 PME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-commerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leads Perdidos Recuperados - régua de emails</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mensalidade Grátis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mensalidade Grátis - Individual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mensalidade Grátis - MEI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mensalidade Grátis - PME</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CanalComunicacao__c</picklist>
+        <values>
+            <fullName>Campanhas de vendas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jornal%2F Panfleto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Redes sociais</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sem mídia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tv%2FRádio</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CanalEntrada__c</picklist>
+        <values>
+            <fullName>Atendimento Loja</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ação Araujo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Base leads Salesforce sem proprietário</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blended - AeC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Call Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consultor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Desconhecido</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ex Cliente Unimed-BH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fala Cliente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hotsite%3A Soluções Empresa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HubSpot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indicação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indicação interna UnimedBH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leads Facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Levantada de Mão</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Levantada de mão - Bem Digital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Levantada de mão - Portal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Levantada de mão - Página de Planos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mailing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mensagens ou comentários Redes Sociais</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nuvidio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Promotor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospecção</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Páginas ou Campanhas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RN DE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Receptivo - AeC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>e-Commerce</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ClienteIraLojaFisica__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ClienteUnimedBH__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Covid__c</picklist>
+        <values>
+            <fullName>Alto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Baixo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crítico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Médio</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DetalhamentoCanal__c</picklist>
+        <values>
+            <fullName>Ação Araújo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distribuição de leads sem proprietários</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ex-cliente Unimed-BH</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DetalhamentoMotivo__c</picklist>
+        <values>
+            <fullName>BH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Betim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CNPJ menor que 180 dias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Doc%2E Saúde menor de 12 anos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Doc%2E de vínculo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lagoa Santa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pedro Leopoldo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planomed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planovendas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salutia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santa Bárbara</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santa Luzia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unisaúde</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>União estável</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DetalhamentoOrigem__c</picklist>
+        <values>
+            <fullName>Campanha - Mude Para Unimed-BH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Campanha - Odonto Exclusivo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Campanha - Pra Você</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-commerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead Scoring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lista Neoway</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Página - Bem Digital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Página - Planos</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>EmpresaAtiva__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ExCliente__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ExclusivoOdontoConverteu__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ExclusivoOdonto__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>HouveAgendamento__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry</picklist>
+        <values>
+            <fullName>Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apparel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Banking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biotechnology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemicals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food %26 Beverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machinery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not For Profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recreation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecommunications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utilities</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Call Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chatbot%2FIndicação Interna Unimed-BH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HubSpot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAGINA DE PLANOS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LojaFisicaClienteIraVisitar__c</picklist>
+        <values>
+            <fullName>BH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Betim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lagoa Santa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pedro Leopoldo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planomed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planovendas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salutia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santa Bárbara</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santa Luzia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unisaúde</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MesVencimentoContrato2__c</picklist>
+        <values>
+            <fullName>Abril</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agosto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dezembro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fevereiro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Janeiro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Julho</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Junho</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Março</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Novembro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Não sabe informar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outubro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Setembro</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MesVencimentoContrato__c</picklist>
+        <values>
+            <fullName>Abril</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Agosto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dezembro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fevereiro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Janeiro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Julho</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Junho</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Março</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Novembro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Não sabe informar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outubro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Setembro</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MotivoAlteracaoTipoAtendimento__c</picklist>
+        <values>
+            <fullName>Possui perfil empresarial</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MotivoNaoAgendamento__c</picklist>
+        <values>
+            <fullName>Achou alto o valor do plano</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CNPJ cadastrado a menos de 6 meses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelamento%2FReagendamento de visita ou confirmação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cliente optou por ir à loja</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deseja plano com abrangência nacional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Encaminhado para célula de vendas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fora da área de abrangência</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Informação para Terceiros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Informações da ativação da contratação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Informações sobre contratação via site</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Já é cliente%2C Dúvidas %28Acomodação%2C opcionais%2C adaptação%2C ex-funcionário%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Não possui documentação obrigatória</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outras opções dentro do 4020-4020 ou Unidesk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Queda%2Fligação muda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reagendamento de visita ou confirmação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sem contingente mínimo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Troca de plano</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Área de risco</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MotivoNaoFechamento__c</picklist>
+        <values>
+            <fullName>Achou alto o valor do plano</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cliente Fora da área de atuação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cliente Unimed Inadimplente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cliente não concorda com prazos e carências</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cliente sem documentação necessária</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contratou por outro canal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deseja Plano Empresaria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Em negociação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fechou com a concorrência</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fechou com adesão</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Já Cliente Unimed Adesão</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Já cliente Unimed Empresarial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Já cliente Unimed Individual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negado Serasa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Não Atende %2FCaixa Posta %2FLigação Muda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Não compensou trocar produto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preenchimento Incorreto%2F Orientado a realizar novo preenchimento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preço Acima da Concorrência</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proposta Cancelada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proposta Vencida E-commerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Queria plano nacional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Queria produto sem copart</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sem Condições Financeiras</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Só queria saber preço - sem intenção de compra</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MotivoNaoVenda__c</picklist>
+        <values>
+            <fullName>Cliente Inadimplente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Condições financeiras</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Configuração do Plano %28Linear%2C sem copart%2C fixo%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Em cotação de mercado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEI%2FEI com menos de 180 dias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multa rescisória na contratante</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Não elegível pela documentação%2Fregras</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preço %28concorrência valor menor%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rede</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SERASA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Satisfação com a operadora atual</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Name</picklist>
+        <values>
+            <fullName>Dr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mrs%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ms%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prof%2E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NegociacaoPerdidaOperadora__c</picklist>
+        <values>
+            <fullName>Amil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bradesco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hapivida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notredame</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Promed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Samp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saúde Sistema</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sulamérica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unimed CO-Irmã</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unimed-BH</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NomeCorretora__c</picklist>
+        <values>
+            <fullName>3C CORRETORA DE SEGUROS LTDA ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A %26 C NUNES CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A%2EF%2EU%2E ASSEKURANZ CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A%2ER%2EG - MULTIPLA CORRETORA E ADMINISTRADORA DE SEGUROS LTDA AAGS CORRETORA DE SEGUROS LTDA - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AAGS CORRETORA DE SEGUROS LTDA - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ABNARA CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ADMINISTRACAO E SERVICOS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ADMINISTRADORA E CONSULTORIA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ADMINISTRADORA E CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ADMINISTRATIVO SÓ SAUDE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ADMIRAL CORRETORA E ADMINISTRADORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ADMIX - ADMINISTRACAO%2C CONSULTORIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AF SEGUROS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGILE MINAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGREGA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ALLBROKERS BRASIL CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ALLCARE BENEFICIOS CORRETORA DE SEGUROS SAO PAULO LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ALMEIDA %26 SALES CORRETORA DE SEGUROS LTDA - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ALPER CONSULTORIA E CORRETORA DE SEGUROS S%2EA%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ALV ADMINISTRADORA E CORRETORA DE SEGUROS LTDA ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ALV ADMINISTRADORA E CORRETORA DE SEGUROS LTDA ME%2C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AMMA %26 TORRES ADMINISTRADORA E CORRETORA DE SEGUROS EIRELI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AMPLA ADMINISTRACAO E SERVICOS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AMPLA ADMINISTRADORA DE BENEFICIOS EIRELI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AMPLA CONSULTORIA E CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ANGELOS GOUVEA ADMINISTRADORA E CORRETORA SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ANGELOS GOUVEA CORRETORA ADM%2E SEGURO SAUDE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ANPTA CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AON HOLDINGS CORRETORES DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AON HOLDINGS CORRETORES DE SEGUROS LTDA - FILIAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AON HOLDINGS CORRETORES DE SEGUROS LTDA - MATRIZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>APACHE CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>APL ADMINISTRADORA E CORRETORA DE SEGUROS LTDA ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ARH CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASPEN CORRETORA DE SEGUROS LTDA - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASSCONTAS ASSOCIACAO DOS SERVIDORES TRIBUNAL DE CONTAS DO ESTADO DE MINAS GERAIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASSOC DOS SERVID MUNICIPAIS DA PREFEIT DE B HORIZONTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASSOCIACAO COMERCIAL E EMPRESARIAL DE MINAS - ACMINAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASSOCIACAO DE ASSISTENCIA AOS SERVIDORES DO CEFET MG ASCEFET MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASSOCIACAO DOS EMPREGADOS DA COPASA DE SUAS SUBSIDIARIAS E PATROCINADAS AECO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASSOCIACAO DOS SERV PUBLICOS MUNICIPAIS DE SABARA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASSOCIACAO DOS SERVIDORES DA POLICIA FEDERAL DE BELO HORIZONTE MG ANSEF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASSOCIACAO DOS SERVIDORES MUNICIPAIS DE BETIM ASMUBE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASSOCIACAO DOS SERVIDORES MUNICIPAIS DE VESPASIANO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASSOCIACAO MEDICA DE MINAS GERAIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASSOCIACAO NACIONAL DAS EMPRESAS PROJETISTAS E PREST DE SERVICOS PARA AREA DE ENG E CONGENERES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASSOCIACAO NACIONAL DOS SERVIDORES PUBLICOS DA FEDERACAO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASTRUS ADMINISTRADORA E CORRETORA DE SEGUROS SAUDE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ATENTACOR CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUDITHEC LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alves %26 Denucci Corretora de Seguros Eireli</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BANK RIO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BARBOSA %26 TOUSSAINT CORRETAGEM DE SEGUROS E CONSULTORIA EMP LTDA -  BT SEGUROS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BEM BENEFICIOS ASSESSORIA EM BENEFICIOS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BENEFITS CONSULTING LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BENEFITS SOLUCOES EM SEGUROS LTDA - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BENIGNA CORRETORA DE SEGUROS LTDA - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BENS CONSULTORIA E CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BHMINAS ADMINISTRACAO E CORRETAGEM DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BHR ASSESSORIA E CORRETORA DE SEGUROS LTDA - EPP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BR INSURANCE CORRETORA DE SEGUROS S%2EA%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BRMG CORRETORA DE SEGUROS LTDA - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAIXA DE ASSISTENCIA DOS ADVOGADOS DE MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAPELINHA SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CDG CORRETORA E ADMINISTRADORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHAVES %26 FARIA PRESTACAO DE SERVICOS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHAVES %26 FARIA PRESTAÇÃO DE SERVIÇOS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CIA DO SEGURO CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLASSIC WSW PRESTADORA DE SERVICOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLEMENTINO ADMINISTRADORA E CORRETORA DE SEGUROS DE VIDA LTD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLUBE DE BENEFICIOS PARA COOPERATIVAS ASSOCIACOES CONSELHOS SINDICATOS E SEGUROS CBCACSS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COFARGO CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COMPACTA BENEFICIOS CORRETORA DE SEGUROS SAUDE LTDA - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CONFIANCE LIFE CORRETORA DE SEGUROS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CONSULTE CORRETORA DE SEGUROS LTDA ME - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CONVICTOS CORRETORA E CONSULTORIA LTDA - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CORRETORA BROKERS DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CORRETORIA%2ENET CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COSEMIG CORRETORA DE SEGUROS EIRELI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COUTINHO E SALIBA CONSULTORIA EM BENEFICIO LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CSL CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D%27OR MINAS GERAIS CONSULTORIA EM CORRETAGEM DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DAGA CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DEL NUNES CONSULTORIA E CORRETORA DE SEGUROS DE VIDA LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DIAS %26 COSTA - CORRETORA E ADM DE SEGUROS LTDA ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DOR CONSULTORIA EM CORRETAGEM DE SEGUROS E BENEFICIOS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DUCAIS - CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DUOBENS CONSULTORIA E CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EDNA APARECIDA DE CARVALHO - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EQUIPE ADMINISTRACAO E CORRETAGEM DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ESCRITORIO PIUMHI %E2%80%93 5%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EXCLUSIVE CONSULTORIA E CORRETAGEM DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EXCLUSIVE CONSULTORIA E CORRETAGEM DE SEGUROS LTDA FEDERACAO DAS ASSOCIACOES COMERCIAIS E EMPRESARIAIS DO ESTADO DE MINAS GERAIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FEDERACAO DO COMERCIO DE BENS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FEDERACAO DOS CONTABILISTAS DO ESTADO DE MINAS GERAIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FIAT CHRYSLER RIMACO BRASIL CORRETAGENS DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FLY HIGH ADM E CORRETORA DE SEGUROS LTDA - EPP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FORT BEL ADMINISTRADORA E CORRETORA DE SEGUROS DE VIDA LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FORTIFY ADMINISTRACAO E CORRETAGEM DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FORTS ADMINISTRACAO E CORRETAGEM DE SEGUROS LTDA - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA CONSULTORIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GABRIEL TEIXEIRA REZENDE MATOS VERSIANI CORRETAGEM E SEGUROS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GECORP GESTAO DE BENEFICIOS E CORRETORA DE SEGUROS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GERA - CONSULTORIA EM BENEFICIO LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GERMANICA CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GESTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GILEADE CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GPM CONSULTORIA E PRESTACAO DE SERVICOS LTDA ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GRUPO SIMETRIA REPRESENTACOES LTDA - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GUEDES E CONFIANZA CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GUINAZZI BRASIL ASSESSORIA E CORRETAGEM DE SEGUROS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GVB CORRETORA DE PLANOS DE SAUDE LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HAGIS CORRETORA E GESTAO EM SEGUROS LTDA - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HARMONIA CORRETORA DE SEGUROS S A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HARMONIA CORRETORA DE SEGUROS S%2EA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HEALFORT CORRETORA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HELLUS CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HOLDEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR%2E ADMINISTRADORA E CORRETORA DE SEGUROS LTDA%2E - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HUMANITTARE CONSULTORIA E CDORRETORA DE SEGUROS EIRELI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IBBCA 2008 CORRETORA DE SEGUROS LTDA - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IBRAIM ADMINISTRADORA E CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IDEAL POSITIVO CONSULTORIA EM SEGUROS E PREVIDENCIA LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INCORP-8 CORRETORA DE SEGUROS E BENEFICIOS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INCORP-8 SEGUROS E BENEFÍCIOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INTERMEDIUM SAUDE LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INTERMEZZO ADMINISTRADORA E CORRETORA DE SEGUROS LTDA EPP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INTERPARS CONSULTORIA ADMINISTRACAO E CORRETAGEM DE SEGUROS LTDA ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INVITE CONSULTORIA E CORRETAGEM DE SEGUROS LTDA ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INVITE SOLUTION CORRETORA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ITSSEG CORRETORA DE SEGUROS S%2EA%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IZAMED CORRETORA DESEGUROS DE VIDA LTDA ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JC CORRETORA DE SEGUROS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JC REPRESENTACOES E CONSULTORIA LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JLT SCK CORRETORA E ADMINISTRADORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JM3D CORRETORA DE SEGUROS EIRELI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KELLY DAS GRACAS PEREIRA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LAZAM-MDS CORRETORA E ADMINISTRADORA DE SEGUROS S%2EA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LH - ADMINISTRADORA E CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LIBE COMERCIO REPRESENTACOES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LIBERTAS BRASIL CONSULTORIA E CORRETORA DE SEGUROS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LIFE HEALTH PLANOS DE SAUDE LTDA - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LOCKTON BRASIL CONSULTORIA E CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LOGOS E CARVALHO CORRETORA E CONSULTORIA EM SEGUROS LTDA - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LOTUS SEGUROS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LS ADMINISTRACAO E CORRETAGEM DE SEGUROS S%2FC LTDA ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LUDI CORDEIRO CONSULTORIA E CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LUMA CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAC - ADMINISTRADORA E CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MANZALLI ADMINISTRADORA E CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MARSH CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MARSH CORRETORA DE SEGUROS LTDA - 61%2E038%2E592%2F0008-00 FILIAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MASTERPLANOS CORRETORA DE PLANOS DE SAUDE LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MASTERPLANOS CORRETORA DE PLANOS DE SAUDE LTDA ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAVC - ADMINISTRACAO CONSULTORIA E CORRETAGEM DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAX CORRETORA DE SAUDE E SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MBS PARTNERS CORRETORA DE SEGUROS E CONSULTORIA LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEDIATTA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEDSETE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MENDES GOLDMAN CONSULTORIA EM BENEFICIOS COORPORATIVOS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MERCATO ADMINISTRADORA E CORRETORA DE SEGUROS LTDA - EPP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METAS %26 PLANOS CORRETORAS DE SEGURO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MINAS CORRETORA LTDA ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MINAS PARTNER ADMINISTRADORA E CORRETORA DE SEGURO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MINAS PLANOS REPRESENTACAO COMERCIAL LTDA ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MINAS SAUDE CORRETAGEM DE SEGUROS DE VIDA LTDA ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MINAS SAUDE CORRETORA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MINAS TENIS CLUBE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MINAS TENIS NAUTICO CLUBE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MOMENTO CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MONDIAL TOTAL CORRETORA DE SEGUROS - EIRELI - EPP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MORE SOLUTIONS CORRETORA DE SEGUROS E CONSULTORIA LTDA EPP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MOREIRA E MEDEIROS ADMINISTRADORA E CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MOVER ADMINISTRADORA E CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MULTISEG CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NEW CONSULTORIA E REPRESENTACAO LTDA - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NOCTA CONSULTORIA E CORRETORA DE SEGUROS EIRELI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NOTA MIL ADMINISTRADORA E CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NOVALIANCA CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>O%26F Corretora de Seguros LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ONIX CORRETORA DE SEGUROS S%2FC LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ONYX CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OPUS CORRETORA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PARTICIPACOES E CORRETORA DE SEGUROS DE VIDAS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PATRIMUS CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIPO SAÚDE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PME CORRETORA DE SEGUROS DE VIDA LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PREVIDENCIA E PLANOS DE SAUDE EIRELI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PREVTODOS ADMINISTRADORA DE BENEFICIOS E CORRETORA LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRIMEIRA RONA INSURANCE ADM E CORRETORA DE SEG LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRIMORDIAL CORRETORA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRO BONO CORRETORA DE SEGUROS LTDA - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PROMISSOR CORPORATE CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PROPAY BRASIL CORRETORA E ADMINISTRADORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PROPLANOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PUBLIC BROKER DO BRASIL CORRETORA DE SEGUROS LTDA %C2%BF ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QUALICORP CONSULTORIA E CORRETORA DE SEGUROS S%2EA%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QUALICORP CORRETORA DE SEGUROS S%2EA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RAPOSO TAVARES CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RCLX CORRETORA DE SEGUROS E PARTICIPACOES LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REAL ADMINISTRADORA E CORRETORA DE SEGUROS LTDA - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REIS %26 SILVA CORRETAGEM DE SEGUROS E INTERMEDIACAO DE NEGOCIOS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RELIES CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RESEDA CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RMG CORRETORA DE SEGUROS E PLANOS DE SAUDE LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROMILT CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROTA SEG REPRESENTACOES LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RRANA AGENTES DE PLANO DE SAUDE LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SABSEG MINAS CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SALUZ CORRETORA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAMA CORRETORA DE SEGUROS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAMA CORRETORA DE SEGUROS E INTERMEDIACAO DE NEGOCIOS E SERVICOS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAUSEG ADM E CORRET DE SEG VIDA E REP COM LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAUSEG ADMINISTRADORA E CORRETORA DE SEGUROS DE VIDA E REPRESENTACOES COMERCIAIS LTDA - EPP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAÚDE BRASIL CONSULTORIA E CORRETAGEM DE SEGUROS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCIATH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SECULUS DA AMAZONIA INDUSTRIA E COMERCIO S A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEG MINAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEGURATO CORRETORA DE SEGUROS EIRELI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEGURAUTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEGURAUTO ADMINISTRACAO E CORRETAGEM DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SENA SAUDE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SERVICOS E TURISMO DO ESTADO DE MINAS GERAIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIMETRIA CORRETORA DE SEGUROS DE VIDA LTDA - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIMGULAR GESTÃO EM SAÚDE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SINDICATO DOS DELEGADOS DE POLICIA DO ESTADO DE MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SINDICATO DOS POLICIAIS FEDERAIS EM MINAS GERAIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SINDICATO DOS PROFESSORES DO ESTADO DE MINAS GERAIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SINDICATO DOS SERVIDORES DA POLICIA CIVIL DO ESTADO DE MINAS GERAIS SINDPOL MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SINDICATO DOS SERVIDORES DO MINISTERIO PUBLICO DO ESTADO DE MINAS GERAIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SINDICATO DOS TRABALHADORES EM TRANSPORTES RODOVIARIOS DE BETIM E REGIAO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SL CONSULTORIA E CORRETORA DE SEGUROS LTDA ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOLUCOES ROCHEDO COR SEGUROS E SERVICOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOLUM CORRETORA DE SEGUROS E BENEFICIOS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOLUM CORRETORA DE SEGUROS E BENEFICIOS LTDASOLUM CORRETORA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SUPER POSITIVO ADMINISTRACAO E CORRETAGEM DE SEGUROS LTDA - EPP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SUPREMO CORRETORA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SVM REPRESENTACOES LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stoa Plataforma Administradora e Corretora de Seguros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TELE-UNI CORRETORA DE SEGUROS LTDA - EPP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>THB BRASIL HOLDINGS ADMINISTRACAO E PARTICIPACOES LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TORRES %26 ASSOCIADOS CONSULTORES DE BENEFICIOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TOTAL SERVICE SEGUROS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRR CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UDI MINAS CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UIRTUS CONSULTORIA E CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ULLY SEGUROS SAÚDE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ULYMAR CORRETORA DE SEGUROS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNICA AGRO CORRETORA DE SEG LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNISAUDE LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNIVERSAL CORRETORA DE SEGUROS - EPP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UP MAIS CORRETORA DE SEGUROS LTDA - ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VALEM ADMINISTRADORA DE BENEFICIOS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VALLOR CORRETORA DE SEGUROS E GESTAO DE BENEFICIOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VERTEX ADMINISTRADORA E CORRETORA DE SEGUROS S%2EA%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VIA MARY CORRETORA DE SEGUROS EIRELI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VIA PAMPULHA CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VICTOR SOARES ADMINISTRADORA E CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VICTORY CONSULTING CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VICTORY SAÚDE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VIDA CAPITALIZACAO E PREVIDENCIA PRIVADA LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VKN SEGUROS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VL CORRETORA DE SEGUROS EIRELI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VORTICE CONSULTORIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WG MINAS CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WILLIS CORRETORES DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZEAL ASSESSORIA E CORRETAGEM DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZETRASOFT LTDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZULA ADMINISTRADORA E CORRETORA DE SEGUROS LTDA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NovoCliente__c</picklist>
+        <values>
+            <fullName>N</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OperadoraOdontologico__c</picklist>
+        <values>
+            <fullName>Amil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BeloDente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bradesco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inpao</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metlife</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Odontoprev</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sulamérica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uniodonto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vitallis%2FKeralty</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OperadoraSaude2__c</picklist>
+        <values>
+            <fullName>Amil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bradesco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hapivida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notredame</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Promed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Samp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saúde Sistema</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sulamérica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unimed CO-Irmã</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unimed-BH</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OperadoraSaude__c</picklist>
+        <values>
+            <fullName>Amil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bradesco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hapivida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notredame</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Promed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Samp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saúde Sistema</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sulamérica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unimed CO- Irmã</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unimed-BH</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OrigemLeadHubSpot__c</picklist>
+        <values>
+            <fullName>DIRECT_TRAFFIC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMAIL_MARKETING</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OFFLINE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ORGANIC_SEARCH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTHER_CAMPAIGNS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAID_SEARCH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAID_SOCIAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REFERRALS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOCIAL_MEDIA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PessoaDecisoraCompra__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PlanPicklist__c</picklist>
+        <values>
+            <fullName>Exclusivo Odonto</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PossuiPlano__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PotencialVidas__c</picklist>
+        <values>
+            <fullName>Acima de 30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>De 1 a 5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>De 11 a 20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>De 21 a 29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>De 6 a 10</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PreferenciaContato__c</picklist>
+        <values>
+            <fullName>E-mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ligação telefônica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telefone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Whatsapp</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating</picklist>
+        <values>
+            <fullName>Frio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Morno</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quente</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ReceberContatoUnimed__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ReceberInformacoesUnimed__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Revenda__c</picklist>
+        <values>
+            <fullName>N</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SituacaoSerasa__c</picklist>
+        <values>
+            <fullName>Liberado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negado</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SubMotivoNaoVenda__c</picklist>
+        <values>
+            <fullName>Amil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bradesco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hapivida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notredame</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Promed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Samp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saúde Sistema</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sulamérica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unimed BH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unimed CO- Irmã</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TipoBeneficiario__c</picklist>
+        <values>
+            <fullName>Dependente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Titular</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TipoCliente__c</picklist>
+        <values>
+            <fullName>Admissão %28Novo%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inclusão de dependente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inclusão de módulo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transferência</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TipoContratacao__c</picklist>
+        <values>
+            <fullName>1 a 29 pessoas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>100 a 299 pessoas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30 a%C2%A099 pessoas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>300 a 599 pessoas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Individual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MEI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>a partir de 600 pessoas</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VendaRealizada__c</picklist>
+        <values>
+            <fullName>Não</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sim</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>et4ae5__Mobile_Country_Code__c</picklist>
+        <values>
+            <fullName>AC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AQ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BQ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GQ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IQ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ML</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MQ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TW</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>US</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>UY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VU</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZW</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

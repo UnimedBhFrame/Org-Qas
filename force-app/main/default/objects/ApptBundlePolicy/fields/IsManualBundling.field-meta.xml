@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsManualBundling</fullName>
+    <inlineHelpText>Disponibilize essa política quando o supervisor empacotar manualmente os compromissos de serviço no console de envio. Você pode ter agrupamento manual e agrupamento automático habilitados ao mesmo tempo.</inlineHelpText>
+</CustomField>

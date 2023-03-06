@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QuantasVidasTemNaOutraOperadora</fullName>
+    <active>false</active>
+    <errorConditionFormula>((PossuiPlanoEmpresarial__c==true)
+&amp;&amp;
+ISBLANK(VidasOutraOperadora__c))
+&amp;&amp; RecordType.Name == &apos;Apresentação de Proposta/Negociação&apos;</errorConditionFormula>
+    <errorDisplayField>VidasOutraOperadora__c</errorDisplayField>
+    <errorMessage>Campo quantas vidas na outra operadora Obrigatório</errorMessage>
+</ValidationRule>

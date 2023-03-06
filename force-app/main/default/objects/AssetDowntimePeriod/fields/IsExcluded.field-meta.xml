@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsExcluded</fullName>
+    <inlineHelpText>Quando a caixa de seleção é marcada, esse registro é excluído dos cálculos de disponibilidade e confiabilidade porque está fora da Data de início do registro de tempo de atividade e Data de término do registro do tempo de atividade para o ativo. Somente leitura.</inlineHelpText>
+</CustomField>

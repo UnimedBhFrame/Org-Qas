@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QuantidadeColaborador__c</fullName>
+    <description>Informa quantos usuários tem no período de trabalho</description>
+    <externalId>false</externalId>
+    <label>Quantidade de Colaboradores</label>
+    <summaryForeignKey>PeriodoTrabalhoAtendente__c.PeriodoTrabalho__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

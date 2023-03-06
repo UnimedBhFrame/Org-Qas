@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SituacaoPJ__c</fullName>
+    <description>Campo utilizado para INTEGRAÇÃO - NÃO DELETAR</description>
+    <externalId>false</externalId>
+    <label>Situação PJ</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>D - Disponível para reserva</fullName>
+                <default>false</default>
+                <label>D - Disponível para reserva</label>
+            </value>
+            <value>
+                <fullName>D - Disponivel para reserva</fullName>
+                <default>false</default>
+                <label>D - Disponivel para reserva</label>
+            </value>
+            <value>
+                <fullName>DC - Disponível para cadastro</fullName>
+                <default>false</default>
+                <label>DC - Disponível para cadastro</label>
+            </value>
+            <value>
+                <fullName>AT - Reserva ativa</fullName>
+                <default>false</default>
+                <label>AT - Reserva ativa</label>
+            </value>
+            <value>
+                <fullName>I - Indisponível</fullName>
+                <default>false</default>
+                <label>I - Indisponível</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

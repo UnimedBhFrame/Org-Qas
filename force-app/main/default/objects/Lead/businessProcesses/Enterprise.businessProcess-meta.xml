@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enterprise</fullName>
+    <description>Processo do Lead Dedicado a grandes empresas</description>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Alavancagem</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Captação</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>Convertido</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Entrada de terceiros</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Lead Perdido</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Proibido</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Qualificação</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

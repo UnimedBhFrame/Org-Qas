@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DataFimFerias__c</fullName>
+    <description>Armazena a data que o colaborador saiu de férias.</description>
+    <externalId>false</externalId>
+    <label>Data Fim das Férias</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Lead_Varejo_ImpedeCriacaoCaptacao</fullName>
+    <active>false</active>
+    <description>Impede que o lead seja criado no Status de captação, quando os campos associados não estão preenchidos.</description>
+    <errorConditionFormula>ISCHANGED(Status) &amp;&amp; NOT($Permission.ByPassValidationRules) &amp;&amp; (RecordType.Name &lt;&gt; &apos;Pessoa Jurídica&apos; || RecordType.Name &lt;&gt; &apos;Pessoa Jurídica - Enterprise&apos;) &amp;&amp; (ISPICKVAL(Status, &apos;Captação&apos;) &amp;&amp; (ISBLANK(LastName)|| ISBLANK(Phone)))</errorConditionFormula>
+    <errorMessage>O lead não pode ser criado em captação caso algum dos campos não esteja preenchido:
+Sobrenome, Telefone ou Tipo de Registro de Lead.</errorMessage>
+</ValidationRule>

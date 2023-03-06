@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CanalComunicacao__c</fullName>
+    <externalId>false</externalId>
+    <label>Canal de comunicação</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Tv/Rádio</fullName>
+                <default>false</default>
+                <label>Tv/Rádio</label>
+            </value>
+            <value>
+                <fullName>Site</fullName>
+                <default>false</default>
+                <label>Site</label>
+            </value>
+            <value>
+                <fullName>Redes sociais</fullName>
+                <default>false</default>
+                <label>Redes sociais</label>
+            </value>
+            <value>
+                <fullName>Jornal/ Panfleto</fullName>
+                <default>false</default>
+                <label>Jornal/ Panfleto</label>
+            </value>
+            <value>
+                <fullName>Campanhas de vendas</fullName>
+                <default>false</default>
+                <label>Campanhas de vendas</label>
+            </value>
+            <value>
+                <fullName>Sem mídia</fullName>
+                <default>false</default>
+                <label>Sem mídia</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>COTACAO_CONVERTIDA</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+   Lead__r.STATUS_DO_LEAD_EM_TEXTO_FORMULA__c != &apos;Convertido&apos;,
+   
+   STATUS_DA_COTACAO_FORMULA__c = &apos;Convertida&apos;
+   
+
+)</errorConditionFormula>
+    <errorMessage>SO PODE CONVERTER SE O LEAD ESTIVER CONVERTIDO</errorMessage>
+</ValidationRule>

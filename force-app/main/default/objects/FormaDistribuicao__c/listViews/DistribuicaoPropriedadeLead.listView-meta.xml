@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DistribuicaoPropriedadeLead</fullName>
+    <booleanFilter>1 AND 2</booleanFilter>
+    <columns>NAME</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>QuantidadeAtual__c</columns>
+    <columns>QuantidadePermitida__c</columns>
+    <columns>Processo__c</columns>
+    <columns>Objeto__c</columns>
+    <columns>Priorizar__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Processo__c</field>
+        <operation>equals</operation>
+        <value>Distribuição de Propriedade</value>
+    </filters>
+    <filters>
+        <field>Objeto__c</field>
+        <operation>equals</operation>
+        <value>Lead</value>
+    </filters>
+    <label>Distribuição de Propriedade de Lead</label>
+</ListView>

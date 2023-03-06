@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status_do_lead</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISCHANGED( Status ) &amp;&amp; IsConverted &lt;&gt; TRUE</errorConditionFormula>
+    <errorMessage>O LEAD NÃO FOI CONVERTIDO</errorMessage>
+</ValidationRule>

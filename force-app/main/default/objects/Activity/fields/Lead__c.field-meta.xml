@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Armazena o id do lead.
+Campo necessário para não perder a relação do lead, pois quando um registro é convertido o campo whoid é alterado para o id da oportunidade.</description>
+    <externalId>false</externalId>
+    <label>Lead</label>
+    <referenceTo>Lead</referenceTo>
+    <relationshipLabel>Atividades</relationshipLabel>
+    <relationshipName>Atividades</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

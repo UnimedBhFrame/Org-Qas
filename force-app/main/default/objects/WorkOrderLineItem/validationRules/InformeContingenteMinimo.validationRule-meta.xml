@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InformeContingenteMinimo</fullName>
+    <active>false</active>
+    <errorConditionFormula>(HouveAlteracaoContingente__c == true  
+&amp;&amp;
+ISBLANK( ContingenteMinimo__c))
+&amp;&amp; RecordType.Name == &apos;Manutenção Relacionamento&apos;</errorConditionFormula>
+    <errorDisplayField>ContingenteMinimo__c</errorDisplayField>
+    <errorMessage>Campo contigente mínimo Obrigatório</errorMessage>
+</ValidationRule>

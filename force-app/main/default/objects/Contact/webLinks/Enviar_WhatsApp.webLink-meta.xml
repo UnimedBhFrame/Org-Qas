@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enviar_WhatsApp</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Enviar WhatsApp</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>https://api.whatsapp.com/send?phone={!Contact.Phone}&amp;text={!JSENCODE(&quot;Olá &quot;&amp;Contact.FirstName   &amp;&quot;, tudo bem? Sou da Unimed...&quot;)}</url>
+</WebLink>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValidaDetalhamentoMotivo</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT($Permission.ByPassValidationRules) &amp;&amp; OR(AND(ISPICKVAL(MotivoNaoAgendamento__c, &apos;Cliente optou por ir à loja&apos;),ISBLANK(TEXT(DetalhamentoMotivo__c))), AND(ISPICKVAL(MotivoNaoAgendamento__c, &apos;Não possui documentação obrigatória&apos;),ISBLANK(TEXT(DetalhamentoMotivo__c))))</errorConditionFormula>
+    <errorDisplayField>DetalhamentoMotivo__c</errorDisplayField>
+    <errorMessage>Campo obrigatório.</errorMessage>
+</ValidationRule>

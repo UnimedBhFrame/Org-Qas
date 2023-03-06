@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IdMetaLoja__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Id das metas das lojas autorizadas e próprias. As lojas não tem meta desafio.</description>
+    <externalId>false</externalId>
+    <label>Id Meta Loja</label>
+    <referenceTo>Meta__c</referenceTo>
+    <relationshipLabel>Movimentações (Id Meta Loja)</relationshipLabel>
+    <relationshipName>Movimenta_es6</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

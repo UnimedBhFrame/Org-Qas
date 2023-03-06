@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QualOperadora</fullName>
+    <active>false</active>
+    <errorConditionFormula>(((PossuiPlanoEmpresarial__c==true)||(PossuiPlanoAssistencial__c==true))
+&amp;&amp;
+(ISPICKVAL(Operadora__c,&quot;&quot;)))
+&amp;&amp; RecordType.Name == &apos;Apresentação de Proposta/Negociação&apos;</errorConditionFormula>
+    <errorDisplayField>Operadora__c</errorDisplayField>
+    <errorMessage>Campo operadora Obrigatório</errorMessage>
+</ValidationRule>

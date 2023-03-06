@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loja__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+				OR(CanalComercializador__c = &quot;ALLCARE BENEFICIOS CORRETORA DE SEGUROS&quot;,
+							CanalComercializador__c = &quot;QUALICORP CONSULTORIA E CORRETORA DE SEGUROS&quot;,
+							CanalComercializador__c = &quot;VALLOR CORRETORA DE SEGUROS&quot;),
+				&quot;PME&quot;,
+				
+IF(CanalComercializador__c = &quot;GERENTE DE VENDAS&quot;,&quot;ADESÃO&quot;,
+			
+IF(CanalComercializador__c = &quot;CANAL CALL CENTER&quot;,&quot;CALL CENTER&quot;,
+
+IF(CanalComercializador__c = &quot;GVEN - ECOMMERCE EMPRESARIAL&quot;,&quot;EMPRESARIAL&quot;,
+			
+IF(
+				OR(
+								CanalComercializador__c = &quot;GVEN - ECOMMERCE INDIVIDUAL&quot;,
+								CanalComercializador__c = &quot;REVENDA E-COMMERCE INDIVIDUAL&quot;),
+				&quot;INDIVIDUAL&quot;,
+				
+IF(CanalComercializador__c = &quot;EQUIPE CORPORATIVA&quot;,&quot;EQUIPE CORPORATIVA&quot;,
+			
+IF(CanalComercializador__c = &quot;EQUIPE CORPORATIVA - COORDENACAO&quot;,&quot;COORDENAÇÃO&quot;,
+			
+IF(CanalComercializador__c = &quot;EQUIPE CORPORATIVA - CORRETOR&quot;,&quot;CORRETOR&quot;,
+			
+IF(CanalComercializador__c = &quot;EQUIPE CORPORATIVA - GC&quot;,&quot;GRANDES CONTAS&quot;,
+			
+IF(CanalComercializador__c = &quot;EQUIPE CORPORATIVA - ME&quot;,&quot;MÉDIAS CONTAS&quot;,
+	
+IF(CanalComercializador__c = &quot;EQUIPE CORPORATIVA - PME II&quot;,&quot;PME II&quot;,
+			
+IF(CanalComercializador__c = &quot;MULTISEG CORRETORA DE SEGUROS LTDA&quot;,&quot;CORRETORAS&quot;,
+
+IF(CanalComercializador__c = &quot;GVEN - CONSULTORES&quot;,&quot;GVEN - CONSULTORES&quot;,
+
+IF(CanalComercializador__c = &quot;AC SAUDE SC LTDA&quot;,&quot;UNISAUDE&quot;,
+			
+IF(CanalComercializador__c = &quot;PLANOMED REPRESENTACOES LTDA&quot;,&quot;PLANOMED&quot;,
+			
+IF(CanalComercializador__c = &quot;PLANOVENDAS ADMINISTRADORA E CORRETORA DE SEGUROS LTDA&quot;,&quot;PLANOVENDAS&quot;,
+
+IF(CanalComercializador__c = &quot;SALUTIA REPRESENTACOES LTDA&quot;,&quot;SALUTIA&quot;,
+			
+IF(
+				OR(
+								CanalComercializador__c = &quot;VENDAS LJ PROPRIA BETIM&quot;,
+								CanalComercializador__c = &quot;VENDAS LJ PROPRIA CONTAGEM&quot;),
+				&quot;BETIM&quot;,
+				
+IF (CanalComercializador__c = &quot;VENDAS LJ PROPRIA LAGOA SANTA&quot;, &quot;LAGOA SANTA&quot;,
+
+IF (CanalComercializador__c = &quot;VENDAS LJ PROPRIA PEDRO LEOPOLDO&quot;, &quot;PEDRO LEOPOLDO&quot;,
+
+IF (CanalComercializador__c = &quot;VENDAS LJ PROPRIA SANTA BARBARA&quot;, &quot;SANTA BARBARA&quot;,
+				
+IF (CanalComercializador__c = &quot;VENDAS LJ PROPRIA SANTA LUZIA&quot;, &quot;SANTA LUZIA&quot;,
+				
+IF (CanalComercializador__c = &quot;VENDAS LOJA PROPRIA BH&quot;, &quot;BH&quot;,
+				
+IF (CanalComercializador__c = &quot;SINDILOJAS BH&quot;, &quot;SINDILOJAS&quot;,NULL))))))))))))))))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Loja</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

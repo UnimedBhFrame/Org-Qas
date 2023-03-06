@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InformeNomeBrinde</fullName>
+    <active>false</active>
+    <errorConditionFormula>(HouveEntregaBrinde__c == true
+&amp;&amp;
+ISBLANK(NomeBrindeEntregue__c ))
+&amp;&amp; RecordType.Name == &apos;Manutenção Relacionamento&apos;</errorConditionFormula>
+    <errorDisplayField>NomeBrindeEntregue__c</errorDisplayField>
+    <errorMessage>Campo nome do brinde Obrigatório</errorMessage>
+</ValidationRule>

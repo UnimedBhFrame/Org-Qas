@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Metadado que permite envios de atas, ao emails informados no campo, aos leads que possuem mais do que 30 vidas.</description>
+    <label>E-mails para recebimento de ata</label>
+    <pluralLabel>E-mails para recebimento de atas</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

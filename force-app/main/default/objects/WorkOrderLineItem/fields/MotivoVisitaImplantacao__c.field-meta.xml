@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MotivoVisitaImplantacao__c</fullName>
+    <externalId>false</externalId>
+    <label>Motivo da visita (Implantação)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Início do Processo de Implantação</fullName>
+                <default>false</default>
+                <label>Início do Processo de Implantação</label>
+            </value>
+            <value>
+                <fullName>Complemento de Implantação</fullName>
+                <default>false</default>
+                <label>Complemento de Implantação</label>
+            </value>
+            <value>
+                <fullName>Passagem de Bastão</fullName>
+                <default>false</default>
+                <label>Passagem de Bastão</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

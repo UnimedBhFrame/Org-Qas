@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AddToBundleStatuses</fullName>
+    <inlineHelpText>Selecione os status dos compromissos de serviço que podem ser empacotados. use um valor vazia para empacotar compromissos de serviço em qualquer status.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+</CustomField>

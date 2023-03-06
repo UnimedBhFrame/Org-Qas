@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DetalhamentoMotivo__c</fullName>
+    <externalId>false</externalId>
+    <label>Detalhamento de Motivo</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>MotivoNaoAgendamento__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BH</fullName>
+                <default>false</default>
+                <label>BH</label>
+            </value>
+            <value>
+                <fullName>Pedro Leopoldo</fullName>
+                <default>false</default>
+                <label>Pedro Leopoldo</label>
+            </value>
+            <value>
+                <fullName>Santa Luzia</fullName>
+                <default>false</default>
+                <label>Santa Luzia</label>
+            </value>
+            <value>
+                <fullName>Betim</fullName>
+                <default>false</default>
+                <label>Betim</label>
+            </value>
+            <value>
+                <fullName>Lagoa Santa</fullName>
+                <default>false</default>
+                <label>Lagoa Santa</label>
+            </value>
+            <value>
+                <fullName>Santa Bárbara</fullName>
+                <default>false</default>
+                <label>Santa Bárbara</label>
+            </value>
+            <value>
+                <fullName>Planomed</fullName>
+                <default>false</default>
+                <label>Planomed</label>
+            </value>
+            <value>
+                <fullName>Salutia</fullName>
+                <default>false</default>
+                <label>Salutia</label>
+            </value>
+            <value>
+                <fullName>Unisaúde</fullName>
+                <default>false</default>
+                <label>Unisaúde</label>
+            </value>
+            <value>
+                <fullName>Planovendas</fullName>
+                <default>false</default>
+                <label>Planovendas</label>
+            </value>
+            <value>
+                <fullName>CNPJ menor que 180 dias</fullName>
+                <default>false</default>
+                <label>CNPJ menor que 180 dias</label>
+            </value>
+            <value>
+                <fullName>Doc. de vínculo</fullName>
+                <default>false</default>
+                <label>Doc. de vínculo</label>
+            </value>
+            <value>
+                <fullName>União estável</fullName>
+                <default>false</default>
+                <label>União estável</label>
+            </value>
+            <value>
+                <fullName>CPF</fullName>
+                <default>false</default>
+                <label>CPF</label>
+            </value>
+            <value>
+                <fullName>Doc. Saúde menor de 12 anos</fullName>
+                <default>false</default>
+                <label>Doc. Saúde menor de 12 anos</label>
+            </value>
+            <value>
+                <fullName>Outros</fullName>
+                <default>false</default>
+                <label>Outros</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Não possui documentação obrigatória</controllingFieldValue>
+            <valueName>CNPJ menor que 180 dias</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não possui documentação obrigatória</controllingFieldValue>
+            <valueName>Doc. de vínculo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não possui documentação obrigatória</controllingFieldValue>
+            <valueName>União estável</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não possui documentação obrigatória</controllingFieldValue>
+            <valueName>CPF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não possui documentação obrigatória</controllingFieldValue>
+            <valueName>Doc. Saúde menor de 12 anos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não possui documentação obrigatória</controllingFieldValue>
+            <valueName>Outros</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cliente optou por ir à loja</controllingFieldValue>
+            <valueName>BH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cliente optou por ir à loja</controllingFieldValue>
+            <valueName>Pedro Leopoldo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cliente optou por ir à loja</controllingFieldValue>
+            <valueName>Santa Luzia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cliente optou por ir à loja</controllingFieldValue>
+            <valueName>Betim</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cliente optou por ir à loja</controllingFieldValue>
+            <valueName>Lagoa Santa</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cliente optou por ir à loja</controllingFieldValue>
+            <valueName>Santa Bárbara</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cliente optou por ir à loja</controllingFieldValue>
+            <valueName>Planomed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cliente optou por ir à loja</controllingFieldValue>
+            <valueName>Salutia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cliente optou por ir à loja</controllingFieldValue>
+            <valueName>Unisaúde</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cliente optou por ir à loja</controllingFieldValue>
+            <valueName>Planovendas</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

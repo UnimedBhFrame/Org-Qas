@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProximoAniversarioContato__c</fullName>
+    <externalId>false</externalId>
+    <formula>DATE(IF(TODAY()&lt;date(year(today()),month(DataDeNascimento__c),DAY(DataDeNascimento__c)),YEAR(TODAY()),YEAR(TODAY())+1),month(DataDeNascimento__c),
+DAY(DataDeNascimento__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Proximo aniversário do contato</label>
+    <required>false</required>
+    <type>Date</type>
+</CustomField>

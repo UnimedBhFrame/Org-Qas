@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StatusReagendado</fullName>
+    <active>true</active>
+    <description>Obrigar o preenchimento do Motivo do reagendamento quando o Status for Reagendado</description>
+    <errorConditionFormula>AND(ISPICKVAL(Status, &apos;Rescheduled&apos;),ISBLANK(TEXT(MotivoReagendamento__c)))</errorConditionFormula>
+    <errorDisplayField>MotivoReagendamento__c</errorDisplayField>
+    <errorMessage>Motivo de Reagendamento deve ser preenchido</errorMessage>
+</ValidationRule>

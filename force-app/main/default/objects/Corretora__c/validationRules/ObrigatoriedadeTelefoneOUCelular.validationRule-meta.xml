@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ObrigatoriedadeTelefoneOUCelular</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT($Permission.ByPassValidationRules) &amp;&amp; (ISBLANK(TelefoneContato__c) &amp;&amp; ISBLANK(CelularContato__c)) &amp;&amp; NOT($Permission.Integracao)</errorConditionFormula>
+    <errorDisplayField>TelefoneContato__c</errorDisplayField>
+    <errorMessage>Telefone ou Celular são obrigatórios!</errorMessage>
+</ValidationRule>

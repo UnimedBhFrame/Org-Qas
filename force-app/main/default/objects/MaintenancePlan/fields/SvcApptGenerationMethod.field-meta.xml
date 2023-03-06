@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SvcApptGenerationMethod</fullName>
+    <inlineHelpText>Especifique como as visitas são geradas quando mais de um ativo está associado ao plano de manutenção e o método de geração do agendamento é um item de linha do agendamento por ativo.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

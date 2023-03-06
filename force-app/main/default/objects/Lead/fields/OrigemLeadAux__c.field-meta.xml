@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OrigemLeadAux__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(OrigemWebToLead__c = &quot;bemdigital.unimedbh.com.br&quot;,&quot;BEM DIGITAL&quot;,
+ IF(CONTAINS(OrigemWebToLead__c, &quot;conecta&quot;),&quot;PAGINA DE PLANOS&quot;,
+				IF(CONTAINS(OrigemWebToLead__c,&quot;historias&quot;),&quot;HISTORIAS&quot;,
+							IF(CONTAINS(OrigemWebToLead__c,&quot;planos&quot;),&quot;PAGINA DE PLANOS&quot;,
+										IF(CONTAINS(OrigemWebToLead__c,&quot;portal&quot;),&quot;PORTAL&quot;,
+													IF(CONTAINS(OrigemWebToLead__c,&quot;INDICACAO&quot;),&quot;PAGINA DE PLANOS&quot;,
+																IF(CONTAINS(OrigemWebToLead__c,&quot;sim&quot;),&quot;PAGINA DE PLANOS&quot;,NULL))
+												
+										)
+		    )
+    )))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Origem do Lead Auxiliar</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

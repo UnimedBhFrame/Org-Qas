@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MotivoNaoFechamento__c</fullName>
+    <externalId>false</externalId>
+    <label>Motivo não fechamento</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sem Condições Financeiras</fullName>
+                <default>false</default>
+                <label>Sem Condições Financeiras</label>
+            </value>
+            <value>
+                <fullName>Preço Acima da Concorrência</fullName>
+                <default>false</default>
+                <label>Preço Acima da Concorrência</label>
+            </value>
+            <value>
+                <fullName>Já cliente Unimed Empresarial</fullName>
+                <default>false</default>
+                <label>Já cliente Unimed Empresarial</label>
+            </value>
+            <value>
+                <fullName>Já cliente Unimed Individual</fullName>
+                <default>false</default>
+                <label>Já cliente Unimed Individual</label>
+            </value>
+            <value>
+                <fullName>Deseja Plano Empresaria</fullName>
+                <default>false</default>
+                <label>Deseja Plano Empresaria</label>
+            </value>
+            <value>
+                <fullName>Já Cliente Unimed Adesão</fullName>
+                <default>false</default>
+                <label>Já Cliente Unimed Adesão</label>
+            </value>
+            <value>
+                <fullName>Cliente Unimed Inadimplente</fullName>
+                <default>false</default>
+                <label>Cliente Unimed Inadimplente</label>
+            </value>
+            <value>
+                <fullName>Cliente não concorda com prazos e carências</fullName>
+                <default>false</default>
+                <label>Cliente não concorda com prazos e carências</label>
+            </value>
+            <value>
+                <fullName>Cliente Fora da área de atuação</fullName>
+                <default>false</default>
+                <label>Cliente Fora da área de atuação</label>
+            </value>
+            <value>
+                <fullName>Cliente sem documentação necessária</fullName>
+                <default>false</default>
+                <label>Cliente sem documentação necessária</label>
+            </value>
+            <value>
+                <fullName>Em negociação</fullName>
+                <default>false</default>
+                <label>Em negociação</label>
+            </value>
+            <value>
+                <fullName>Fechou com a concorrência</fullName>
+                <default>false</default>
+                <label>Fechou com a concorrência</label>
+            </value>
+            <value>
+                <fullName>Fechou com adesão</fullName>
+                <default>false</default>
+                <label>Fechou com adesão</label>
+            </value>
+            <value>
+                <fullName>Não compensou trocar produto</fullName>
+                <default>false</default>
+                <label>Não compensou trocar produto</label>
+            </value>
+            <value>
+                <fullName>Negado Serasa</fullName>
+                <default>false</default>
+                <label>Negado Serasa</label>
+            </value>
+            <value>
+                <fullName>Queria produto sem copart</fullName>
+                <default>false</default>
+                <label>Queria produto sem copart</label>
+            </value>
+            <value>
+                <fullName>Queria plano nacional</fullName>
+                <default>false</default>
+                <label>Queria plano nacional</label>
+            </value>
+            <value>
+                <fullName>Só queria saber preço - sem intenção de compra</fullName>
+                <default>false</default>
+                <label>Só queria saber preço - sem intenção de compra</label>
+            </value>
+            <value>
+                <fullName>Não Atende /Caixa Posta /Ligação Muda</fullName>
+                <default>false</default>
+                <label>Não Atende /Caixa Posta /Ligação Muda</label>
+            </value>
+            <value>
+                <fullName>Proposta Cancelada</fullName>
+                <default>false</default>
+                <label>Proposta Cancelada</label>
+            </value>
+            <value>
+                <fullName>Contratou por outro canal</fullName>
+                <default>false</default>
+                <label>Contratou por outro canal</label>
+            </value>
+            <value>
+                <fullName>Preenchimento Incorreto/ Orientado a realizar novo preenchimento</fullName>
+                <default>false</default>
+                <label>Preenchimento Incorreto/ Orientado a realizar novo preenchimento</label>
+            </value>
+            <value>
+                <fullName>Proposta Vencida E-commerce</fullName>
+                <default>false</default>
+                <label>Proposta Vencida E-commerce</label>
+            </value>
+            <value>
+                <fullName>Achou alto o valor do plano</fullName>
+                <default>false</default>
+                <label>Achou alto o valor do plano</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Lead Perdido</controllingFieldValue>
+            <valueName>Sem Condições Financeiras</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lead Perdido</controllingFieldValue>
+            <valueName>Preço Acima da Concorrência</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lead Perdido</controllingFieldValue>
+            <valueName>Já cliente Unimed Empresarial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lead Perdido</controllingFieldValue>
+            <valueName>Já cliente Unimed Individual</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lead Perdido</controllingFieldValue>
+            <valueName>Deseja Plano Empresaria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lead Perdido</controllingFieldValue>
+            <valueName>Já Cliente Unimed Adesão</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lead Perdido</controllingFieldValue>
+            <valueName>Cliente Unimed Inadimplente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lead Perdido</controllingFieldValue>
+            <valueName>Cliente não concorda com prazos e carências</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lead Perdido</controllingFieldValue>
+            <valueName>Cliente Fora da área de atuação</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lead Perdido</controllingFieldValue>
+            <valueName>Cliente sem documentação necessária</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lead Perdido</controllingFieldValue>
+            <valueName>Em negociação</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lead Perdido</controllingFieldValue>
+            <valueName>Fechou com a concorrência</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lead Perdido</controllingFieldValue>
+            <valueName>Fechou com adesão</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lead Perdido</controllingFieldValue>
+            <valueName>Não compensou trocar produto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lead Perdido</controllingFieldValue>
+            <valueName>Negado Serasa</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lead Perdido</controllingFieldValue>
+            <valueName>Queria produto sem copart</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lead Perdido</controllingFieldValue>
+            <valueName>Queria plano nacional</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lead Perdido</controllingFieldValue>
+            <valueName>Só queria saber preço - sem intenção de compra</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lead Perdido</controllingFieldValue>
+            <valueName>Não Atende /Caixa Posta /Ligação Muda</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lead Perdido</controllingFieldValue>
+            <valueName>Proposta Cancelada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lead Perdido</controllingFieldValue>
+            <valueName>Contratou por outro canal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lead Perdido</controllingFieldValue>
+            <valueName>Preenchimento Incorreto/ Orientado a realizar novo preenchimento</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lead Perdido</controllingFieldValue>
+            <valueName>Achou alto o valor do plano</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

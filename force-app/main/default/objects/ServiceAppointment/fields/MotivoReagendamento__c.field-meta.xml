@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MotivoReagendamento__c</fullName>
+    <externalId>false</externalId>
+    <label>Motivo do Reagendamento</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A pedido do Cliente</fullName>
+                <default>false</default>
+                <label>A pedido do Cliente</label>
+            </value>
+            <value>
+                <fullName>Cliente Ausente</fullName>
+                <default>false</default>
+                <label>Cliente Ausente</label>
+            </value>
+            <value>
+                <fullName>Cliente sem Documentação</fullName>
+                <default>false</default>
+                <label>Cliente sem Documentação</label>
+            </value>
+            <value>
+                <fullName>Readequação de Agenda</fullName>
+                <default>false</default>
+                <label>Readequação de Agenda</label>
+            </value>
+            <value>
+                <fullName>Solicitação do Vendedor</fullName>
+                <default>false</default>
+                <label>Solicitação do Vendedor</label>
+            </value>
+            <value>
+                <fullName>Vendedor não Compareceu</fullName>
+                <default>false</default>
+                <label>Vendedor não Compareceu</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Rescheduled</controllingFieldValue>
+            <valueName>A pedido do Cliente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rescheduled</controllingFieldValue>
+            <valueName>Cliente Ausente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rescheduled</controllingFieldValue>
+            <valueName>Cliente sem Documentação</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rescheduled</controllingFieldValue>
+            <valueName>Readequação de Agenda</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rescheduled</controllingFieldValue>
+            <valueName>Solicitação do Vendedor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rescheduled</controllingFieldValue>
+            <valueName>Vendedor não Compareceu</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Período de SLA em que a oportunidade poderá permanecer no status de &apos;Elaboração de Proposta&apos;. Obrigatoriamente após esse período, ela será movida para &apos;ElaboraçãoVencida&apos;</description>
+    <label>Período de Vencimento da Oportunidade</label>
+    <pluralLabel>Períodos de Vencimento de Oportunidades</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

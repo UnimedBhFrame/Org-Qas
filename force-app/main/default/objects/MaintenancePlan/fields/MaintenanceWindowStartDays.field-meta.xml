@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MaintenanceWindowStartDays</fullName>
+    <inlineHelpText>O número de dias antes da data de serviço sugerida do agendamento em que a visita pode ser agendado.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

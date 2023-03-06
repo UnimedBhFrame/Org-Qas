@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ImpedeDataPassado</fullName>
+    <active>true</active>
+    <description>Obriga que a data de término seja maior do que a data de FIm</description>
+    <errorConditionFormula>DataHorarioInicio__c  &gt; DataHorarioTermino__c</errorConditionFormula>
+    <errorMessage>A Data de término não pode ser anterior à data de Início</errorMessage>
+</ValidationRule>

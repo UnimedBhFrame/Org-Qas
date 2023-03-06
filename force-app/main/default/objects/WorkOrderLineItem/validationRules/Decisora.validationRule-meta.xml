@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Decisora</fullName>
+    <active>false</active>
+    <errorConditionFormula>((PessoaDecisora__c==false)
+&amp;&amp;
+( ISBLANK(NomeDecisor__c )))
+&amp;&amp; RecordType.Name == &apos;Apresentação de Proposta/Negociação&apos;</errorConditionFormula>
+    <errorDisplayField>NomeDecisor__c</errorDisplayField>
+    <errorMessage>Campo Nome do decisor obrigatório</errorMessage>
+</ValidationRule>

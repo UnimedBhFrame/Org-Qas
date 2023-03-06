@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Index xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Index</fullName>
+    <fields>
+        <name>ServiceResource__c</name>
+        <sortDirection>ASC</sortDirection>
+    </fields>
+    <fields>
+        <name>DataLocalizacao__c</name>
+        <sortDirection>ASC</sortDirection>
+    </fields>
+    <fields>
+        <name>Latitude__c</name>
+        <sortDirection>ASC</sortDirection>
+    </fields>
+    <fields>
+        <name>Longitude__c</name>
+        <sortDirection>ASC</sortDirection>
+    </fields>
+    <label>Index</label>
+</Index>

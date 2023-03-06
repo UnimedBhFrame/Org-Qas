@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Ctt_ImpedeTelefonesInvalido</fullName>
+    <active>true</active>
+    <description>Impede que o usuário preencha o telefone com valores do tipo (11) 11111-1111.</description>
+    <errorConditionFormula>NOT($Permission.ByPassValidationRules) &amp;&amp; (Phone = &apos;(11) 1111-1112&apos;|| Phone =&apos;(31) 77777-7777&apos;|| Phone =&apos;(31) 11111-1111&apos;|| Phone =&apos;(11) 1111-11119&apos;|| Phone =&apos;(31) 33333-3333&apos;|| Phone =&apos;(31) 9999-9999&apos;|| Phone =&apos;(31) 2222-2222&apos;|| Phone =&apos;(31) 55555-5555&apos;|| Phone =&apos;(31) 1111-1111&apos;|| Phone =&apos;(11) 1111-1111&apos;|| Phone =&apos;(31) 7777-7777&apos;|| Phone =&apos;(31) 4444-4444&apos;|| Phone =&apos;(11) 11111-1111&apos;|| Phone =&apos;(31) 44444-4444&apos;|| Phone =&apos;(31) 99999-9999&apos;|| Phone =&apos;(31) 3333-3333&apos;|| Phone =&apos;(31) 5555-5555&apos;|| Phone =&apos;(31) 8888-8888&apos;|| Phone =&apos;(31) 88888-8888&apos;|| Phone =&apos;(31) 6666-6666&apos;|| Phone =&apos;(31) 66666-6666&apos;)</errorConditionFormula>
+    <errorDisplayField>Phone</errorDisplayField>
+    <errorMessage>Por favor, insira um telefone válido.</errorMessage>
+</ValidationRule>

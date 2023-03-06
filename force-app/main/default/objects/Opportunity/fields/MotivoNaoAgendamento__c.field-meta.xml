@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MotivoNaoAgendamento__c</fullName>
+    <externalId>false</externalId>
+    <label>Motivo do Não Agendamento</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>HouveAgendamento__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Achou alto o valor do plano</fullName>
+                <default>false</default>
+                <label>Achou alto o valor do plano</label>
+            </value>
+            <value>
+                <fullName>Ficou de pensar na proposta</fullName>
+                <default>false</default>
+                <label>Ficou de pensar na proposta</label>
+            </value>
+            <value>
+                <fullName>Sem contingente mínimo</fullName>
+                <default>false</default>
+                <label>Sem contingente mínimo</label>
+            </value>
+            <value>
+                <fullName>Cliente optou por ir à loja</fullName>
+                <default>false</default>
+                <label>Cliente optou por ir à loja</label>
+            </value>
+            <value>
+                <fullName>Vai pensar/avaliar</fullName>
+                <default>false</default>
+                <label>Vai pensar/avaliar</label>
+            </value>
+            <value>
+                <fullName>Outras opções dentro do 4020-4020 ou Unidesk</fullName>
+                <default>false</default>
+                <label>Outras opções dentro do 4020-4020 ou Unidesk</label>
+            </value>
+            <value>
+                <fullName>Informações da ativação da contratação</fullName>
+                <default>false</default>
+                <label>Informações da ativação da contratação</label>
+            </value>
+            <value>
+                <fullName>Cadastro de benefício RN</fullName>
+                <default>false</default>
+                <label>Cadastro de benefício RN</label>
+            </value>
+            <value>
+                <fullName>Cancelamento/Reagendamento de visita ou confirmação</fullName>
+                <default>false</default>
+                <label>Cancelamento/Reagendamento de visita ou confirmação</label>
+            </value>
+            <value>
+                <fullName>CNPJ cadastrado a menos de 6 meses</fullName>
+                <default>false</default>
+                <label>CNPJ cadastrado a menos de 6 meses</label>
+            </value>
+            <value>
+                <fullName>Cliente inadimplente</fullName>
+                <default>false</default>
+                <label>Cliente inadimplente</label>
+            </value>
+            <value>
+                <fullName>Fora da área de abrangência</fullName>
+                <default>false</default>
+                <label>Fora da área de abrangência</label>
+            </value>
+            <value>
+                <fullName>Deseja plano com abrangência nacional</fullName>
+                <default>false</default>
+                <label>Deseja plano com abrangência nacional</label>
+            </value>
+            <value>
+                <fullName>Não possui documentação obrigatória</fullName>
+                <default>false</default>
+                <label>Não possui documentação obrigatória</label>
+            </value>
+            <value>
+                <fullName>RN acima de 28 dias</fullName>
+                <default>false</default>
+                <label>RN acima de 28 dias</label>
+            </value>
+            <value>
+                <fullName>Queda/ligação muda</fullName>
+                <default>false</default>
+                <label>Queda/ligação muda</label>
+            </value>
+            <value>
+                <fullName>Área de risco</fullName>
+                <default>false</default>
+                <label>Área de risco</label>
+            </value>
+            <value>
+                <fullName>Informação para Terceiros</fullName>
+                <default>false</default>
+                <label>Informação para Terceiros</label>
+            </value>
+            <value>
+                <fullName>Encaminhado para célula de vendas</fullName>
+                <default>false</default>
+                <label>Encaminhado para célula de vendas</label>
+            </value>
+            <value>
+                <fullName>Troca de plano</fullName>
+                <default>false</default>
+                <label>Troca de plano</label>
+            </value>
+            <value>
+                <fullName>Dúvidas (Acomodação, opcionais, adaptação, troca de plano, ex-funcionário)</fullName>
+                <default>false</default>
+                <label>Já é cliente, Dúvidas (Acomodação, opcionais, adaptação, ex-funcionário)</label>
+            </value>
+            <value>
+                <fullName>Já é cliente, Dúvidas (Acomodação, opcionais, adaptação, ex-funcionário)</fullName>
+                <default>false</default>
+                <label>Já é cliente, Dúvidas (Acomodação, opcionais, adaptação, ex-funcionário)</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Não</controllingFieldValue>
+            <valueName>Achou alto o valor do plano</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não</controllingFieldValue>
+            <valueName>Ficou de pensar na proposta</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não</controllingFieldValue>
+            <valueName>Sem contingente mínimo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não</controllingFieldValue>
+            <valueName>Cliente optou por ir à loja</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não</controllingFieldValue>
+            <valueName>Vai pensar/avaliar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não</controllingFieldValue>
+            <valueName>Outras opções dentro do 4020-4020 ou Unidesk</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não</controllingFieldValue>
+            <valueName>Informações da ativação da contratação</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não</controllingFieldValue>
+            <valueName>Cadastro de benefício RN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não</controllingFieldValue>
+            <valueName>Cancelamento/Reagendamento de visita ou confirmação</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não</controllingFieldValue>
+            <valueName>CNPJ cadastrado a menos de 6 meses</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não</controllingFieldValue>
+            <valueName>Cliente inadimplente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não</controllingFieldValue>
+            <valueName>Fora da área de abrangência</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não</controllingFieldValue>
+            <valueName>Deseja plano com abrangência nacional</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não</controllingFieldValue>
+            <valueName>Não possui documentação obrigatória</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não</controllingFieldValue>
+            <valueName>RN acima de 28 dias</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não</controllingFieldValue>
+            <valueName>Queda/ligação muda</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não</controllingFieldValue>
+            <valueName>Área de risco</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não</controllingFieldValue>
+            <valueName>Informação para Terceiros</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não</controllingFieldValue>
+            <valueName>Encaminhado para célula de vendas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Não</controllingFieldValue>
+            <valueName>Troca de plano</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

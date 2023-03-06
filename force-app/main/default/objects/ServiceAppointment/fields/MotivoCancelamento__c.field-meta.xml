@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MotivoCancelamento__c</fullName>
+    <externalId>false</externalId>
+    <label>Motivo do Cancelamento</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Adquiriu via outra operadora</fullName>
+                <default>false</default>
+                <label>Adquiriu via outra operadora</label>
+            </value>
+            <value>
+                <fullName>Agendamento duplicado</fullName>
+                <default>false</default>
+                <label>Agendamento duplicado</label>
+            </value>
+            <value>
+                <fullName>Adquiriu via e-commerce</fullName>
+                <default>false</default>
+                <label>Adquiriu via e-commerce</label>
+            </value>
+            <value>
+                <fullName>Cliente ausente</fullName>
+                <default>false</default>
+                <label>Cliente ausente</label>
+            </value>
+            <value>
+                <fullName>Cliente desistiu da visita</fullName>
+                <default>false</default>
+                <label>Cliente desistiu da visita</label>
+            </value>
+            <value>
+                <fullName>Cliente optou por ir a loja</fullName>
+                <default>false</default>
+                <label>Cliente optou por ir a loja</label>
+            </value>
+            <value>
+                <fullName>Cliente sem documentação</fullName>
+                <default>false</default>
+                <label>Cliente sem documentação</label>
+            </value>
+            <value>
+                <fullName>Vendedor não compareceu</fullName>
+                <default>false</default>
+                <label>Vendedor não compareceu</label>
+            </value>
+            <value>
+                <fullName>Vendedor não localizou o endereço</fullName>
+                <default>false</default>
+                <label>Vendedor não localizou o endereço</label>
+            </value>
+            <value>
+                <fullName>Troca de consultor para o atendimento</fullName>
+                <default>false</default>
+                <label>Troca de consultor para o atendimento</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Canceled</controllingFieldValue>
+            <valueName>Adquiriu via outra operadora</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Canceled</controllingFieldValue>
+            <valueName>Agendamento duplicado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Canceled</controllingFieldValue>
+            <valueName>Adquiriu via e-commerce</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Canceled</controllingFieldValue>
+            <valueName>Cliente ausente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Canceled</controllingFieldValue>
+            <valueName>Cliente desistiu da visita</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Canceled</controllingFieldValue>
+            <valueName>Cliente optou por ir a loja</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Canceled</controllingFieldValue>
+            <valueName>Cliente sem documentação</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Canceled</controllingFieldValue>
+            <valueName>Vendedor não compareceu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Canceled</controllingFieldValue>
+            <valueName>Vendedor não localizou o endereço</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Canceled</controllingFieldValue>
+            <valueName>Troca de consultor para o atendimento</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

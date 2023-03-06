@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HoraCriacao__c</fullName>
+    <externalId>false</externalId>
+    <formula>TIMEVALUE(CreatedDate - ( 3 / 24 ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Hora de criação</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Time</type>
+</CustomField>

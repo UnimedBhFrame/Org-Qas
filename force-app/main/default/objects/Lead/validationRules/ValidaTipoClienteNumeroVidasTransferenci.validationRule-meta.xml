@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValidaTipoClienteNumeroVidasTransferenci</fullName>
+    <active>true</active>
+    <description>Clientes do tipo Transferência precisam ter o campo Quantidade de Vidas Transferência preenchido e o campo Quantidade de Vidas Novas tem que estar em branco.</description>
+    <errorConditionFormula>AND(NOT($Permission.ByPassValidationRules),NOT($Permission.Integracao),NOT($Permission.SupervisorVendas),ISPICKVAL(TipoCliente__c,&quot;Transferência&quot;), ISNULL(QtdeVidasTransferencia__c) || QtdeVidasTransferencia__c &lt; 1)</errorConditionFormula>
+    <errorDisplayField>QtdeVidasTransferencia__c</errorDisplayField>
+    <errorMessage>Clientes do tipo Transferência precisam ter o campo Quantidade de Vidas Transferência preenchido</errorMessage>
+</ValidationRule>

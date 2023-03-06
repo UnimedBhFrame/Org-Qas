@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>pedrocampolina@frwk.com.br</contactEmail>
+    <label>Integração - Unimed BH</label>
+    <oauthConfig>
+        <callbackUrl>https://</callbackUrl>
+        <consumerKey>3MVG9ooRt4uZ_3Tn2AXN7hjvld0hqDZ7e65z8GKBKxbkisiB0R6FHWXGoFmzrReTAxDotU2gSvjukycJvcSxc</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+        <scopes>Api</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>BYPASS</ipRelaxation>
+        <refreshTokenPolicy>zero</refreshTokenPolicy>
+    </oauthPolicy>
+</ConnectedApp>

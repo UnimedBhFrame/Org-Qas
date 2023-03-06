@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SortOrder</fullName>
+    <inlineHelpText>Defina a precedência que determina como agendamentos são gerados quando um plano de manutenção ou um ativo de manutenção tem duas ou mais regras de trabalho de manutenção gerando um agendamento para a mesma data. O menor valor da ordem de classificação tem precedência.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

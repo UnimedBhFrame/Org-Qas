@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Porte__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(1,
+
+IF((NumeroVidas__c&gt;=1)&amp;&amp;(NumeroVidas__c&lt;=29),1,0),&apos;PME1 e Individual&apos;,
+
+IF((NumeroVidas__c&gt;29)&amp;&amp;(NumeroVidas__c&lt;=99) &amp;&amp;  (CONTAINS(Codigo__c, &apos;EXT&apos;) || CONTAINS(Codigo__c, &apos;INT&apos;)),1,0),&apos;PME1, PME2 e Individual&apos;,
+
+IF((NumeroVidas__c &gt; 29)&amp;&amp; (NumeroVidas__c&lt;=99),1,0), &apos;PME2&apos;,
+
+IF((NumeroVidas__c &gt; 99)&amp;&amp; (NumeroVidas__c&lt;=300),1,0), &apos;ME&apos;,
+
+IF((NumeroVidas__c &gt; 300)&amp;&amp; (NumeroVidas__c&lt;=600),1,0), &apos;GC&apos;,
+
+IF((NumeroVidas__c &gt; 600),1,0), &apos;CE&apos;,
+
+&apos;Dados Inválidos&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Porte</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

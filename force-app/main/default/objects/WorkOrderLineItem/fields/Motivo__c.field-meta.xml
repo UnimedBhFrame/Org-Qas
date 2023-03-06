@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Motivo__c</fullName>
+    <externalId>false</externalId>
+    <label>Motivo</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Preço</fullName>
+                <default>false</default>
+                <label>Preço</label>
+            </value>
+            <value>
+                <fullName>Rede</fullName>
+                <default>false</default>
+                <label>Rede</label>
+            </value>
+            <value>
+                <fullName>Cobertura</fullName>
+                <default>false</default>
+                <label>Cobertura</label>
+            </value>
+            <value>
+                <fullName>Falta de interesse no produto</fullName>
+                <default>false</default>
+                <label>Falta de interesse no produto</label>
+            </value>
+            <value>
+                <fullName>Multa rescisória na contratante</fullName>
+                <default>false</default>
+                <label>Multa rescisória na contratante</label>
+            </value>
+            <value>
+                <fullName>Satisfação com o prestador atual</fullName>
+                <default>false</default>
+                <label>Satisfação com o prestador atual</label>
+            </value>
+            <value>
+                <fullName>Avaliar com decisor</fullName>
+                <default>false</default>
+                <label>Avaliar com decisor</label>
+            </value>
+            <value>
+                <fullName>Avaliação orçamentária</fullName>
+                <default>false</default>
+                <label>Avaliação orçamentária</label>
+            </value>
+            <value>
+                <fullName>Pendente de documentação</fullName>
+                <default>false</default>
+                <label>Pendente de documentação</label>
+            </value>
+            <value>
+                <fullName>Sem condição financeira</fullName>
+                <default>false</default>
+                <label>Sem condição financeira</label>
+            </value>
+            <value>
+                <fullName>Em cotação de mercado</fullName>
+                <default>false</default>
+                <label>Em cotação de mercado</label>
+            </value>
+            <value>
+                <fullName>Preço superior ao plano atual</fullName>
+                <default>false</default>
+                <label>Preço superior ao plano atual</label>
+            </value>
+            <value>
+                <fullName>Preço (em relação à concorrência)</fullName>
+                <default>false</default>
+                <label>Preço (em relação à concorrência)</label>
+            </value>
+            <value>
+                <fullName>Preço (condições financeiras)</fullName>
+                <default>false</default>
+                <label>Preço (condições financeiras)</label>
+            </value>
+            <value>
+                <fullName>Cliente Inadimplente</fullName>
+                <default>false</default>
+                <label>Cliente Inadimplente</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IDMetaGerente__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Busca a informação da meta do gerente no objeto meta__c, a meta é compatível com a competência. Esta meta não é a desafio.</description>
+    <externalId>false</externalId>
+    <label>Id da Meta do Gerente</label>
+    <referenceTo>Meta__c</referenceTo>
+    <relationshipLabel>Movimentações (Id da Meta do Gerente)</relationshipLabel>
+    <relationshipName>Movimenta_es1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

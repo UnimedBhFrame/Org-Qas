@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ObrigaPendenteAutorizacao</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(StatusCotacao__c , &apos;Pendente de autorização&apos;) &amp;&amp; ISBLANK( TEXT(Detalhamento_da_autoriza_o__c))</errorConditionFormula>
+    <errorDisplayField>Detalhamento_da_autoriza_o__c</errorDisplayField>
+    <errorMessage>Campo Obrigatorio Aprovação Pendente</errorMessage>
+</ValidationRule>

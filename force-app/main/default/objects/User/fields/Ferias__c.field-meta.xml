@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ferias__c</fullName>
+    <externalId>false</externalId>
+    <formula>AND(DataInicioFerias__c &lt;= today(), DataFimFerias__c &gt;= today())</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Férias</label>
+    <type>Checkbox</type>
+</CustomField>

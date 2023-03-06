@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tste</fullName>
+    <fields>IsRecurrence</fields>
+    <fields>OwnerId</fields>
+    <fields>Email</fields>
+    <fields>Status</fields>
+    <fields>Type</fields>
+    <fields>WhatId</fields>
+    <fields>WhoId</fields>
+    <fields>Motivo__c</fields>
+    <label>tste</label>
+</CompactLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SortType</fullName>
+    <inlineHelpText>&quot;Classificar em um pacote&quot; define a ordem de membros do pacote. Também é usado quando você desempacota para definir a ordem em que os compromissos de serviço são agendados no Gantt.
+            &quot;Classificar para empacotamento automatizado&quot; define a ordem em que o empacotamento automatizado usa para examinar os compromissos de serviço candidatos a serem empacotados.</inlineHelpText>
+</CustomField>

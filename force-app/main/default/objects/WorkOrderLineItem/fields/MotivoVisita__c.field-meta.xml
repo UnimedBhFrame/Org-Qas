@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MotivoVisita__c</fullName>
+    <externalId>false</externalId>
+    <label>Motivo da visita</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Implantação</fullName>
+                <default>false</default>
+                <label>Implantação</label>
+            </value>
+            <value>
+                <fullName>Manutenção</fullName>
+                <default>false</default>
+                <label>Manutenção</label>
+            </value>
+            <value>
+                <fullName>Prospecção</fullName>
+                <default>false</default>
+                <label>Prospecção</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

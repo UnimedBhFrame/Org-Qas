@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IDCoordenador__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>UserID do Coordenador</description>
+    <externalId>false</externalId>
+    <label>ID do Coordenador</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>MetasIDCoordenador</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

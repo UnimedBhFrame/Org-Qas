@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StatusesNotToUpdateOnUnbundle</fullName>
+    <inlineHelpText>Selecione os status que não são atualizados quando um pacote é desempacotado. Use um valor vazio para atualizar os compromissos de serviço ao desempacotar.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+</CustomField>
