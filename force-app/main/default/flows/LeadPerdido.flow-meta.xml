@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>53.0</apiVersion>
+    <decisions>
+        <description>Para cada caminho que o fluxo possa seguir, crie um resultado. Para cada resultado, especifique as condições que devem ser cumpridas para que o fluxo siga esse caminho.</description>
+        <name>VerificaLead</name>
+        <label>Lead tem mais de 3 meses com status perdido?</label>
+        <locationX>182</locationX>
+        <locationY>276</locationY>
+        <defaultConnector>
+            <targetReference>AtualizaFalse</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Perdido menos de 3 meses</defaultConnectorLabel>
+        <rules>
+            <name>PerdidoTresMeses</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SubtraiDataLeadPerdido</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <numberValue>91.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Lead Perdido</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>AtualizaTempoLeadPerdido</targetReference>
+            </connector>
+            <label>Perdido há mais de 3 meses</label>
+        </rules>
+    </decisions>
+    <description>Flow utilizado para atualizar o campo TempoLeadPerdido__c caso o lead esteja com status &quot;Leard Perdido&quot; há mais de 91 dias.
+Este campo é utilizado pelo Marketing Cloud para executar as jornadas de leads perdidos.</description>
+    <formulas>
+        <description>Converte o campo DataLeadPerdido__c em número e recupera a diferença em dias da data corrente até a data em que o lead foi perdido</description>
+        <name>SubtraiDataLeadPerdido</name>
+        <dataType>Number</dataType>
+        <expression>TODAY() - DATEVALUE({!$Record.DataLeadPerdido__c})</expression>
+        <scale>2</scale>
+    </formulas>
+    <interviewLabel>Lead Perdido há mais de x tempo {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Lead Perdido há mais de x dias</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>AtualizaFalse</name>
+        <label>AtualizaFalse</label>
+        <locationX>314</locationX>
+        <locationY>396</locationY>
+        <inputAssignments>
+            <field>TempoLeadPerdido__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Atualize registros do Salesforce usando valores do fluxo.</description>
+        <name>AtualizaTempoLeadPerdido</name>
+        <label>Atualiza Tempo Lead Perdido</label>
+        <locationX>50</locationX>
+        <locationY>396</locationY>
+        <inputAssignments>
+            <field>TempoLeadPerdido__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>VerificaLead</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Lead Perdido</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>DataLeadPerdido__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>Lead</object>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startDate>2021-10-20</startDate>
+            <startTime>20:00:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

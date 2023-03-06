@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Flow utilizado para atualizar o campo TempoLeadPerdido__c caso o lead esteja com status &quot;Leard Perdido&quot; há mais de 91 dias.
+Este campo é utilizado pelo Marketing Cloud para executar as jornadas de leads perdidos.</description>
+    <masterLabel>Lead Perdido há mais de x dias</masterLabel>
+</FlowDefinition>

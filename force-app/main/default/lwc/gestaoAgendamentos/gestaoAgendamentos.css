@@ -1,0 +1,32 @@
+.slds-notify {
+    border-radius: .25rem;
+    width: 96%;
+    margin-left: 10px;
+}
+
+.slds-modal__content{
+    overflow: initial;
+}
+
+.pending-badge {
+    --slds-c-badge-font-size: 12px;
+    display:inline-block;
+    padding: 10px 10px 0px 0px;
+    /* cursor: pointer; */
+}
+
+.pending-badge:hover {
+    cursor: pointer;
+}
+
+.modalBody {
+    position: relative;
+}
+
+.motivo-cancelamento-combobox{
+    padding: 10px 5px 10px 5px;
+}
+
+.submotivo-cancelamento-combobox {
+    padding: 10px 5px 10px 5px;
+}

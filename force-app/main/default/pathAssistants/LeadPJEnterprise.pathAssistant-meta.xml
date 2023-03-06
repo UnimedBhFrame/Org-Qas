@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Lead</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Lead - Pessoa Jurídica Enterprise</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>CNPJ__c</fieldNames>
+        <fieldNames>Address</fieldNames>
+        <fieldNames>Phone</fieldNames>
+        <fieldNames>TipoInclusaoModulo__c</fieldNames>
+        <fieldNames>DataVigencia__c</fieldNames>
+        <info>&lt;p&gt;A fase de alavancagem do negócio consiste em se relacionar com a empresa e seus interlocutores, se tornar uma referência para eles(as), sempre com cautela, para não se tornar insistente demais.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Ações sugeridas:&lt;/p&gt;&lt;p&gt;1 - Envie periodicamente materiais de marketing via e-mail e whatsapp;&lt;/p&gt;&lt;p&gt;2 - Convide para eventos patrocinados que tenham aderência às preferências já mapeadas pelo consultor(a);&lt;/p&gt;&lt;p&gt;3 - Envie felicitações nas datas de aniversário;&lt;/p&gt;&lt;p&gt;4 - Realize visitas periódicas e aborde assuntos relevantes sobre acontecimentos na UNIMED-BH, no mercado de saúde em geral e sobre a atuação da empresa. Sempre buscando novas informações sobre possibilidades de negócio;&lt;/p&gt;&lt;p&gt;5 - Presenteie com brindes institucionais;&lt;/p&gt;&lt;p&gt;6 - Caso a data base do contrato esteja próxima, seja ágil e assertivo, elabore uma proposta comercial e se involva intensamente com a negociação.&lt;/p&gt;</info>
+        <picklistValueName>Alavancagem</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>DataVigencia__c</fieldNames>
+        <fieldNames>NumeroVidas__c</fieldNames>
+        <fieldNames>PossuiPlano__c</fieldNames>
+        <fieldNames>OperadoraSaude__c</fieldNames>
+        <info>&lt;p&gt;Estou aqui para te dar dicas importantes para o sucesso da sua venda!&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Ações Sugeridas:&lt;/p&gt;&lt;p&gt;1 - Crie tarefas de acompanhamento diárias, entre no site e redes sociais da empresa, a fim de conhecê-la mais. Demonstre que você se interessa e valoriza a empresa;&lt;/p&gt;&lt;p&gt;2 - Registre todas as tentativas de contato em Atividades;&lt;/p&gt;&lt;p&gt;3 - Utilize canais e horários variados quando for contatar o seu Lead (fique atento às preferências dele, e solicite conexão nas redes sociais);&lt;/p&gt;&lt;p&gt;4 - Apresente-se sempre como consultor(a) responsável pelo atendimento à região da empresa, e que inicialmente, você deseja conhecer o(a) interlocutor(a) e estabelecer um relacionamento comercial (ainda não fale sobre proposta e negociação);&lt;/p&gt;&lt;p&gt;5 - Ao realizar uma tentativa de agendamento, apresente no mínimo, duas opções de dias e horários. Assim, você não concede margem para receber um não;&lt;/p&gt;&lt;p&gt;6 - Não desista!&lt;/p&gt;</info>
+        <picklistValueName>Captação</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>CNPJ__c</fieldNames>
+        <fieldNames>Address</fieldNames>
+        <fieldNames>Phone</fieldNames>
+        <info>&lt;p&gt;Show! Você já tem um cliente um pouco mais quente nas mãos. É hora de coletar algumas informações essenciais para conhecermos melhor nosso cliente. A prioridade desta fase é ação. Passe confiança para seu cliente, apresente-se sempre como consultor(a) e deixe claro seu papel de facilitador do processo de contratação e/ou troca do plano de saúde!&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Ações Sugeridas:&lt;/p&gt;&lt;p&gt;1 - Cause uma boa impressão. Pontualidade. vestimentas adequadas e imagem pessoal podem ajudar nesse objetivo;&lt;/p&gt;&lt;p&gt;2 - Entonação e segurança ao falar;&lt;/p&gt;&lt;p&gt;3 - Ouça mais e fale menos, demonstre paciência e interesse;&lt;/p&gt;&lt;p&gt;4 - Atente-se a detalhes, como preferências pessoais, gostos e perfil do interlocutor. Registre esses detalhes assim como os fatos pertinentes à negociação;&lt;/p&gt;&lt;p&gt;5 - Deixe claro que você irá cuidar de tudo e conseguirá ofertar as melhores condições à empresa!&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Qualificação</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>PessoaJuridicaEnterprise</recordTypeName>
+</PathAssistant>

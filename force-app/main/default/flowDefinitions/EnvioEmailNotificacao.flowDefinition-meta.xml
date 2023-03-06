@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>2</activeVersionNumber>
+    <description>Fluxo que envia email e notificação de alerta
+Condição: faltar 15 dias para o aniversário da corretora</description>
+    <masterLabel>Envio de Email e Notificação Corretora</masterLabel>
+</FlowDefinition>

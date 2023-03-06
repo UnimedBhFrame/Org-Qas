@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Atualiza o campo CPFCNPJ__c com a informação do documento de identificação, essa regra é necessária para evitar duplicidade de informação. Este campo é utilizado nas regras de correspondência.</description>
+    <masterLabel>Lead - CPFCNPJ</masterLabel>
+</FlowDefinition>

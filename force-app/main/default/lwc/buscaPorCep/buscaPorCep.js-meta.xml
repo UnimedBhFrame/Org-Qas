@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Buscar endereço CEP</masterLabel>
+    <description>Componente para buscar o endereço pelo CEP e salvar no registro</description>
+    <targets>
+        <target>lightning__RecordPage</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage">
+            <property required="true" label="Nome do campo para  CEP" name="ConfigCep" type="String" />
+            <property required="true" label="Nome do campo para Rua" name="ConfigRua" type="String" />
+            <property required="true" label="Nome do campo para  Numero" name="ConfigNumero" type="String" />
+            <property required="true" label="Nome do campo para  Complemento" name="ConfigComplemento" type="String" />
+            <property required="true" label="Nome do campo para  Bairro" name="ConfigBairro" type="String" />
+            <property required="true" label="Nome do campo para  Cidade" name="ConfigCidade" type="String" />
+            <property required="true" label="Nome do campo para  Estado" name="ConfigEstado" type="String" />
+            <property required="true" label="Nome do campo para  Pais" name="ConfigPais" type="String" />
+            <property label="Nome do campo para  Latitude" name="ConfigLatitude" type="String" />
+            <property label="Nome do campo para  Longitude" name="ConfigLongitude" type="String" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

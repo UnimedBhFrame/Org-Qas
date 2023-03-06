@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <decisions>
+        <name>TemVisita</name>
+        <label>Tem visita criada?</label>
+        <locationX>176</locationX>
+        <locationY>455</locationY>
+        <defaultConnector>
+            <targetReference>RegistraLigacaoSemVisita</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Sem visita</defaultConnectorLabel>
+        <rules>
+            <name>VisitaCriada</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>BuscaVisita.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>Sem Finalizar</label>
+        </rules>
+    </decisions>
+    <description>Registra ligação depois que o agendamento é realizado.</description>
+    <interviewLabel>Registra Ligação Automaticamente {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Registra Ligação Automaticamente</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <description>Registra ligação criando uma tarefa</description>
+        <name>RegistraLigacaoSemVisita</name>
+        <label>Registra Ligação Sem Visita</label>
+        <locationX>308</locationX>
+        <locationY>575</locationY>
+        <inputAssignments>
+            <field>IdServiceAppointment__c</field>
+            <value>
+                <elementReference>BuscaVisita.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Lead__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Motivo__c</field>
+            <value>
+                <stringValue>Lead criado sem visita</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Completa</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Ligacao</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>TipoAtendimento__c</field>
+            <value>
+                <elementReference>$Record.RecordType.Name</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhoId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <description>Retornar a visita criada</description>
+        <name>BuscaVisita</name>
+        <label>Busca Visita</label>
+        <locationX>176</locationX>
+        <locationY>335</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>TemVisita</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Lead__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>ServiceAppointment</object>
+        <sortField>CreatedDate</sortField>
+        <sortOrder>Desc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>BuscaVisita</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AbriuModalAgendamento__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Lead</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

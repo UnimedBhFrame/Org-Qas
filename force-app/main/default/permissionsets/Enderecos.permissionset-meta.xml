@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Permite acesso ao objeto endereços, onde são registrados endereços adicionais do lead.</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>EnderecosAdicionais__c.Lead__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>EnderecosAdicionais__c.Numero__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Endereços: Ler, Criar e Excluir</label>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>EnderecosAdicionais__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <tabSettings>
+        <tab>EnderecosAdicionais__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+</PermissionSet>

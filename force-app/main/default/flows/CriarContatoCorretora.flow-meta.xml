@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <decisions>
+        <name>RegistroCriado</name>
+        <label>O registro esta sendo criado</label>
+        <locationX>182</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>Atualizado</defaultConnectorLabel>
+        <rules>
+            <name>Criar</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IsNew</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>CriarContatos</targetReference>
+            </connector>
+            <label>Criar</label>
+        </rules>
+    </decisions>
+    <description>Fluxo criado a partir do card 134208 (https://unimedbh.visualstudio.com/CSD/_boards/board/t/Avenders/Stories/?workitem=134208).
+Trigger para todos os casos de criação ou atualização de registros no objeto corretora.
+01/09/2022 - Inserida condicional da regra ByPass</description>
+    <formulas>
+        <name>IsNew</name>
+        <dataType>Boolean</dataType>
+        <expression>IsNew()</expression>
+    </formulas>
+    <interviewLabel>Criar Contato a partir da Corretora {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Corretora - After Create or Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>RegistroCriado</targetReference>
+        </connector>
+        <object>Corretora__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <description>Fluxo criado a partir do card 134208 (https://unimedbh.visualstudio.com/CSD/_boards/board/t/Avenders/Stories/?workitem=134208).
+Usado para criação de contatos</description>
+        <name>CriarContatos</name>
+        <label>Criar Contato</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <flowName>CriarContatos</flowName>
+        <inputAssignments>
+            <name>VarInput</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+</Flow>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>Oportunidade - Enterprise</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Proposta aprovada. parabéns!&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Próximos passos:&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;1 - Agendar e realizar a primeira reunião de implantação com todos os envolvidos no processo;&lt;/p&gt;&lt;p&gt;2 - Definir cronograma de todas as atividades da implantação de acordo com a data de vigência do contrato;&lt;/p&gt;&lt;p&gt;3 - Acompanhar, envolver-se e conferir todas as etapas da implantação;&lt;/p&gt;&lt;p&gt;4 - Cumprir todos os prazos acordados e sanar todas as possíveis pendências realizadas;&lt;/p&gt;&lt;p&gt;5 - Realizar reunião de passagem de bastão para a área de relacionamento, de acordo com todo o fluxo já desenhado em nosso procedimento operacional.&lt;/p&gt;</info>
+        <picklistValueName>Negociação</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Parabéns! Temos um novo cliente usufruindo um serviço de qualidade, graças a sua colaboração!&lt;/p&gt;</info>
+        <picklistValueName>Oportunidade Ganha</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Proposta recusada!&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Não foi dessa vez, mas não desanime! É hora de anotar as lições aprendidas com esta negociação. E o jogo não se encerra neste momento, continue com o relacionamento com a empresa, para que, no aniversário de contrato você possa tentar novamente, dessa vez, com mais experiência!&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Prioridade desta fase:&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;1 - Procure entender detalhadamente os motivos da escolha da empresa por outra operadora, ou os motivos de não contratarem um plano neste momento;&lt;/p&gt;&lt;p&gt;2 - Busque feedback da empresa sobre a negociação e sua atuação como consultor(a);&lt;/p&gt;&lt;p&gt;3 - Colha e registre todos os pontos relevantes da negociação para ter como referência na próxima oportunidade.&lt;/p&gt;</info>
+        <picklistValueName>Oportunidade Perdida</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Enterprise</recordTypeName>
+</PathAssistant>

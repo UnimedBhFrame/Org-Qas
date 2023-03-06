@@ -1,0 +1,18 @@
+<template>
+    <template if:true={mostrarModal}>
+        <section role="dialog" tabindex="-1" aria-label="Teste modal" aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" onclick={fecharModal}>
+                    <svg class="slds-button__icon slds-button__icon_large" aria-hidden="false">
+                        <use xlink:href="/_slds/icons/utility-sprite/svg/symbols.svg#close"></use>
+                    </svg>
+                <span class="slds-assistive-text">Fechar</span>
+                </button>
+                <div class="slds-modal__content slds-p-around_medium slds-modal__content_headless" id="modal-content-id-1">
+                    <c-schedule-component record-id={recordId} onfecharmodal={fecharModal}></c-schedule-component>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+    </template>
+</template>

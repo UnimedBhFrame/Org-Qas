@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Call Center</fullName>
+        <default>false</default>
+        <label>Call Center</label>
+    </customValue>
+    <customValue>
+        <fullName>Equipe Corporativa</fullName>
+        <default>false</default>
+        <label>Equipe Corporativa</label>
+    </customValue>
+    <customValue>
+        <fullName>GVEN - Consultores</fullName>
+        <default>false</default>
+        <label>GVEN - Consultores</label>
+    </customValue>
+    <customValue>
+        <fullName>Lojas Autorizadas</fullName>
+        <default>false</default>
+        <label>Lojas Autorizadas</label>
+    </customValue>
+    <customValue>
+        <fullName>Lojas Próprias</fullName>
+        <default>false</default>
+        <label>Lojas Próprias</label>
+    </customValue>
+    <customValue>
+        <fullName>Promotores</fullName>
+        <default>false</default>
+        <label>Promotores</label>
+    </customValue>
+    <customValue>
+        <fullName>Novos Negocios</fullName>
+        <default>false</default>
+        <label>Novos Negocios</label>
+    </customValue>
+    <description>Canal de vendas</description>
+    <masterLabel>Canal</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

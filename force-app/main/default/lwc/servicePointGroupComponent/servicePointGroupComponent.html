@@ -1,0 +1,45 @@
+<template>
+    <div>
+        <lightning-card  title="Cadastro de ausência" icon-name="standard:date_input">
+        
+            <div style="border-radius: .25rem;" class="slds-m-around_medium">
+                <lightning-combobox
+                    name="Motivo da Ausência" 
+                    label="Motivo da Ausência" 
+                    placeholder="Seleciona uma opção" 
+                    value={value}
+                    onchange={handleAbscenceReason}
+                    options={abscenceTypes}>            
+                </lightning-combobox>    
+            </div>
+            <div class="slds-m-around_medium">
+                <h2>Preencha a data de ausência</h2>
+                <lightning-input type="datetime" name="startTime" label="Data de início da ausência" onchange={handleStartTime} ></lightning-input>
+                <lightning-input type="datetime" name="endTime" label="Data de término da ausência" onchange={handleEndTime}></lightning-input>
+            </div> 
+            <div class="slds-m-around_medium">
+                <lightning-input type="text" label="Descrição" onchange={handleText}></lightning-input>    
+            </div>
+            <template if:true={isHidden}>
+                <div class="row slds-m-around_medium slds-clearfix">
+                    <lightning-button class="slds-float_right" label="Salvar" slot="actions" icon-position="right" onclick={handleSaveButton}></lightning-button>
+                </div>
+            </template>
+            
+            <div class="slds-m-around_medium">
+                <lightning-datatable
+                    if:true={activeEmptyInfo}
+                    key-field="id"
+                    columns={columns}
+                    data={abscenceData}
+                    hide-checkbox-column
+                    default-sort-direction={defaultSortDirection}
+                    sorted-direction={sortDirection}
+                    sorted-by={sortedBy}
+                    onsort={onHandleSort}>
+            </lightning-datatable>
+            </div>
+        </lightning-card>
+    </div>
+    
+</template>

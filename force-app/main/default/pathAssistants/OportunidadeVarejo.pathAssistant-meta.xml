@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>Oportunidade - Varejo</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13.3333px; font-family: Arial;&quot;&gt;Sua proposta está em análise cadastral! Acompanhe, e se você receber um check list (o que não é nada legal!), resolva no prazo determinado.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Análise cadastral</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;table class=&quot;ql-table-blob&quot; dir=&quot;ltr&quot; style=&quot;font-weight: 400; font-style: normal; font-size: 10pt; width: 0px; color: rgb(8, 7, 7); background-color: rgb(255, 255, 255); font-family: Arial;&quot;&gt;&lt;tbody style=&quot;font-size: 13.3333px;&quot;&gt;&lt;tr style=&quot;font-size: 13.3333px; height: 21px;&quot;&gt;&lt;td colspan=&quot;1&quot; rowspan=&quot;1&quot; style=&quot;font-size: 13.3333px;&quot;&gt;Falta pouco para sua proposta ser implantada! Acompanhe se o cliente assinou o termo de CPT. Caso não tenha conseguido contato, veja se pode ajudar!&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>CPT</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-family: Arial; font-size: 13.3333px;&quot;&gt;TENHA ATENÇÃO! Preencha com muita atenção todos os campos obrigatórios e não esqueça nenhum documento:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-family: Arial; font-size: 13.3333px;&quot;&gt;1 - Recolher o maior número de contatos possíveis, esclarecendo os processos seguintes que exigem necessidade de contato;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-family: Arial; font-size: 13.3333px;&quot;&gt;2 - Anexar toda a documentação obrigatória LEGÍVEL;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-family: Arial; font-size: 13.3333px;&quot;&gt;3 - Conferir assinatura.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Elaboração de proposta</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13.3333px; font-family: Arial;&quot;&gt;Trata-se de oportunidades que estão mornas devido ao prazo de fechamento ter vencido a quantidade de dias necessários para uma venda ser efetivada.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Elaboração vencida</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-family: Arial; font-size: 13.3333px;&quot;&gt;Dê as boas vindas ao seu cliente!&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-family: Arial; font-size: 13.3333px;&quot;&gt;Já é possível informar o número das carteirinhas, reforce os contatos de pós venda da Unimed-BH e solicite indicações de familiares, amigos e conhecidos. Caso a proposta não seja implantada por alguma discordância de processo das etapas anteriores, ou por desistência, coloque-se à disposição para oportunidades futuras. Fale do APP UNIMED-BH.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Oportunidade Ganha</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;span style=&quot;font-family: Arial; font-size: 13.3333px;&quot;&gt;Sua proposta está em uma etapa onde o contato com o cliente é imprescindível!&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-family: Arial; font-size: 13.3333px;&quot;&gt;Acompanhe sua proposta e, caso seja necessário, contate seu cliente.&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Triagem médica</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Varejo</recordTypeName>
+</PathAssistant>

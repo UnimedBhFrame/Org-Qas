@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowCategory xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Fluxos referente ao call center</description>
+    <flowCategoryItems>
+        <flow>LogCallCenterCanceled</flow>
+    </flowCategoryItems>
+    <flowCategoryItems>
+        <flow>LogCallCallCenter</flow>
+    </flowCategoryItems>
+    <flowCategoryItems>
+        <flow>LogCall</flow>
+    </flowCategoryItems>
+    <masterLabel>CallCenter</masterLabel>
+</FlowCategory>

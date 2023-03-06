@@ -1,0 +1,312 @@
+<template>
+    <lightning-card variant="Narrow" icon-name="standard:work_order">
+        <p slot="title"><b>Agendamento</b></p>
+        <div class="slds-m-around_medium">
+            <template if:true={errorStatus}>
+                <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert"
+                    style="border-radius: .25rem;">
+                    <span class="slds-assistive-text">warning</span>
+                    <span class="slds-icon_container slds-icon-utility-warning slds-m-right_x-small" title="">
+                        <lightning-icon icon-name="utility:warning" variant="circle" alternative-text="warning">
+                        </lightning-icon>
+                    </span>
+                    <h2>
+                        {logErrorMessage}
+                    </h2>
+                </div>
+            </template>
+            <template if:true={hasPermission}>
+                <div>
+                    <lightning-button label="Atualizar" slot="refresh" class="slds-float_right" onclick={refreshPage}
+                        style="margin-bottom: 10px;">
+                    </lightning-button>
+                </div>
+                <br />
+                <template if:true={isScheduled}>
+                    <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert"
+                        style="border-radius: 5px;">
+                        <span class="slds-assistive-text">warning</span>
+                        <span class="slds-icon_container slds-icon-utility-warning slds-m-right_x-small" title="">
+                            <lightning-icon icon-name="utility:warning" variant="circle" alternative-text="warning">
+                            </lightning-icon>
+                        </span>
+                        <h2>
+                            Agendamento realizado. A visita será realizada por: <lightning-formatted-text
+                                value={textResourceName}></lightning-formatted-text>
+                        </h2>
+                    </div>
+                    <div class="slds-m-around_medium">
+                        <p>Consultor: <lightning-formatted-text value={textResourceName}></lightning-formatted-text>
+                        </p>
+                        <p>Data: <lightning-formatted-date-time value={scheduledDate} day="numeric" month="numeric"
+                                year="numeric" hour="2-digit" minute="2-digit">
+                            </lightning-formatted-date-time>
+                            <!--span if:true={permissionAgendamentoSabado}>
+                                </br></br>
+                                {scheduledDate}
+                            </span-->
+                        </p>
+                    </div>
+                    <template if:false={inProgress}>
+                        <div class="row slds-m-around_medium slds-clearfix" id="inProgress">
+                            <lightning-button class="slds-float_left" variant="destructive-text" label="Cancelamento"
+                                slot="actions" onclick={showHideModalCancel}></lightning-button>
+
+                            <lightning-button class="slds-float_right" label="Reagendamento" slot="actions"
+                                onclick={showHideModalReschedule}></lightning-button>
+                        </div>
+                    </template>
+
+
+                </template>
+                <template if:true={adressStatus}>
+                    <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert"
+                        style="border-radius: .25rem;">
+                        <span class="slds-assistive-text">warning</span>
+                        <span class="slds-icon_container slds-icon-utility-warning slds-m-right_x-small" title="">
+                            <lightning-icon icon-name="utility:warning" variant="circle" alternative-text="warning">
+                            </lightning-icon>
+                        </span>
+                        <h2>
+                            Esta região não se encontra cadastrada no sistema. Encaminhe os dados do cliente para seu
+                            supervisor e informe que receberá retorno.
+                        </h2>
+                    </div>
+                </template>
+                <template if:false={hasAddress}>
+                    <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert"
+                        style="border-radius: .25rem;">
+                        <span class="slds-assistive-text">warning</span>
+                        <span class="slds-icon_container slds-icon-utility-warning slds-m-right_x-small" title="">
+                            <lightning-icon icon-name="utility:warning" variant="circle" alternative-text="warning">
+                            </lightning-icon>
+                        </span>
+                        <h2>
+                            {addressMessage}
+                        </h2>
+                    </div>
+                </template>
+                <template if:true={riskStatus}>
+                    <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert"
+                        style="border-radius: .25rem;">
+                        <span class="slds-assistive-text">warning</span>
+                        <span class="slds-icon_container slds-icon-utility-warning slds-m-right_x-small" title="">
+                            <lightning-icon icon-name="utility:warning" variant="circle" alternative-text="warning">
+                            </lightning-icon>
+                        </span>
+                        <h2>
+                            Não é possível realizar atendimento presencial nesta região por se tratar de {riskMessage}.
+                            Encaminhe os dados do cliente para seu supervisor e informe que receberá retorno
+                        </h2>
+                    </div>
+                </template>
+                <template if:true={hasError}>
+                    <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert"
+                        style="border-radius: .25rem;">
+                        <span class="slds-assistive-text">warning</span>
+                        <span class="slds-icon_container slds-icon-utility-warning slds-m-right_x-small" title="">
+                            <lightning-icon icon-name="utility:warning" variant="circle" alternative-text="warning">
+                            </lightning-icon>
+                        </span>
+                        <h2>
+                            {errorMessage}.
+                        </h2>
+                    </div>
+                </template>
+                <template if:true={scheduleStatus}>
+                    <div class="slds-m-around_medium">
+                        <lightning-input if:true={permissionAgendamentoSabado} type="checkbox"
+                            label="Agendamento aos Sábados" onchange={handleChangeAgendSabados}></lightning-input>
+                        <lightning-input if:true={permissionPSAtendenteCallCenter} type="checkbox"
+                            label="Agendamento Célula Call Center" checked={atendenteCallCenter}
+                            onchange={handleChangeAtendenteCallCenter}></lightning-input>
+                        <lightning-combobox class="selecione-consultor" name="Selecione o consultor"
+                            label="Selecione o consultor" placeholder="Selecione o consultor" value={value}
+                            onchange={handleConsult} options={consult}>
+                        </lightning-combobox>
+                    </div>
+                    <div class="slds-m-around_medium">
+                        <lightning-input class="selecione-data" type="date" name="Selecione uma data e hora"
+                            label="Selecione uma data e hora" placeholder="Selecione uma data e hora"
+                            onchange={handleDateTime}>
+                        </lightning-input>
+                    </div>
+                    <div if:false={atendenteCallCenter} class="slds-m-around_medium">
+                        <lightning-combobox class="selecione-horario" name="Selecione um horário"
+                            label="Selecione um horário" placeholder="Selecione um horário" onchange={handleTime}
+                            value={value} options={scheduleOptions}>
+                        </lightning-combobox>
+                    </div>
+                    <div if:true={atendenteCallCenter} class="slds-m-around_medium">
+                        <lightning-input type="time" class="selecione-horario" name="Selecione um horário"
+                            label="Selecione um horário" placeholder="Selecione um horário" onchange={handleTime}
+                            value={value} min={primeiroHorario} max={ultimoHorario}>
+                        </lightning-input>
+                    </div>
+                    <div class="slds-m-around_medium">
+                        <lightning-input type="text" label="Informações Adicionais" onchange={handleText}>
+                        </lightning-input>
+                    </div>
+                    <div class="row slds-m-around_medium slds-clearfix">
+                        <lightning-button class="slds-float_right" label="Salvar" slot="actions"
+                            onclick={handleSaveButton}></lightning-button>
+                    </div>
+
+                </template>
+                <template if:true={loaded}>
+                    <div class="div-spinner-center">
+                        <lightning-spinner alternative-text="Processando" size="medium" class="spinner-center">
+                        </lightning-spinner>
+                    </div>
+                </template>
+            </template>
+            <!--
+            <template if:false={hasPermission}>
+                <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert" style="border-radius: .25rem;">
+                    <span class="slds-assistive-text">warning</span>
+                    <span class="slds-icon_container slds-icon-utility-warning slds-m-right_x-small" title="">
+                        <lightning-icon icon-name="utility:warning" variant="circle"  alternative-text="warning"></lightning-icon>            
+                    </span>
+                    <h2>
+                        Você não possui permissão para acessar o componente.
+                    </h2>
+                </div>
+            </template>
+            -->
+
+        </div>
+    </lightning-card>
+
+    <!--Busca CEP-->
+    <div if:false={actionButton} style="margin-top: 12px">
+        <c-search-address record-id={recordId} onchangeaddress={handleChangeAddress}></c-search-address>
+    </div>
+
+    <!--Modal de Reagendamento-->
+    <div class="modal-reschedule slds-modal" style="display: flex;">
+        <!--section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+            aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open" style="display: flex;"-->
+        <div class="slds-modal__container" style="height: unset; padding: 0; margin: auto; width: 70%;">
+            <div if:false={scheduleLoaded} class="div-spinner-center">
+                <lightning-spinner alternative-text="Processando" size="large" class="spinner-center">
+                </lightning-spinner>
+            </div>
+            <header class="slds-modal__header">
+                <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close"
+                    onclick={showHideModalReschedule}>
+                    <lightning-icon icon-name="utility:close" size="medium">
+                    </lightning-icon>
+                    <span class="slds-assistive-text">Close</span>
+                </button>
+                <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Reagendamento</h2>
+            </header>
+            <div class="slds-modal__content slds-p-around_medium">
+                <div class="slds-m-around_medium">
+                    <lightning-combobox name="Selecione o consultor" class="selecione-consultor"
+                        label="Selecione o consultor" placeholder="Selecione o consultor" value={value}
+                        onchange={handleConsult} options={consult}>
+                    </lightning-combobox>
+                </div>
+                <div class="slds-m-around_medium">
+                    <lightning-input type="date" class="selecione-data" name="Selecione uma data e hora"
+                        label="Selecione uma data e hora" placeholder="Selecione uma data e hora"
+                        onchange={handleDateTime}>
+                    </lightning-input>
+                </div>
+                <div if:false={atendenteCallCenter} class="slds-m-around_medium">
+                    <lightning-combobox name="Selecione um horário" class="selecione-horario"
+                        label="Selecione um horário" placeholder="Selecione um horário" onchange={handleTime}
+                        value={value} options={scheduleOptions}>
+                    </lightning-combobox>
+                </div>
+                <div if:true={atendenteCallCenter} class="slds-m-around_medium">
+                    <lightning-input type="time" class="selecione-horario" name="Selecione um horário"
+                        label="Selecione um horário" placeholder="Selecione um horário" onchange={handleTime}
+                        value={value} min={primeiroHorario} max={ultimoHorario}>
+                    </lightning-input>
+                </div>
+                <div style="border-radius: .25rem;" class="slds-m-around_medium">
+                    <lightning-combobox name="Motivo do Reagendamento" label="Motivo do Reagendamento"
+                        placeholder="Selecione uma opção" value={value} onchange={handleRescheduleReason}
+                        options={rescheduleOptions}>
+                    </lightning-combobox>
+                </div>
+                <div class="slds-m-around_medium">
+                    <lightning-input type="text" label="Informações Adicionais" onchange={handleText}>
+                    </lightning-input>
+                </div>
+            </div>
+            <template if:true={isHidden}>
+                <div id="resButton">
+                    <footer class="slds-modal__footer">
+                        <lightning-button label="Cancelar" variant="neutral" onclick={showHideModalReschedule}>
+                        </lightning-button>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <lightning-button label="Salvar" variant="brand" onclick={handleReSaveButton}>
+                        </lightning-button>
+                    </footer>
+                </div>
+
+            </template>
+
+        </div>
+        <!--/section-->
+
+    </div>
+    <div class="modal-reschedule slds-backdrop"></div>
+
+    <!--Modal de Cancelamento-->
+    <div class="modal-cancel slds-modal" style="display: flex;">
+        <!--section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+            aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open" style="display: flex;"-->
+        <div class="slds-modal__container" style="height: unset; padding: 0; margin: auto; width: 70%;">
+            <div if:false={cancelLoaded} class="div-spinner-center">
+                <lightning-spinner alternative-text="Processando" size="large" class="spinner-center"
+                    style="border-radius: 0.25rem;">
+                </lightning-spinner>
+            </div>
+            <header class="slds-modal__header">
+                <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close"
+                    onclick={showHideModalCancel}>
+                    <lightning-icon icon-name="utility:close" size="medium">
+                    </lightning-icon>
+                    <span class="slds-assistive-text">Close</span>
+                </button>
+                <h2 class="slds-text-heading_medium slds-hyphenate">Cancelamento de
+                    visita
+                </h2>
+            </header>
+            <div class="slds-modal__content slds-p-around_medium" style="height: 300px;">
+                <div class="slds-m-around_medium">
+
+                </div>
+
+                <div style="border-radius: .25rem;" class="slds-m-around_medium">
+                    <lightning-combobox class="motivo-cancelamento-combobox" name="Motivo do cancelamento"
+                        label="Motivo do cancelamento" placeholder="Selecione uma opção"
+                        value={motivoCancelamentoSelected} onchange={handleOnChangeMotivoCancelamento}
+                        options={motivoCancelamentoValues}>
+                    </lightning-combobox>
+                </div>
+
+                <div style="border-radius: .25rem;" class="slds-m-around_medium">
+                    <lightning-combobox class="submotivo-cancelamento-combobox" name="Submotivo do cancelamento"
+                        label="Submotivo do cancelamento" placeholder="Selecione uma opção"
+                        value={submotivoCancelamentoSelected} onchange={handleOnChangeSubmotivoCancelamento}
+                        options={submotivoCancelamentoValues} disabled="true">
+                    </lightning-combobox>
+                </div>
+
+            </div>
+
+
+            <footer class="slds-modal__footer">
+                <lightning-button label="Cancelar" variant="neutral" onclick={showHideModalCancel}>
+                </lightning-button>&nbsp;&nbsp;&nbsp;&nbsp;
+                <lightning-button label="Salvar" variant="brand" onclick={handleSaveCancelButton}>
+                </lightning-button>
+            </footer>
+        </div>
+        <!--/section-->
+    </div>
+    <div class="modal-cancel slds-backdrop"></div>
+</template>

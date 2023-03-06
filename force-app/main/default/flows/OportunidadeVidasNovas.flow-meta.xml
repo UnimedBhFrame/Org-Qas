@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <decisions>
+        <description>Verificar se o cliente é admissão (novo) ou se é considerado como transferência</description>
+        <name>TipoRegistro</name>
+        <label>Qual Tipo de Registro?</label>
+        <locationX>493</locationX>
+        <locationY>461</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Novo</name>
+            <conditionLogic>1 AND 2 AND (3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>Obter_Lead.TipoCliente__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Admissão (Novo)</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.TipoCliente__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Admissão (Novo)</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.QtdeVidasNovas__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.QtdeVidasNovas__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Oportunidade</targetReference>
+            </connector>
+            <label>Tipo de Cliente Novo</label>
+        </rules>
+        <rules>
+            <name>Transferencia</name>
+            <conditionLogic>1 AND 2 AND (3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>Obter_Lead.TipoCliente__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Admissão (Novo)</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.TipoCliente__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Admissão (Novo)</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.QtdeTransferencia__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.QtdeTransferencia__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Oportunidade0</targetReference>
+            </connector>
+            <label>Tipo de Cliente Transferência</label>
+        </rules>
+    </decisions>
+    <description>Atualiza o campo QtdeVidasNovas__c e QtdeTransferencia__c caso este esteja em branco ou nulo buscando a informação do objeto lead.</description>
+    <interviewLabel>Oportunidade - Vidas Novas {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Oportunidade - Vidas Novas</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Obter_Lead</name>
+        <label>Obter Lead</label>
+        <locationX>501</locationX>
+        <locationY>288</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>TipoRegistro</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ConvertedOpportunityId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Lead</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Oportunidade</name>
+        <label>Atualizar Quantidade Vidas Novas</label>
+        <locationX>386</locationX>
+        <locationY>612</locationY>
+        <inputAssignments>
+            <field>QtdeVidasNovas__c</field>
+            <value>
+                <elementReference>Obter_Lead.NumeroVidas__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Oportunidade0</name>
+        <label>Atualizar Quantidade de Vidas Transferência</label>
+        <locationX>619</locationX>
+        <locationY>612</locationY>
+        <inputAssignments>
+            <field>QtdeTransferencia__c</field>
+            <value>
+                <elementReference>Obter_Lead.QtdeVidasTransferencia__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>375</locationX>
+        <locationY>6</locationY>
+        <connector>
+            <targetReference>Obter_Lead</targetReference>
+        </connector>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

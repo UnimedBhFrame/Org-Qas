@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Lead</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Lead - Pessoa Jurídica</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>CNPJ__c</fieldNames>
+        <fieldNames>Address</fieldNames>
+        <fieldNames>NumeroVidas__c</fieldNames>
+        <info>&lt;p&gt;Estou aqui para te dar dicas importantes para o sucesso da sua venda!&lt;/p&gt;&lt;p&gt;O cliente quer conhecer a UNIMED-BH e você é a porta de entrada.&lt;/p&gt;&lt;p&gt;É imprescindível realizar contato o mais breve possível para atender às expectativas do cliente. Lembre-se:&lt;/p&gt;&lt;p&gt;1 - Criar necessidade do produto e/ou serviço;&lt;/p&gt;&lt;p&gt;2 - Apresentar ao cliente a melhor solução em saúde dentro do seu perfil;&lt;/p&gt;&lt;p&gt;3 - Apresentar os diferenciais da UNIMED-BH;&lt;/p&gt;&lt;p&gt;4 - Estabelecer um prazo para resposta.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Ações Sugeridas:&lt;/p&gt;&lt;p&gt;1 - Crie Tarefas de acompanhamento diárias;&lt;/p&gt;&lt;p&gt;2 - Registre todas as tentativas de contato em atividades;&lt;/p&gt;&lt;p&gt;3 - Utilize horários e canais variados para tentar contato;&lt;/p&gt;&lt;p&gt;4 - Não desista!&lt;/p&gt;</info>
+        <picklistValueName>Captação</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>CNPJ__c</fieldNames>
+        <fieldNames>Address</fieldNames>
+        <fieldNames>NumeroVidas__c</fieldNames>
+        <fieldNames>TipoInclusaoModulo__c</fieldNames>
+        <fieldNames>DataVigencia__c</fieldNames>
+        <info>&lt;p&gt;&lt;span style=&quot;font-family: Arial; font-size: 13.3333px;&quot;&gt;QUE MARAVILHA! Você tem um Lead mais aquecido!&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-family: Arial; font-size: 13.3333px;&quot;&gt;Faça contas para seu cliente e mostre as vantagens, pois tem QUEM TEM UNIMED TEM MAIS.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-family: Arial; font-size: 13.3333px;&quot;&gt;Momento de decisão, faça as considerações relevantes nesse momento. Dicas para você:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-family: Arial; font-size: 13.3333px;&quot;&gt;- Verificar se há CNPJ ou dependentes para captação de um maior número de vidas;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-family: Arial; font-size: 13.3333px;&quot;&gt;- Verificar critérios para portabilidade (se é cliente da concorrência);&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-family: Arial; font-size: 13.3333px;&quot;&gt;- Informar ações de vendas vigentes (campanhas, concessões, etc).&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Negociação</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>CNPJ__c</fieldNames>
+        <fieldNames>Address</fieldNames>
+        <fieldNames>NumeroVidas__c</fieldNames>
+        <info>&lt;p&gt;&lt;span style=&quot;font-family: Arial; font-size: 13.3333px;&quot;&gt;Show! Você tem uma oportunidade de vendas mais QUENTE heim! É hora de coletar informações essenciais para conhecermos melhor essa oportunidade.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-family: Arial; font-size: 13.3333px;&quot;&gt;A prioridade desta fase é:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-family: Arial; font-size: 13.3333px;&quot;&gt;- Passe confiança para o cliente e oriente-o sobre o processo de contratação de um plano de saúde!&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-family: Arial; font-size: 13.3333px;&quot;&gt;- Confirmar se o cliente atende os critérios conforme as regras de comercialização.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-family: Arial; font-size: 13.3333px;&quot;&gt;- É hora de deixar claro que você irá cuidar de tudo e conseguir a melhor condição para ele!&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>Qualificação</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>PessoaJuridica</recordTypeName>
+</PathAssistant>

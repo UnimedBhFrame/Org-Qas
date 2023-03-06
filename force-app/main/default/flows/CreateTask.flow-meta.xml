@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <choices>
+        <name>Achou_alto_o_valor_do_plano</name>
+        <choiceText>Achou alto o valor do plano</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Achou alto o valor do plano</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Alto</name>
+        <choiceText>Alto</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Alto</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Cadastro_de_benef_cio_RN</name>
+        <choiceText>Cadastro de benefício RN</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Cadastro de benefício RN</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Cancelamento_Reagendamento_de_visita_ou_confirma_o</name>
+        <choiceText>Cancelamento/Reagendamento de visita ou confirmação</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Cancelamento/Reagendamento de visita ou confirmação</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Cliente_inadimplente</name>
+        <choiceText>Cliente inadimplente</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Cliente inadimplente</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Cliente_optou_por_ir_loja</name>
+        <choiceText>Cliente optou por ir à loja</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Cliente optou por ir à loja</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>CNPJ_cadastrado_a_menos_de_6_meses</name>
+        <choiceText>CNPJ cadastrado a menos de 6 meses</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>CNPJ cadastrado a menos de 6 meses</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Completa</name>
+        <choiceText>Completa</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Completa</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Deseja_plano_com_abrang_ncia_nacional</name>
+        <choiceText>Deseja plano com abrangência nacional</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Deseja plano com abrangência nacional</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Em_Progresso</name>
+        <choiceText>Em Progresso</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Em Progresso</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Email</name>
+        <choiceText>Email</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Email</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Encaminhado_para_c_lula_de_vendas</name>
+        <choiceText>Encaminhado para célula de vendas</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Encaminhado para célula de vendas</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Esperando_Outro</name>
+        <choiceText>Esperando Outro</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Esperando Outro</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Fora_da_rea_de_abrang_ncia</name>
+        <choiceText>Fora da área de abrangência</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Fora da área de abrangência</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Informa_es_da_ativa_o_da_contrata_o</name>
+        <choiceText>Informações da ativação da contratação</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Informações da ativação da contratação</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Informa_es_sobre_contrata_o_via_site</name>
+        <choiceText>Informações sobre contratação via site</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Informações sobre contratação via site</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Informa_o_para_Terceiros</name>
+        <choiceText>Informação para Terceiros</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Informação para Terceiros</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>J_cliente_D_vidas_Acomoda_o_opcionais_adapta_o_ex_funcion_rio</name>
+        <choiceText>Já é cliente, Dúvidas (Acomodação, opcionais, adaptação, ex-funcionário)</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Já é cliente, Dúvidas (Acomodação, opcionais, adaptação, ex-funcionário)</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Liga_o_Ativa</name>
+        <choiceText>Ligação Ativa</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Ligação Ativa</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Liga_o_Receptiva</name>
+        <choiceText>Ligação Receptiva</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Ligação Receptiva</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>M_dico_Cooperado</name>
+        <choiceText>Médico Cooperado</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Médico Cooperado</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>N_o_Iniciado</name>
+        <choiceText>Não Iniciado</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Não Iniciado</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>N_o_possui_documenta_o_obrigat_ria</name>
+        <choiceText>Não possui documentação obrigatória</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Não possui documentação obrigatória</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Negada</name>
+        <choiceText>Negada</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Negada</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Normal</name>
+        <choiceText>Normal</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Normal</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Outras_op_es_dentro_do_4020_4020_ou_Unidesk</name>
+        <choiceText>Outras opções dentro do 4020-4020 ou Unidesk</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue> Outras opções dentro do 4020-4020 ou Unidesk</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Outro</name>
+        <choiceText>Outro</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Outro</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Pessoa_F_sica</name>
+        <choiceText>Pessoa Física</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Pessoa Física</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Pessoa_F_sica_RN</name>
+        <choiceText>Pessoa Física RN</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Pessoa Física RN</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Pessoa_Jur_dica</name>
+        <choiceText>Pessoa Jurídica</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Pessoa Jurídica</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Pessoa_Jur_dica_Enterprise</name>
+        <choiceText>Pessoa Jurídica Enterprise</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Pessoa Jurídica Enterprise</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Queda_liga_o_muda</name>
+        <choiceText>Queda/ligação muda</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Queda/ligação muda</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Reagendamento_de_visita_ou_confirma_o</name>
+        <choiceText>Reagendamento de visita ou confirmação</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Reagendamento de visita ou confirmação</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>RN_acima_de_28_dias</name>
+        <choiceText>RN acima de 28 dias</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>RN acima de 28 dias</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Troca_de_plano</name>
+        <choiceText>Troca de plano</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Troca de plano</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Vai_pensar_avaliar</name>
+        <choiceText>Vai pensar/avaliar</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Vai pensar/avaliar</stringValue>
+        </value>
+    </choices>
+    <description>Cria tarefa e atividades</description>
+    <formulas>
+        <description>Retorna a instancia do ambiente</description>
+        <name>V_Instance</name>
+        <dataType>String</dataType>
+        <expression>LEFT({!$Api.Partner_Server_URL_540}, FIND( &apos;/services&apos;, {!$Api.Partner_Server_URL_540}))</expression>
+    </formulas>
+    <interviewLabel>Create Task {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Registro de Ligações e Tarefas</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordCreates>
+        <name>CriarTarefa</name>
+        <label>Criar Tarefa</label>
+        <locationX>176</locationX>
+        <locationY>398</locationY>
+        <connector>
+            <targetReference>Sucesso</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>DataVencimento</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Description</field>
+            <value>
+                <elementReference>Comentarios</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Motivo__c</field>
+            <value>
+                <elementReference>Motivo</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <elementReference>Prioridade</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <elementReference>Status</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <elementReference>Subject</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>TipoAtendimento__c</field>
+            <value>
+                <elementReference>TipoAtendimento</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhoId</field>
+            <value>
+                <elementReference>ObtemRegistro.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <name>ObtemRegistro</name>
+        <label>Obtém Registro</label>
+        <locationX>176</locationX>
+        <locationY>158</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>CreateTask</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>RecordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Lead</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <screens>
+        <description>Cria Tarefa</description>
+        <name>CreateTask</name>
+        <label>Registre a Ligação</label>
+        <locationX>176</locationX>
+        <locationY>278</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>CriarTarefa</targetReference>
+        </connector>
+        <fields>
+            <name>CreateTask_Section1</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>CreateTask_Section1_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>Motivo</name>
+                    <choiceReferences>Achou_alto_o_valor_do_plano</choiceReferences>
+                    <choiceReferences>Cliente_optou_por_ir_loja</choiceReferences>
+                    <choiceReferences>Vai_pensar_avaliar</choiceReferences>
+                    <choiceReferences>Outras_op_es_dentro_do_4020_4020_ou_Unidesk</choiceReferences>
+                    <choiceReferences>Informa_es_da_ativa_o_da_contrata_o</choiceReferences>
+                    <choiceReferences>Cadastro_de_benef_cio_RN</choiceReferences>
+                    <choiceReferences>Cancelamento_Reagendamento_de_visita_ou_confirma_o</choiceReferences>
+                    <choiceReferences>CNPJ_cadastrado_a_menos_de_6_meses</choiceReferences>
+                    <choiceReferences>Cliente_inadimplente</choiceReferences>
+                    <choiceReferences>Fora_da_rea_de_abrang_ncia</choiceReferences>
+                    <choiceReferences>Deseja_plano_com_abrang_ncia_nacional</choiceReferences>
+                    <choiceReferences>N_o_possui_documenta_o_obrigat_ria</choiceReferences>
+                    <choiceReferences>RN_acima_de_28_dias</choiceReferences>
+                    <choiceReferences>Queda_liga_o_muda</choiceReferences>
+                    <choiceReferences>Troca_de_plano</choiceReferences>
+                    <choiceReferences>Informa_o_para_Terceiros</choiceReferences>
+                    <choiceReferences>Encaminhado_para_c_lula_de_vendas</choiceReferences>
+                    <choiceReferences>Informa_es_sobre_contrata_o_via_site</choiceReferences>
+                    <choiceReferences>Reagendamento_de_visita_ou_confirma_o</choiceReferences>
+                    <choiceReferences>J_cliente_D_vidas_Acomoda_o_opcionais_adapta_o_ex_funcion_rio</choiceReferences>
+                    <dataType>String</dataType>
+                    <fieldText>Motivo</fieldText>
+                    <fieldType>DropdownBox</fieldType>
+                    <isRequired>true</isRequired>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>6</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>CreateTask_Section1_Column2</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>Subject</name>
+                    <choiceReferences>Liga_o_Receptiva</choiceReferences>
+                    <choiceReferences>Liga_o_Ativa</choiceReferences>
+                    <choiceReferences>Email</choiceReferences>
+                    <choiceReferences>Outro</choiceReferences>
+                    <dataType>String</dataType>
+                    <defaultSelectedChoiceReference>Liga_o_Receptiva</defaultSelectedChoiceReference>
+                    <fieldText>Assunto</fieldText>
+                    <fieldType>DropdownBox</fieldType>
+                    <isRequired>true</isRequired>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>6</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>CreateTask_Section2</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>CreateTask_Section2_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>TipoAtendimento</name>
+                    <choiceReferences>Pessoa_F_sica</choiceReferences>
+                    <choiceReferences>M_dico_Cooperado</choiceReferences>
+                    <choiceReferences>Pessoa_F_sica_RN</choiceReferences>
+                    <choiceReferences>Pessoa_Jur_dica</choiceReferences>
+                    <choiceReferences>Pessoa_Jur_dica_Enterprise</choiceReferences>
+                    <dataType>String</dataType>
+                    <defaultSelectedChoiceReference>Pessoa_F_sica</defaultSelectedChoiceReference>
+                    <fieldText>Tipo de Atendimento</fieldText>
+                    <fieldType>DropdownBox</fieldType>
+                    <isRequired>false</isRequired>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>6</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>CreateTask_Section2_Column2</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>DataVencimento</name>
+                    <dataType>Date</dataType>
+                    <fieldText>Data de Vencimento</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <helpText>&lt;p&gt;Data de Vencimento da tarefa, caso esta ainda seja executada.&lt;/p&gt;</helpText>
+                    <isRequired>false</isRequired>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>6</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>CreateTask_Section3</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>CreateTask_Section3_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>Lead</name>
+                    <dataType>String</dataType>
+                    <defaultValue>
+                        <stringValue>Nome do Lead</stringValue>
+                    </defaultValue>
+                    <fieldText>Lead</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <isRequired>false</isRequired>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>6</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>CreateTask_Section3_Column2</name>
+                <fieldType>Region</fieldType>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>6</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>Comentarios</name>
+            <fieldText>Comentários</fieldText>
+            <fieldType>LargeTextArea</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>CreateTask_Section4</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>CreateTask_Section4_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>Prioridade</name>
+                    <choiceReferences>Normal</choiceReferences>
+                    <choiceReferences>Alto</choiceReferences>
+                    <dataType>String</dataType>
+                    <defaultSelectedChoiceReference>Normal</defaultSelectedChoiceReference>
+                    <fieldText>Prioridade</fieldText>
+                    <fieldType>DropdownBox</fieldType>
+                    <isRequired>true</isRequired>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>6</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>CreateTask_Section4_Column2</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>Status</name>
+                    <choiceReferences>N_o_Iniciado</choiceReferences>
+                    <choiceReferences>Em_Progresso</choiceReferences>
+                    <choiceReferences>Completa</choiceReferences>
+                    <choiceReferences>Esperando_Outro</choiceReferences>
+                    <choiceReferences>Negada</choiceReferences>
+                    <dataType>String</dataType>
+                    <defaultSelectedChoiceReference>Completa</defaultSelectedChoiceReference>
+                    <fieldText>Status</fieldText>
+                    <fieldType>DropdownBox</fieldType>
+                    <isRequired>false</isRequired>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>6</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Sucesso</name>
+        <label>Sucesso!</label>
+        <locationX>176</locationX>
+        <locationY>518</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>Sucess</name>
+            <fieldText>&lt;p&gt;&lt;b&gt;Registro Realizado com Sucesso!&lt;/b&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>ObtemRegistro</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>RecordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

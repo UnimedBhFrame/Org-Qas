@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <assignments>
+        <name>SETAtendimentoLoja</name>
+        <label>SET Atendimento Loja</label>
+        <locationX>50</locationX>
+        <locationY>398</locationY>
+        <assignmentItems>
+            <assignToReference>GETLead.CanalEntrada__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Atendimento Loja</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>GETLead.LeadSource</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Atendimento Loja</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>UpdateLead</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>SETCallCenter</name>
+        <label>SET Call Center</label>
+        <locationX>314</locationX>
+        <locationY>398</locationY>
+        <assignmentItems>
+            <assignToReference>VarCanal_Output</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Call Center</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>GETLead.CanalEntrada__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Call Center</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>GETLead.LeadSource</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Call Center</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>UpdateLead</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>SETCanalOrigem_0_0_0</name>
+        <label>SET Canal e Origem</label>
+        <locationX>842</locationX>
+        <locationY>398</locationY>
+        <assignmentItems>
+            <assignToReference>GETLead.CanalEntrada__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Chatbot/Indicação Interna Unimed-BH</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>GETLead.LeadSource</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Chatbot/Indicação Interna Unimed-BH</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>UpdateLead</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>SETCanalOrigem_0_0_0_0</name>
+        <label>SET Canal e Origem</label>
+        <locationX>1106</locationX>
+        <locationY>398</locationY>
+        <assignmentItems>
+            <assignToReference>GETLead.CanalEntrada__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Mensagens ou comentários Redes Sociais</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>GETLead.LeadSource</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Mensagens ou comentários Redes Sociais</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>UpdateLead</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>SETPromotor</name>
+        <label>SET Promotor</label>
+        <locationX>578</locationX>
+        <locationY>398</locationY>
+        <assignmentItems>
+            <assignToReference>GETLead.CanalEntrada__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Promotor</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>GETLead.LeadSource</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Promotor</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>UpdateLead</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>VerificaOrigemCanal</name>
+        <label>Verifica a Origem e o Canal de Entrada</label>
+        <locationX>710</locationX>
+        <locationY>278</locationY>
+        <defaultConnectorLabel>Não Mapeado</defaultConnectorLabel>
+        <rules>
+            <name>Loja</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>GETLead.CanalProprietario__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Lojas</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SETAtendimentoLoja</targetReference>
+            </connector>
+            <label>Loja</label>
+        </rules>
+        <rules>
+            <name>CallCenter</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>GETLead.CanalProprietario__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Call Center</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SETCallCenter</targetReference>
+            </connector>
+            <label>Call Center</label>
+        </rules>
+        <rules>
+            <name>Promotor</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>GETLead.CanalProprietario__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Promotor</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SETPromotor</targetReference>
+            </connector>
+            <label>Promotor</label>
+        </rules>
+        <rules>
+            <name>ChatbotIndicacaoInternaUnimedBH</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>GETLead.CanalEntrada__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Chatbot/Indicação Interna Unimed-BH</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>GETLead.LeadSource</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Chatbot/Indicação Interna Unimed-BH</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SETCanalOrigem_0_0_0</targetReference>
+            </connector>
+            <label>Chatbot/Indicação Interna Unimed-BH</label>
+        </rules>
+        <rules>
+            <name>MensagensComentariosRedesSociais</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>GETLead.CanalEntrada__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Mensagens ou comentários Redes Sociais</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>GETLead.LeadSource</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Mensagens ou comentários Redes Sociais</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SETCanalOrigem_0_0_0_0</targetReference>
+            </connector>
+            <label>Mensagens ou comentários Redes Sociais</label>
+        </rules>
+    </decisions>
+    <description>Fluxo criado a partir do card 130659 (https://unimedbh.visualstudio.com/CSD/_boards/board/t/Avenders/Stories/?workitem=130659).
+Atualiza campos considerando o canal de entrada do criador do lead.</description>
+    <interviewLabel>Atualiza Origem e Canal de Entrada {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Atualiza Origem e Canal de Entrada</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>GETLead</name>
+        <label>GET Lead</label>
+        <locationX>710</locationX>
+        <locationY>158</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>VerificaOrigemCanal</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>LeadId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Lead</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>UpdateLead</name>
+        <label>Update Lead</label>
+        <locationX>710</locationX>
+        <locationY>614</locationY>
+        <inputReference>GETLead</inputReference>
+    </recordUpdates>
+    <runInMode>SystemModeWithoutSharing</runInMode>
+    <start>
+        <locationX>584</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>GETLead</targetReference>
+        </connector>
+    </start>
+    <status>Obsolete</status>
+    <variables>
+        <description>Registra o Id do Lead</description>
+        <name>LeadId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Identifica o Canal e Origem que o lead pertence</description>
+        <name>VarCanal_Output</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

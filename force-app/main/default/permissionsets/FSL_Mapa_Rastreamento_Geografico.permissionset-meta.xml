@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <classAccesses>
+        <apexClass>MapGeographicController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>FSL_Mapa_Rastreamento_Geografico</name>
+    </customPermissions>
+    <description>Permissão para visualização do Mapa - Rastreamento Geográfico</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>FSL: Mapa - Rastreamento Geográfico</label>
+    <license>Salesforce</license>
+    <tabSettings>
+        <tab>Mapa_Geogr_fico</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>Rastreamento_Geogr_fico</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+</PermissionSet>

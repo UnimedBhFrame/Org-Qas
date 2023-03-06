@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Cotacoes__c</entityName>
+    <fieldName>StatusCotacao__c</fieldName>
+    <masterLabel>Caminho Cotação</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Por favor verifique se existe uma proposta convertida!&lt;/p&gt;</info>
+        <picklistValueName>Convertida</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

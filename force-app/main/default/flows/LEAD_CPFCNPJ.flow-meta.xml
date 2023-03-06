@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <description>Atualiza o campo CPFCNPJ__c com a informação do documento de identificação, essa regra é necessária para evitar duplicidade de informação. Este campo é utilizado nas regras de correspondência.</description>
+    <formulas>
+        <description>Retira as pontuações do CPF ou CNPJ.</description>
+        <name>LeadAtualizaCPFCNPJ</name>
+        <dataType>String</dataType>
+        <expression>IF(ISCHANGED({!$Record.CPF__c}),SUBSTITUTE(
+SUBSTITUTE(
+SUBSTITUTE({!$Record.CPF__c},&quot;.&quot;,&quot;&quot;),&quot;-&quot;,&quot;&quot;),&quot;/&quot;,&quot;&quot;),
+IF(ISCHANGED({!$Record.CNPJ__c}),
+SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE({!$Record.CNPJ__c},&quot;.&quot;,&quot;&quot;),&quot;-&quot;,&quot;&quot;),&quot;/&quot;,&quot;&quot;),
+IF(NOT(ISBLANK({!$Record.CPF__c})),
+SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE({!$Record.CPF__c},&quot;.&quot;,&quot;&quot;),&quot;-&quot;,&quot;&quot;),&quot;/&quot;,&quot;&quot;),
+SUBSTITUTE(
+SUBSTITUTE(SUBSTITUTE({!$Record.CNPJ__c},&quot;.&quot;,&quot;&quot;),&quot;-&quot;,&quot;&quot;),&quot;/&quot;,&quot;&quot;)
+)
+)
+)</expression>
+    </formulas>
+    <interviewLabel>LEAD - CPFCNPJ {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>LEAD - CPFCNPJ</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>Atualiza o campo CPFCNPJ__c com a informação do documento de identificação, essa regra é necessária para evitar duplicidade de informação. Este campo é utilizado nas regras de correspondência</description>
+        <name>Lead_Atualiza_CPFCNPJ</name>
+        <label>Atualiza CPFCNPJ</label>
+        <locationX>176</locationX>
+        <locationY>335</locationY>
+        <inputAssignments>
+            <field>CPFCNPJ__c</field>
+            <value>
+                <elementReference>LeadAtualizaCPFCNPJ</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Lead_Atualiza_CPFCNPJ</targetReference>
+        </connector>
+        <object>Lead</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

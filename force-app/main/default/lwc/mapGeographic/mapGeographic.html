@@ -1,0 +1,63 @@
+<template>
+    <template if:false={hasPermission}>
+        <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert"
+            style="border-radius: .25rem;">
+            <span class="slds-assistive-text">warning</span>
+            <span class="slds-icon_container slds-icon-utility-warning slds-m-right_x-small" title="">
+                <lightning-icon icon-name="utility:warning" variant="circle" alternative-text="warning">
+                </lightning-icon>
+            </span>
+            <h2>Você não possui permissão para acessar o mapa, entre em contato com o Administrador.</h2>
+        </div>
+    </template>
+    <article if:true={hasPermission} class="slds-card">
+        <div class="slds-card__body slds-card__body_inner" style="display: flex;">
+            <div class="filter-default">
+                <div style="margin: auto;">
+                    <lightning-input type="date" name="inputDate" label="Inicio" value={inicio} onchange={handleChangeInicio}>
+                    </lightning-input>
+                    <lightning-input type="date" name="inputDate" label="Fim" value={fim} onchange={handleChangeFim}>
+                    </lightning-input>
+                </div>
+
+            </div>
+            <div class="filter-default">
+                <div style="margin: auto;">
+                    <lightning-record-edit-form object-api-name="ServiceTerritoryMember">
+                        <lightning-input-field field-name="ServiceTerritoryId" value={serviceTerritoryId} onchange={handleChangeServiceTerritory}>
+                        </lightning-input-field>
+                        <lightning-input-field field-name="ServiceResourceId" value={serviceResourceId} onchange={handleChangeServiceResource}>
+                        </lightning-input-field>
+                    </lightning-record-edit-form>
+                </div>
+            </div>
+            <div class="filter-default">
+                <div style="margin: auto;">
+                    <span style="font-size: 12px;"><b>Tipo de Lead</b></span>
+                    <lightning-input type="checkbox" label="Pessoa Física" checked={valuePFisica} onchange={handleChangePFisica}>
+                    </lightning-input>
+                    <lightning-input type="checkbox" label="Pessoa Jurídica" checked={valuePJuridica} onchange={handleChangePJuridica}>
+                    </lightning-input>
+                </div>
+
+            </div>
+            <div class="filter-default">
+                <div style="margin: auto;">
+                    <lightning-checkbox-group name="Tipo" label="Tipo de Carteira" options={optionsTipo}
+                        value={valueTipo} onchange={handleChangeTipo}></lightning-checkbox-group>
+                </div>
+            </div>
+            <div class="filter-default">
+                <div style="margin: auto;">
+                    <lightning-checkbox-group name="Porte" label="Porte" options={optionsPorte} value={valuePorte}
+                        onchange={handleChangePorte}></lightning-checkbox-group>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article if:true={hasPermission} class="slds-card">
+        <lightning-spinner if:false={loaded} alternative-text="Loading" size="large" variant="brand">
+        </lightning-spinner>
+        <div class="map-root" lwc:dom="manual"></div>
+    </article>
+</template>

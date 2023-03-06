@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <assignments>
+        <name>SetIsActiveFalse</name>
+        <label>Set IsActive False</label>
+        <locationX>50</locationX>
+        <locationY>396</locationY>
+        <assignmentItems>
+            <assignToReference>VarIsActive</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>UpdateUser</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>SetIsActiveTrue</name>
+        <label>Set IsActive True</label>
+        <locationX>314</locationX>
+        <locationY>396</locationY>
+        <assignmentItems>
+            <assignToReference>VarIsActive</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>UpdateUser</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>UsuarioFerias</name>
+        <label>O usuário está de férias?</label>
+        <locationX>314</locationX>
+        <locationY>276</locationY>
+        <defaultConnectorLabel>Não, permanecer desativado</defaultConnectorLabel>
+        <rules>
+            <name>Sim</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Ferias__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetIsActiveFalse</targetReference>
+            </connector>
+            <label>Sim, desativar usuário</label>
+        </rules>
+        <rules>
+            <name>ativarUsuario</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Ferias__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>VarDiasFimFerias</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>1.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetIsActiveTrue</targetReference>
+            </connector>
+            <label>Não, ativar usuário</label>
+        </rules>
+    </decisions>
+    <description>09/09/22 - REQ0285776  - Criação do fluxo controle de férias</description>
+    <formulas>
+        <description>Verifica se a data fim das férias foi no dia anterior</description>
+        <name>VarDiasFimFerias</name>
+        <dataType>Number</dataType>
+        <expression>TODAY() - {!$Record.DataFimFerias__c}</expression>
+        <scale>1</scale>
+    </formulas>
+    <interviewLabel>User - Controle de Férias {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>User - Controle de Férias</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>UpdateUser</name>
+        <label>Update User</label>
+        <locationX>314</locationX>
+        <locationY>612</locationY>
+        <inputAssignments>
+            <field>IsActive</field>
+            <value>
+                <elementReference>VarIsActive</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>UsuarioFerias</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DataFimFerias__c</field>
+            <operator>GreaterThanOrEqualTo</operator>
+            <value>
+                <dateValue>2022-09-01</dateValue>
+            </value>
+        </filters>
+        <object>User</object>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startDate>2022-09-09</startDate>
+            <startTime>01:00:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>VarIsActive</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

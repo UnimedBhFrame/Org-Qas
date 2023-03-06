@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>7</activeVersionNumber>
+    <description>Atualiza o campo QtdeVidasNovas__c e QtdeTransferencia__c no objeto Opportunity caso este esteja em branco ou nulo buscando a informação do objeto lead.</description>
+    <masterLabel>Oportunidade - Atualiza Quantidade Vidas Novas e Transferência</masterLabel>
+</FlowDefinition>

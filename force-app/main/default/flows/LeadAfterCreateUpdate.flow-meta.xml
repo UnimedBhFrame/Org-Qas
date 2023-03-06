@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <decisions>
+        <description>Verifica se a origem ou canal de entrada do lead está na regra para automatização. O objetivo é atualizar esses campos automaticamente com base no canal do proprietário ou origem/canal de entrada do lead.</description>
+        <name>CanalOrigemAutomatizado0</name>
+        <label>Canal ou Origem Está Automatizado?</label>
+        <locationX>182</locationX>
+        <locationY>455</locationY>
+        <defaultConnectorLabel>Não</defaultConnectorLabel>
+        <rules>
+            <name>Sim0</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.CanalProprietario__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Lojas</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CanalProprietario__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Call Center</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CanalProprietario__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Promotor</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.LeadSource</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Chatbot/Indicação Interna Unimed-BH</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CanalEntrada__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Chatbot/Indicação Interna Unimed-BH</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.LeadSource</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Mensagens ou comentários Redes Sociais</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CanalEntrada__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Mensagens ou comentários Redes Sociais</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>AtualizaOrigemCanalEntrada_0</targetReference>
+            </connector>
+            <label>Sim</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Verificar se o registro está sendo criado ou atualizado</description>
+        <name>RegistroEstaSendoCriado</name>
+        <label>O registro está sendo criado?</label>
+        <locationX>336</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>Atualizar</defaultConnectorLabel>
+        <rules>
+            <name>Criar</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>IsNew</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>CanalOrigemAutomatizado0</targetReference>
+            </connector>
+            <label>Criar</label>
+        </rules>
+    </decisions>
+    <description>Fluxo criado a partir do card 130659 (https://unimedbh.visualstudio.com/CSD/_boards/board/t/Avenders/Stories/?workitem=130659).
+Trigger para todos os casos de criação ou atualização de registros no objeto Lead</description>
+    <formulas>
+        <description>Verifica se o registro é novo</description>
+        <name>IsNew</name>
+        <dataType>Boolean</dataType>
+        <expression>IsNew()</expression>
+    </formulas>
+    <interviewLabel>Lead - After Create or Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Lead - After Create or Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>210</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>RegistroEstaSendoCriado</targetReference>
+        </connector>
+        <object>Lead</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <description>Atualiza os campos origem do lead e o canal de entrada conforme o canal do proprietário</description>
+        <name>AtualizaOrigemCanalEntrada_0</name>
+        <label>Atualiza Origem e Canal de Entrada</label>
+        <locationX>50</locationX>
+        <locationY>575</locationY>
+        <flowName>AtualizaOrigemCanalEntrada</flowName>
+        <inputAssignments>
+            <name>LeadId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+</Flow>

@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <choices>
+        <name>Achou_alto_o_valor_do_plano</name>
+        <choiceText>Achou alto o valor do plano</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Achou alto o valor do plano</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Agendado</name>
+        <choiceText>Agendado</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Agendado</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Cadastro_de_benef_cio_RN</name>
+        <choiceText>Cadastro de benefício RN</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Cadastro de benefício RN</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Cancelamento_Reagendamento_de_visita_ou_confirma_o</name>
+        <choiceText>Cancelamento/Reagendamento de visita ou confirmação</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Cancelamento/Reagendamento de visita ou confirmação</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Cliente_inadimplente</name>
+        <choiceText>Cliente inadimplente</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Cliente inadimplente</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Cliente_optou_por_ir_loja</name>
+        <choiceText>Cliente optou por ir à loja</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Cliente optou por ir à loja</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>CNPJ_cadastrado_a_menos_de_6_meses</name>
+        <choiceText>CNPJ cadastrado a menos de 6 meses</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>CNPJ cadastrado a menos de 6 meses</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Deseja_plano_com_abrang_ncia_nacional</name>
+        <choiceText>Deseja plano com abrangência nacional</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Deseja plano com abrangência nacional</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Email</name>
+        <choiceText>Email</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Email</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Encaminhado_para_c_lula_de_vendas</name>
+        <choiceText>Encaminhado para célula de vendas</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Encaminhado para célula de vendas</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Fora_da_rea_de_abrang_ncia</name>
+        <choiceText>Fora da área de abrangência</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Fora da área de abrangência</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Informa_es_da_ativa_o_da_contrata_o</name>
+        <choiceText>Informações da ativação da contratação</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Informações da ativação da contratação</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Informa_es_sobre_contrata_o_via_site</name>
+        <choiceText>Informações sobre contratação via site</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Informações sobre contratação via site</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Informa_o_para_Terceiros</name>
+        <choiceText>Informação para Terceiros</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Informação para Terceiros</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>J_cliente_D_vidas_Acomoda_o_opcionais_adapta_o_ex_funcion_rio</name>
+        <choiceText>Já é cliente, Dúvidas (Acomodação, opcionais, adaptação, ex-funcionário)</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Já é cliente, Dúvidas (Acomodação, opcionais, adaptação, ex-funcionário)</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Liga_o_Ativa</name>
+        <choiceText>Ligação Ativa</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Ligação Ativa</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Liga_o_Receptiva</name>
+        <choiceText>Ligação Receptiva</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Ligação Receptiva</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>N_o_possui_documenta_o_obrigat_ria</name>
+        <choiceText>Não possui documentação obrigatória</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Não possui documentação obrigatória</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Outras_op_es_dentro_do_4020_4020_ou_Unidesk</name>
+        <choiceText>Outras opções dentro do 4020-4020 ou Unidesk</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Outras opções dentro do 4020-4020 ou Unidesk</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Outros</name>
+        <choiceText>Outros</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Outros</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Queda_liga_o_muda</name>
+        <choiceText>Queda/ligação muda</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Queda/ligação muda</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Reagendamento_de_visita_ou_confirma_o</name>
+        <choiceText>Reagendamento de visita ou confirmação</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Reagendamento de visita ou confirmação</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>RN_acima_de_28_dias</name>
+        <choiceText>RN acima de 28 dias</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>RN acima de 28 dias</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Troca_de_plano</name>
+        <choiceText>Troca de plano</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Troca de plano</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Vai_pensar_avaliar</name>
+        <choiceText>Vai pensar/avaliar</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Vai pensar/avaliar</stringValue>
+        </value>
+    </choices>
+    <description>Permite o agendamento e registro de ligações</description>
+    <interviewLabel>Agendamento e Registro de Ligações {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Agendamento e Registro de Ligações</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordCreates>
+        <name>CriarTarefaVisita</name>
+        <label>Criar Tarefa Com Visita</label>
+        <locationX>176</locationX>
+        <locationY>398</locationY>
+        <inputAssignments>
+            <field>IdServiceAppointment__c</field>
+            <value>
+                <elementReference>GetServiceAppointment.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Motivo__c</field>
+            <value>
+                <stringValue>Agendado</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Completa</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Ligação Receptiva</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhoId</field>
+            <value>
+                <elementReference>RecordId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <name>GetServiceAppointment</name>
+        <label>GetServiceAppointment</label>
+        <locationX>176</locationX>
+        <locationY>278</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>CriarTarefaVisita</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Lead__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>RecordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>ServiceAppointment</object>
+        <sortField>LastModifiedDate</sortField>
+        <sortOrder>Desc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <runInMode>SystemModeWithoutSharing</runInMode>
+    <screens>
+        <name>TelaSucessoAgendamento</name>
+        <label>TelaSucessoAgendamento</label>
+        <locationX>176</locationX>
+        <locationY>158</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>GetServiceAppointment</targetReference>
+        </connector>
+        <fields>
+            <name>Agendamento</name>
+            <extensionName>c:scheduleComponent</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>recordId</name>
+                <value>
+                    <elementReference>RecordId</elementReference>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>TelaSucessoAgendamento</targetReference>
+        </connector>
+    </start>
+    <status>Obsolete</status>
+    <variables>
+        <name>RecordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

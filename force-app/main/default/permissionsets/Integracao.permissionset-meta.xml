@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Integracao</name>
+    </customPermissions>
+    <description>Conjunto de permissão utilizado em usuários de integração para dar permissões especiais</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Integração</label>
+    <license>Salesforce</license>
+</PermissionSet>

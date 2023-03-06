@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <description>Migrado de: regra de fluxo de trabalho Lead - Formatar Celular
+Descrição da regra de fluxo de trabalho: Formatar campo Celular automaticamente.&quot;</description>
+    <formulas>
+        <name>LeadFormatarCelularFormula</name>
+        <dataType>String</dataType>
+        <expression>IF(
+LEN(TRIM( $Record.MobilePhone)) = 11,
+&quot;(&quot; &amp; LEFT($Record.MobilePhone,2) &amp; &quot;) &quot;&amp; RIGHT(LEFT($Record.MobilePhone,7),5) &amp; &quot;-&quot; &amp; RIGHT($Record.MobilePhone,4),
+&quot;(&quot; &amp; LEFT($Record.MobilePhone,2) &amp; &quot;) &quot;&amp; RIGHT(LEFT($Record.MobilePhone,6),4) &amp; &quot;-&quot; &amp; RIGHT($Record.MobilePhone,4)
+)</expression>
+    </formulas>
+    <label>Lead - Formatar Celular_2</label>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>mainUpdate</name>
+        <label>mainUpdate</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>MobilePhone</field>
+            <value>
+                <elementReference>LeadFormatarCelularFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>mainUpdate</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <object>Lead</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,249 @@
+<template>
+    <template if:false={hasAccess}>
+        <div class="slds-notify slds-notify_alert">
+            <span class="slds-icon_container slds-icon-utility-warning slds-m-right_x-small">
+            </span>
+            {permissionError}
+        </div>
+    </template>
+
+    <template if:true={hasAccess}>
+        <lightning-card title="Agendamento" variant="Narrow" icon-name="standard:work_order">
+            <template if:true={loaded}>
+                <div class="div-spinner-center">
+                    <lightning-spinner alternative-text="Processando" size="medium" class="spinner-center">
+                    </lightning-spinner>
+                </div>
+            </template>
+
+            <template if:true={agendamentoForm}>
+                <lightning-layout horizontal-align="spread">
+                    <lightning-layout-item padding="horizontal-small">
+                        <template if:true={permissionPSAtendenteCallCenter}>
+                            <lightning-input type="checkbox" label="Agendamento célula call center"
+                                checked={atendenteCallCenter}>
+                            </lightning-input>
+                        </template>
+                    </lightning-layout-item>
+
+                    <lightning-button style="align-self: right; margin-right: 13px;" label="Recarregar"
+                        variant="neutral" onclick={refreshPage} disabled={clearFieldsBtn}>
+                    </lightning-button>
+                </lightning-layout>
+
+                <lightning-layout multiple-rows>
+                    <lightning-layout-item padding="horizontal-small" size="12">
+                        <lightning-input type="text" label="Consultor responsável" disabled
+                            value={responsibleConsultant}>
+                        </lightning-input>
+                    </lightning-layout-item>
+
+                    <lightning-layout-item padding="around-small" size="6">
+                        <lightning-input required class="selecione-data" min={dateValue} type="date"
+                            placeholder="Selecione uma data" variant="label-hidden" onchange={handleDateTime}>
+                        </lightning-input>
+                    </lightning-layout-item>
+
+                    <lightning-layout-item padding=" around-small" size="6">
+                        <lightning-combobox required class="selecione-horario" disabled={isDisabled}
+                            placeholder="Selecione um horário" onchange={handleTime} variant="label-hidden"
+                            value={value} options={scheduleOptions}>
+                        </lightning-combobox>
+                    </lightning-layout-item>
+
+                    <!-- <template if:true={hasSchedule}>
+                        <lightning-layout-item padding="around-small" size="12">
+                            <h2> Você já possui agendamentos para esse dia. Clique no horário agendado para
+                                reagendar: </h2>
+                            <template for:each={hours} for:item="acc">
+                                <p key={acc.Id} class="pending-badge">
+                                    <lightning-badge onmouseover={mouseOver} onmouseout={mouseOut} onclick={reschedule}
+                                        icon-name="utility:date_time" label={acc.FormattedDate__c}>
+                                    </lightning-badge>
+                                </p>
+                            </template>
+                        </lightning-layout-item>
+                    </template> -->
+
+                    <lightning-layout-item size="12" padding="horizontal-small">
+                        <lightning-textarea label="Informações Adicionais" onchange={handleAddInfo}>
+                        </lightning-textarea>
+                    </lightning-layout-item>
+
+                    <lightning-layout-item size="12" flexibility="auto" class="slds-text-align_right"
+                        padding="around-small">
+                        <lightning-button label="Salvar" variant="brand" onclick={scheduleSave}>
+                        </lightning-button>
+                    </lightning-layout-item>
+
+                </lightning-layout>
+            </template>
+
+            <template if:false={hasAddress}>
+                <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert">
+                    <span class="slds-assistive-text">warning</span>
+                    <span class="slds-icon_container slds-icon-utility-warning slds-m-right_x-small" title="">
+                        <lightning-icon icon-name="utility:warning" variant="circle" alternative-text="warning">
+                        </lightning-icon>
+                    </span>
+                    <h2>
+                        {errorMessage}
+                    </h2>
+                </div>
+            </template>
+
+            <template if:false={availableCity}>
+                <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert">
+                    <span class="slds-assistive-text">warning</span>
+                    <span class="slds-icon_container slds-icon-utility-warning slds-m-right_x-small" title="">
+                        <lightning-icon icon-name="utility:warning" variant="circle" alternative-text="warning">
+                        </lightning-icon>
+                    </span>
+                    <h2>
+                        {errorMessage}
+                    </h2>
+                </div>
+            </template>
+
+            <template if:true={riskStatus}>
+                <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert"
+                    style="border-radius: .25rem;">
+                    <span class="slds-assistive-text">warning</span>
+                    <span class="slds-icon_container slds-icon-utility-warning slds-m-right_x-small" title="">
+                        <lightning-icon icon-name="utility:warning" variant="circle" alternative-text="warning">
+                        </lightning-icon>
+                    </span>
+                    <h2>
+                        Não é possível realizar atendimento presencial nesta região por se tratar de {riskMessage}.
+                        Encaminhe os dados do cliente para seu supervisor e informe que receberá retorno
+                    </h2>
+                </div>
+            </template>
+
+            <template if:true={isScheduled}>
+                <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert"
+                    style="border-radius: 5px;">
+                    <span class="slds-assistive-text">warning</span>
+                    <span class="slds-icon_container slds-icon-utility-warning slds-m-right_x-small" title="">
+                        <lightning-icon icon-name="utility:warning" variant="circle" alternative-text="warning">
+                        </lightning-icon>
+                    </span>
+                    <h2> Agendamento já realizado. A visita será realizada por {resourceName}, em {scheduledDate} </h2>
+                </div>
+
+                <template if:false={inProgress}>
+                    <div class="row slds-m-around_medium slds-clearfix" id="inProgress">
+                        <lightning-button class="slds-float_left" variant="destructive-text"
+                            label="Cancelar agendamento" onclick={showCancelModal}></lightning-button>
+
+                        <lightning-button class="slds-float_right" label="Reagendar" onclick={showRescheduleModal}>
+                        </lightning-button>
+                    </div>
+                </template>
+            </template>
+        </lightning-card>
+    </template>
+
+    <!--Modal de Reagendamento-->
+    <template if:true={rescheduleModal}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+            aria-describedby="modal-content-id-12" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <h2 class="slds-text-heading_medium slds-hyphenate">Reagendamento de
+                        visita agendada
+                    </h2>
+                </header>
+
+                <div class="slds-modal__content modalBody slds-p-around_medium" id="modal-content-id-12">
+                    <template if:true={loadedRes}>
+                        <lightning-spinner alternative-text="Processando" size="medium" class="spinner-center">
+                        </lightning-spinner>
+                    </template>
+
+                    <lightning-layout multiple-rows>
+                        <lightning-layout-item padding="horizontal-small" size="12">
+                            <lightning-input type="text" label="Consultor responsável" disabled
+                                value={responsibleConsultant}>
+                            </lightning-input>
+                        </lightning-layout-item>
+
+                        <lightning-layout-item padding="around-small" size="6">
+                            <lightning-input variant="label-hidden" required class="selecione-data" min={dateValue}
+                                type="date" placeholder="Selecione uma data" onchange={handleDateTime}>
+                            </lightning-input>
+                        </lightning-layout-item>
+
+                        <lightning-layout-item padding="around-small" size="6">
+                            <lightning-combobox disabled={isDisabled} variant="label-hidden" required
+                                class="selecione-horario" placeholder="Selecione um horário" onchange={handleTime}
+                                value={value} options={scheduleOptions}>
+                            </lightning-combobox>
+                        </lightning-layout-item>
+
+                        <lightning-layout-item padding="around-small" size="12">
+                            <lightning-combobox variant="label-hidden" required class="motivo-reagendamento-combobox"
+                                placeholder="Motivo do reagendamento" value={motivoReagendamentoSelected}
+                                onchange={handleRescheduleReason} options={motivoReagendamentoValues}>
+                            </lightning-combobox>
+                        </lightning-layout-item>
+
+                        <lightning-layout-item size="12" padding="horizontal-small">
+                            <lightning-textarea label="Informações Adicionais" onchange={handleAddInfo}>
+                            </lightning-textarea>
+                        </lightning-layout-item>
+                    </lightning-layout>
+                </div>
+
+                <footer class="slds-modal__footer">
+                    <lightning-button label="Cancelar" variant="neutral" onclick={hideRescheduleModal}>
+                    </lightning-button>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <lightning-button label="Reagendar" variant="brand" onclick={rescheduleSave}>
+                    </lightning-button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+
+    <!--Modal de Cancelamento-->
+    <template if:true={cancelScheduleModal}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+            aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <h2 class="slds-text-heading_medium slds-hyphenate">Cancelamento de
+                        visita agendada
+                    </h2>
+                </header>
+
+                <div class="slds-modal__content modalBody slds-p-around_small" id="modal-content-id-1">
+                    <template if:true={loadedCanc}>
+                        <lightning-spinner alternative-text="Processando" size="medium" class="spinner-center">
+                        </lightning-spinner>
+                    </template>
+
+                    <lightning-combobox variant="label-hidden" class="motivo-cancelamento-combobox" required
+                        placeholder="Selecione o motivo do cancelamento" value={motivoCancelamentoSelected}
+                        onchange={handleOnChangeMotivoCancelamento} options={motivoCancelamentoValues}>
+                    </lightning-combobox>
+
+                    <lightning-combobox variant="label-hidden" class="submotivo-cancelamento-combobox" required
+                        placeholder="Selecione uma opção" value={submotivoCancelamentoSelected}
+                        onchange={handleOnChangeSubmotivoCancelamento} options={submotivoCancelamentoValues}
+                        disabled="true">
+                    </lightning-combobox>
+                </div>
+
+                <footer class="slds-modal__footer">
+                    <lightning-button label="Cancelar" variant="neutral" onclick={hideCancelModal}>
+                    </lightning-button>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <lightning-button label="Prosseguir" variant="brand" onclick={cancelSchedule}>
+                    </lightning-button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+</template>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>permite que o usuário com essa permissão não receba erros das regras de validações.</description>
+    <isLicensed>false</isLicensed>
+    <label>By Pass Validation Rules</label>
+</CustomPermission>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <description>Migrated from the: Lead - Formatar CNPJ workflow rule
+Workflow rule description: Formatar campo CNPJ__c automaticamente.&quot;</description>
+    <formulas>
+        <name>LeadFormatarCNPJFormula</name>
+        <dataType>String</dataType>
+        <expression>(LEFT($Record.CNPJ__c , 2)
+&amp;&quot;.&quot;&amp;
+RIGHT(LEFT($Record.CNPJ__c,5), 3)
+&amp;&quot;.&quot;&amp;
+RIGHT(LEFT($Record.CNPJ__c,8), 3)
+&amp;&quot;/&quot;&amp;
+LEFT(RIGHT($Record.CNPJ__c,6), 4)
+&amp;&quot;-&quot;&amp;
+RIGHT($Record.CNPJ__c,2))</expression>
+    </formulas>
+    <label>Lead - Formatar CNPJ_2</label>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>mainUpdate</name>
+        <label>mainUpdate</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>CNPJ__c</field>
+            <value>
+                <elementReference>LeadFormatarCNPJFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>mainUpdate</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <object>Lead</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

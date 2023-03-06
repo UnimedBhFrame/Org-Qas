@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Colocar essa permissão em todos os usuarios exceto papel de supervisor de call center ela serve para a regra de validação SupervisorCallCenter</description>
+    <isLicensed>false</isLicensed>
+    <label>Todos os papeis exceto Supervisor de Call Center</label>
+</CustomPermission>
