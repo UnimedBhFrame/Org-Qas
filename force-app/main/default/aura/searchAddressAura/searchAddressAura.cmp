@@ -1,0 +1,7 @@
+<aura:component implements="lightning:actionOverride,force:hasRecordId,force:hasSObjectName,force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,forceCommunity:availableForAllPageTypes,force:lightningQuickActionWithoutHeader">
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="objectName" type="String" default="{!v.sObjectName}"/>
+
+    <c:searchAddress recordId="{!v.recordId}" previewAddress="true"/>
+    <lightning:button variant="destructive" label="Voltar" title="Voltar" onclick="{! c.closeModal }"/>
+</aura:component>
